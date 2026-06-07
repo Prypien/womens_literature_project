@@ -337,15 +337,12 @@ let foundItems = new Set();
 let isAudioMuted = true; // Browser autoplay restriction safety
 let typewriterTimeout = null;
 
-// Audio track mapping (single soundtrack file playing continuously)
-const audioTracks = {
-    menu: "womens_literature.mp3",
-    french: "womens_literature.mp3",
-    german: "womens_literature.mp3",
-    taiwanese: "womens_literature.mp3",
-    south_american: "womens_literature.mp3",
-    finale: "womens_literature.mp3"
-};
+// Audio Playlist (plays continuously, next track loads when current track ends)
+const playlist = [
+    "womens_literature.mp3",
+    "womens_literature_2.mp3"
+];
+let currentTrackIndex = 0;
 
 // DOM elements
 const startScreen = document.getElementById("start-screen");
@@ -387,6 +384,16 @@ backToSelectBtn.addEventListener("click", () => {
 closeInspectionBtn.addEventListener("click", closeInspection);
 audioToggle.addEventListener("click", toggleAudio);
 
+// Automatically play next song in playlist when current ends
+bgMusic.addEventListener("ended", () => {
+    currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
+    bgMusic.src = playlist[currentTrackIndex];
+    bgMusic.load();
+    if (!isAudioMuted) {
+        bgMusic.play().catch(e => console.log("Playlist play error:", e));
+    }
+});
+
 // Character card clicks
 document.querySelectorAll(".char-card").forEach(card => {
     card.addEventListener("click", () => {
@@ -399,15 +406,15 @@ document.querySelectorAll(".char-card").forEach(card => {
 
 startFinaleBtn.addEventListener("click", () => transitionTo("finale"));
 
-// Audio controller
-function playTrack(trackName) {
-    const src = audioTracks[trackName];
+// Audio controller (plays from playlist without resetting current song)
+function playTrack() {
+    const src = playlist[currentTrackIndex];
     if (bgMusic.getAttribute("src") !== src) {
         bgMusic.src = src;
         bgMusic.load();
     }
     
-    if (!isAudioMuted) {
+    if (!isAudioMuted && bgMusic.paused) {
         bgMusic.play().catch(e => console.log("Audio play blocked by browser:", e));
     }
 }
