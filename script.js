@@ -134,56 +134,60 @@ const storyData = {
             scenes: [
                 {
                     speaker: "The Taiwanese",
-                    text: "Ten years ago, while my foreign friends went to night markets and traveled to tropical beaches, I spent my nights in the dust-free yellow light of the NYCU semiconductor labs. Today, I am a lead engineer at TSMC, managing the production of the 3nm chips that run the world's smartphones and military systems."
+                    text: "I stayed in Hsinchu after graduation, taking a path not much different from that of my peers. Since stepping into NYCU, my future seemed to be set. Like everyone else, I worked for a master's degree and applied for a decent job in the Hsinchu Science Park. It was the most ordinary path an EE major could take. And though I was not a fan of conferences, since many of my acquaintances were attending, I decided I should attend as well, given how close it was to school."
                 },
                 {
                     speaker: "The Taiwanese",
-                    text: "I attend this congress not to reminisce, but because TSMC is funding a new research building. Looking at the international alumni laughing, I feel a massive distance. They came here to 'experience' Taiwan, while we live here to sustain it. Our labor is the invisible shield of this island – the Silicon Shield."
+                    text: "The conference was about the role of semiconductors in Taiwan and the world, which had everything to do with my job—or rather, my life ever since starting college. I had left school for a few years, yet it feels like nothing has really changed. I thought back to my days after freshman year, writing lab reports until late at night and grinding for exams; my past and future blurred together."
                 },
                 {
                     speaker: "Exploration",
                     type: "point_and_click",
-                    text: "Examine the symbols of technological duty and personal sacrifice.",
+                    text: "Look at the desk and search for items representing your academic and professional path.",
                     items: [
                         {
-                            id: "bunny-suit",
-                            x: "45%",
-                            y: "45%",
-                            icon: "🧑‍🚀",
-                            title: "The Cleanroom Suit (Bunny Suit)",
-                            analysis: "Memory:\n»I remember the feeling of suffocating inside the white cleanroom suit for 12 hours straight. No water, no phone, no identity. We were just cogs in a multi-billion dollar machine, building the future for users in the West who don't know Hsinchu exists.«\n\nReflection:\nTaiwan's semiconductor dominance relies on the extreme collective sacrifice of our generation. While Western students could sit in cafes and discuss the moral philosophy of supply chains, we had to secure the physical output. Our work is not a hobby; it is a matter of national survival."
+                            id: "lab-report",
+                            x: "35%",
+                            y: "55%",
+                            icon: "📊",
+                            title: "Lab Reports & Grinding",
+                            analysis: "Memory:\n»I thought back to my days after freshman year, writing lab reports until late at night and grinding for exams; my past and future blurred together.«\n\nReflection:\nSince starting college, my future seemed predetermined. I worked for a master's degree and applied for a job in the Hsinchu Science Park, the most ordinary path for an EE major. The academic grind became the template for my professional life, blurring my past and my future into a single, continuous loop of work."
                         },
                         {
-                            id: "oolong-tea",
+                            id: "schedule-book",
                             x: "65%",
-                            y: "65%",
-                            icon: "🍵",
-                            title: "Oolong Tea & Sleep Deprivation",
-                            analysis: "Memory:\n»My father told me: 'Work hard, and the world will respect Taiwan.' So I drank cold oolong tea at 3 AM to finish the lithography test, while my German roommate slept soundly after a night of beer.«\n\nReflection:\nThe asymmetry is clear: the weight on our shoulders is colossal. We cannot afford comfort. The wealth and freedom that our Western friends inherit, we must earn from scratch every single day."
+                            y: "45%",
+                            icon: "📅",
+                            title: "Surviving the Present",
+                            analysis: "Memory:\n»I stopped taking classes purely out of interest after my freshman year, as it took too much time away from my study schedule. I started caring less and less about the world and more about surviving the present and planning for a more laid-back future. I remember scolding a friend for never getting enough sleep, but I never actually imagined I would end up in the same position.«\n\nReflection:\nThe carefree days of freshman year quickly vanished under the weight of the study schedule. I had to let go of intellectual curiosity just to survive the competitiveness. I remember scolding a friend for never getting enough sleep, only to end up in the exact same position, sacrificing sleep and curiosity for a secured future."
                         }
                     ]
                 },
                 {
                     speaker: "The Taiwanese",
-                    text: "A foreign voice calls my name. It is the French girl, waving at me. Ten years have passed, and our paths couldn't be more different. She escaped to the arts; I remained in the machine. I take a deep breath, adjust my badge, and walk towards her."
+                    text: "At first, the change was hard to bear. A decade ago, I was a freshman at college, and my life was the most carefree. Even though the change was well expected, it was still hard to adjust. But as time went on, I got used to the lifestyle. And for the sake of my future, I hung on. It’s hard to stop when everyone around you is striving for better. There didn’t seem to be another choice, and I chose this for myself."
+                },
+                {
+                    speaker: "The Taiwanese",
+                    text: "And so, here I am. Almost everything is the same. The same competitiveness, the same busy life, except I get paid more now. Not that I have much time to enjoy it, though. Sometimes I wonder if it’s really worth it, living this way, but as of now, I’m still here. My life as an engineer will continue for the time being."
                 }
             ]
         },
 
         south_american: {
             name: "The South American",
-            portrait: "🇦🇷",
+            portrait: "🇵🇾",
             role: "Cultural Diplomat",
             bgClass: "bg-southamerican-glow",
             audioTrack: "south_american",
             scenes: [
                 {
                     speaker: "The South American",
-                    text: "Ten years ago, I left Buenos Aires for an exchange program in Hsinchu. It was a cultural shock. I was loud, emotional, and disorganized in a world that ran on microchips and absolute order. Today, I work as a cultural attaché, building bridges between South America and East Asia."
+                    text: "Ten years ago, I left Paraguay for an exchange program in Hsinchu. It was a cultural shock. I was loud, emotional, and disorganized in a world that ran on microchips and absolute order. Today, I work as a cultural attaché, building bridges between South America and East Asia."
                 },
                 {
                     speaker: "The South American",
-                    text: "Walking the Guangfu campus, I realize how much Hsinchu has reshaped my concept of time and work. In Argentina, we lived in the shadow of historical crises, learning to survive the present. Here, I learned to build for a future that is already planned years in advance."
+                    text: "Walking the Guangfu campus, I realize how much Hsinchu has reshaped my concept of time and work. In Paraguay, we lived in the shadow of historical crises, learning to survive the present. Here, I learned to build for a future that is already planned years in advance."
                 },
                 {
                     speaker: "Exploration",
@@ -204,7 +208,7 @@ const storyData = {
                             y: "60%",
                             icon: "🧉",
                             title: "The Mate Cup",
-                            analysis: "Memory:\n»I used to brew Mate in the NYCU library. The security guard would stare at me like I was doing something illegal. It was my only anchor to the southern hemisphere.«\n\nReflection:\nDisplacement forces you to distill your culture. In Taiwan, I truly became \"South American\". People appreciated my warmth and spontaneity, but I always remained the exotic outsider, filling the emotional voids of Hsinchu's technology-driven rush."
+                            analysis: "Memory:\n»I used to brew Mate in the NYCU library. The security guard would stare at me like I was doing something illegal. It was my only anchor to the southern hemisphere.«\n\nReflection:\nDisplacement forces you to distill your culture. In Taiwan, I truly became \"Paraguayan\". People appreciated my warmth and spontaneity, but I always remained the exotic outsider, filling the emotional voids of Hsinchu's technology-driven rush."
                         }
                     ]
                 },
