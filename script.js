@@ -134,42 +134,42 @@ const storyData = {
             scenes: [
                 {
                     speaker: "The Taiwanese",
-                    text: "I stayed in Hsinchu after graduation, taking a path not much different from that of my peers. Since stepping into NYCU, my future seemed to be set. Like everyone else, I worked for a master's degree and applied for a decent job in the Hsinchu Science Park. It was the most ordinary path an EE major could take. And though I was not a fan of conferences, since many of my acquaintances were attending, I decided I should attend as well, given how close it was to school."
+                    text: "I stayed in Hsinchu after graduation, taking a path not much different from that of my peers. Since stepping into NYCU, my future seemed to be set. Like everyone else, I worked for a master's degree and applied for a decent job in the Hsinchu Science Park. It was the most ordinary path an EE major could take. And though I was not a fan of conferences, since many of my acquaintances were attending, I decided I should go as well, given how close it was to campus."
                 },
                 {
                     speaker: "The Taiwanese",
-                    text: "The conference was about the role of semiconductors in Taiwan and the world, which had everything to do with my job—or rather, my life ever since starting college. I had left school for a few years, yet it feels like nothing has really changed. I thought back to my days after freshman year, writing lab reports until late at night and grinding for exams; my past and future blurred together."
+                    text: "The conference was about the role of semiconductors in Taiwan and the world, which had everything to do with my job—or rather, my life ever since starting college. The topic was so entirely predictable it was almost boring. It’s not that I hate my job, but I couldn’t help but wonder how things might have been different."
                 },
                 {
                     speaker: "Exploration",
                     type: "point_and_click",
-                    text: "Look at the desk and search for items representing your academic and professional path.",
+                    text: "Search the room for objects that recall your hidden interests and the choices you made.",
                     items: [
                         {
-                            id: "lab-report",
-                            x: "35%",
+                            id: "teachers-book",
+                            x: "40%",
                             y: "55%",
-                            icon: "📊",
-                            title: "Lab Reports & Grinding",
-                            analysis: "Memory:\n»I thought back to my days after freshman year, writing lab reports until late at night and grinding for exams; my past and future blurred together.«\n\nReflection:\nSince starting college, my future seemed predetermined. I worked for a master's degree and applied for a job in the Hsinchu Science Park, the most ordinary path for an EE major. The academic grind became the template for my professional life, blurring my past and my future into a single, continuous loop of work."
+                            icon: "📖",
+                            title: "Teacher's Book",
+                            analysis: "Memory:\n»I thought of my writing teacher and that book of hers she handed me, long ago. I wonder how it would have felt to be her, changing paths from engineering to literature in college. When reading that book, I could smell the bitter yet floral taste of the tea she wrote, as if she had carved down the aroma with her pencil, and it made me sober.«\n\nReflection:\nI couldn’t help but think back to my choices. What if I had chosen what I was most interested in? She had already chosen what she would, when she was in my place. If she were at this conference now, she would have enjoyed listening to stories from different walks of life. If I had made a different choice back then, maybe I would have, too."
                         },
                         {
-                            id: "schedule-book",
-                            x: "65%",
+                            id: "pencil",
+                            x: "60%",
                             y: "45%",
-                            icon: "📅",
-                            title: "Surviving the Present",
-                            analysis: "Memory:\n»I stopped taking classes purely out of interest after my freshman year, as it took too much time away from my study schedule. I started caring less and less about the world and more about surviving the present and planning for a more laid-back future. I remember scolding a friend for never getting enough sleep, but I never actually imagined I would end up in the same position.«\n\nReflection:\nThe carefree days of freshman year quickly vanished under the weight of the study schedule. I had to let go of intellectual curiosity just to survive the competitiveness. I remember scolding a friend for never getting enough sleep, only to end up in the exact same position, sacrificing sleep and curiosity for a secured future."
+                            icon: "✏️",
+                            title: "The Drafting Pencil",
+                            analysis: "Memory:\n»My pencil stays only as a pencil. Back in school, I wrote down equations. I wrote schematics. I drew art, but then erased them. But what if I hadn’t? What if I had been braver, what if I hadn't gone with the flow, what if I had ignored the fact that I had no talent and went after what I loved?«\n\nReflection:\nThough there’s always that pencil sketching out dreams in my head, dreams that I always claim never existed. I let that pencil cross them out again and again, but what’s there will always be there. Sometimes I wonder if it’s really worth it, living this way."
                         }
                     ]
                 },
                 {
                     speaker: "The Taiwanese",
-                    text: "At first, the change was hard to bear. A decade ago, I was a freshman at college, and my life was the most carefree. Even though the change was well expected, it was still hard to adjust. But as time went on, I got used to the lifestyle. And for the sake of my future, I hung on. It’s hard to stop when everyone around you is striving for better. There didn’t seem to be another choice, and I chose this for myself."
+                    text: "But here I am. My thoughts are always in vain, and I’m never brave enough for change. Maybe I get paid more now. Maybe people look up to me more. It’s busy, but it’s not a bad life. Though there’s always that pencil sketching out dreams in my head, dreams that I always claim never existed. I let that pencil cross them out again and again, but what’s there will always be there."
                 },
                 {
                     speaker: "The Taiwanese",
-                    text: "And so, here I am. Almost everything is the same. The same competitiveness, the same busy life, except I get paid more now. Not that I have much time to enjoy it, though. Sometimes I wonder if it’s really worth it, living this way, but as of now, I’m still here. My life as an engineer will continue for the time being."
+                    text: "Sometimes I wonder if it’s really worth it, living this way. However, as of now, I’m still here. My life as an engineer will continue for the time being."
                 }
             ]
         },
