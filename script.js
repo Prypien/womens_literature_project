@@ -21,7 +21,7 @@ const storyData = {
         ]
     },
 
-    // 2. Individual Character Stories
+    // 2. Individual Character Stories (Now fully linear)
     characters: {
         french: {
             name: "The French Girl",
@@ -64,21 +64,6 @@ const storyData = {
                 {
                     speaker: "The French Girl",
                     text: "The course was about the inequalities embedded in globalization mechanisms and about the tiny components in our phones that circulate across all these countries. And as a European who could afford the latest iPhone, I was part of that system. I was benefiting from it because I was born on the “right” side of the world."
-                },
-                {
-                    speaker: "The French Girl",
-                    type: "choice",
-                    text: "How do you respond to your complicity in this global supply chain system?",
-                    choices: [
-                        {
-                            text: "Channel the guilt: Use your art to critique corporate structures",
-                            consequence: "I gripped the warm steel of my phone, accepting my complicity in this chain. I did not throw it away, but I promised to use my art to critique these exact structures. I refused to let corporate giants own my voice; I became an artist."
-                        },
-                        {
-                            text: "Rebel completely: Maintain absolute distance from big tech companies",
-                            consequence: "I placed the phone face down, unable to ignore the disparity. I knew I couldn't escape the digital grid, but I could actively refuse to work for or glorify these big companies. I chose the independent path of art to keep my hands clean."
-                        }
-                    ]
                 },
                 {
                     speaker: "The French Girl",
@@ -126,21 +111,6 @@ const storyData = {
                             icon: "🛂",
                             title: "Inherited Shadows & Privilege",
                             analysis: "Memory:\n»Being the \"white, privileged man\" in Taiwan felt bizarre. I was treated like a beauty ideal and an economic powerhouse based on a legacy that was already crumbling from the inside. My country had lost its focus on digital innovation, its cheap energy, its security, and its work ethic. I felt like the heir to a dying kingdom, enjoying the residual respect of a world that hadn't fully realized we were running on empty.«\n\nReflection:\nTaiwan didn't make me feel superior; it forced me to look up. It made me realize that if the economic axis of the last century had been different, the global ideals of privilege would be completely reversed. I didn't want to be the maggot anymore. I wanted to build my own foundation. The intense drive of this island demanded more of me, setting a bar that I still fear I will never fully reach."
-                        }
-                    ]
-                },
-                {
-                    speaker: "The German",
-                    type: "choice",
-                    text: "How do you respond to the intense focus on performance you observe on the running track?",
-                    choices: [
-                        {
-                            text: "Embrace the strive: Join the track and run side-by-side with them",
-                            consequence: "I walked down to the track, my lungs burning in the heavy, humid Hsinchu air, running side-by-side with them under the floodlights. I wanted to absorb that discipline, to breathe it in and prove I wasn't just a passive heir to a dying empire."
-                        },
-                        {
-                            text: "Reflect from the sidelines: Drink your creatine and study their drive",
-                            consequence: "I stayed on the concrete steps, drinking my creatine, watching their tireless movement. I didn't join. I just watched, absorbing the silent lesson that privilege means nothing without striving, letting it reshape my path."
                         }
                     ]
                 },
@@ -195,21 +165,6 @@ const storyData = {
                 },
                 {
                     speaker: "The Taiwanese",
-                    type: "choice",
-                    text: "Under the immense pressure of the Silicon Shield, how do you sustain yourself?",
-                    choices: [
-                        {
-                            text: "Push forward: Double down on the collective duty",
-                            consequence: "I drank another cup of cold tea and pushed back into the cleanroom. This was my contribution to our national survival. If we falter, the island falters. Our sweat is the real shield of Hsinchu."
-                        },
-                        {
-                            text: "Seek boundaries: Step out of the yellow light to breathe",
-                            consequence: "I stepped outside the lab for a brief ten minutes, looking up at the dark Hsinchu hills. I needed to remind myself that I am a human being with a soul, not just a cleanroom component in the supply chain."
-                        }
-                    ]
-                },
-                {
-                    speaker: "The Taiwanese",
                     text: "A foreign voice calls my name. It is the French girl, waving at me. Ten years have passed, and our paths couldn't be more different. She escaped to the arts; I remained in the machine. I take a deep breath, adjust my badge, and walk towards her."
                 }
             ]
@@ -255,71 +210,186 @@ const storyData = {
                 },
                 {
                     speaker: "The South American",
-                    type: "choice",
-                    text: "Where does your identity anchor after ten years between two worlds?",
-                    choices: [
-                        {
-                            text: "Anchor in East Asia: Adopt the future-driven rhythm of Hsinchu",
-                            consequence: "I grew to love Hsinchu's forward-looking pace. It gave me structure. I anchor myself here now, building bridges, finding my own rhythm in the silicon empire."
-                        },
-                        {
-                            text: "Anchor in the South: Preserve your warm, spontaneous identity",
-                            consequence: "No matter how much NYCU shaped me, my primary pulse remains south of the equator. I carry that warmth as my shield, refusing to be entirely optimized by the machine."
-                        }
-                    ]
-                },
-                {
-                    speaker: "The South American",
                     text: "I spot the German entrepreneur looking out the window, looking serious as always. Nearby, the Taiwanese engineer and the French singer are talking. The circle is closing. Ten years later, we are back where the journey started."
                 }
             ]
         }
     },
 
-    // 3. The Shared Finale
+    // 3. The Shared Branching Finale
     finale: {
         bgClass: "bg-finale-glow",
         audioTrack: "finale",
         scenes: [
+            // Index 0
             {
                 speaker: "The Reunion — A Bar in Hsinchu",
                 text: "Later that evening. The noise of the congress has faded. The four of them sit in a small, dark bar in a side alley near East Gate in Hsinchu. On the table are cold Taiwan Beer, Oolong tea, and empanadas brought by the South American."
             },
+            // Index 1
             {
                 speaker: "The French Girl",
                 text: "It feels so strange being back. When I look at the university now, all I see are the structures of globalization. It feels like the innocence we had ten years ago was just an illusion."
             },
+            // Index 2
             {
                 speaker: "The German",
                 text: "Maybe. But innocence doesn't build anything. Taiwan taught me that the West is living in a dream. If you want a future, you have to work for it, just like the people running on that track every single night."
             },
+            // Index 3
             {
                 speaker: "The Taiwanese",
                 text: "You both talk about Taiwan like it's a concept. For me, it's my daily life. The chips we design are not just 'globalization' or 'energy' – they are the only reason we are still a free country. Our work is our survival. But it is exhausting."
             },
+            // Index 4 (CHOICE 1)
             {
                 speaker: "The South American",
-                text: "Maybe that's the point. We all experienced the same hot summer here, but we carried different burdens. The French girl carried the guilt of consumption, the German the fear of decay, the Taiwanese the weight of survival, and I... I carried the distance of the south."
-            },
-            {
-                speaker: "The Reunion — A Bar in Hsinchu",
                 type: "choice",
-                text: "As you look at your friends and reflect on the semester, what is the ultimate truth of your shared time at NYCU?",
+                text: "We all experienced the same hot summer here, but we carried different burdens. The French girl carried the guilt of consumption, the German the fear of decay, the Taiwanese the weight of survival, and I... the distance of the south. How do you respond to the growing tension?",
                 choices: [
                     {
-                        text: "Acknowledge the Geopolitical Rift: We have grown too far apart",
-                        consequence: "We must accept that we have grown apart. Our backgrounds and national privileges have solidified into separate worlds. Hsinchu was just a brief pause in a system that ultimately divides us. A bittersweet silence settles. The glasses clink, but the division is clear. We are citizens of different realities now, bound by memory but parted by fate."
+                        text: "Critique Western Privilege: Challenge the European projection on Taiwan",
+                        consequence: "I looked at the French girl and the German. We spent our semester consuming the island's energy, projecting our hopes and fears onto it. We treated it like our playground, ignoring the physical labor keeping it afloat.",
+                        targetSceneIndex: 5
                     },
                     {
-                        text: "Embrace the Shared Rhythm: Our bond transcends the divisions",
-                        consequence: "Despite the distances and privileges, Hsinchu gave us a common beat. We might live in different hemispheres, but the drive and friendship we forged will always keep us synchronized. A warm energy fills the small bar. The clink of our glasses echoes into the night. We realize that our friendship is its own shield against the isolating currents of the world."
+                        text: "Defend the Local Sacrifice: Highlight the real human cost of technology",
+                        consequence: "I supported the Taiwanese engineer. Her exhaustion is the price of our global connectivity. The West demands progress but remains blind to the cleanrooms and sleepless labs that build it.",
+                        targetSceneIndex: 9
+                    },
+                    {
+                        text: "Defuse the Tension: Recall the night market nostalgia",
+                        consequence: "I tried to break the heavy silence. I reminded them of our shared youth. We were just students once, sharing bubble tea and stinky tofu in the scorching heat, unaware of the structures dividing us.",
+                        targetSceneIndex: 13
                     }
                 ]
             },
+
+            // ==========================================
+            // BRANCH 1: Western Privilege (Indices 5-8)
+            // ==========================================
+            // Index 5
+            {
+                speaker: "The French Girl",
+                text: "I know I benefit from the system. I sing about peace, but I bought the phone built by underpaid workers. But at least I don't pretend it's a pure meritocracy like you do, German guy! You act like the hustle makes the exploitation moral."
+            },
+            // Index 6
+            {
+                speaker: "The German",
+                text: "It IS raw execution! The developers and engineers here work because they want to build something. Your moral guilt is just the luxury of a decaying European welfare state that has forgotten how to innovate and now hides behind grandstanding!"
+            },
+            // Index 7
+            {
+                speaker: "The Taiwanese",
+                text: "You call my exhaustion 'meritocracy'? It is structural pressure! If I don't work, my family has no security, and our tech shield crumbles. Don't romanticize my long hours just to feed your IT business theories. It's not a choice for me!"
+            },
+            // Index 8 (CHOICE 1.1)
+            {
+                speaker: "The South American",
+                type: "choice",
+                text: "The clash is out in the open, exposing the deep socioeconomic divide between your lifestyles. How do you direct this heated debate?",
+                choices: [
+                    {
+                        text: "Escalate the rift: Acknowledge that your differences are irreconcilable",
+                        consequence: "I realized we couldn't bridge this. Our national identities and privileges had solidified over the decade. We are no longer friends; we are players on opposite sides of a global system.",
+                        targetSceneIndex: 17
+                    },
+                    {
+                        text: "Bridge the gap: Try to find mutual understanding despite the privilege",
+                        consequence: "I asked them to stop arguing. We cannot erase our differences, but we can acknowledge them and listen. We owe it to the semester that shaped us to try to understand each other's burdens.",
+                        targetSceneIndex: 18
+                    }
+                ]
+            },
+
+            // ==========================================
+            // BRANCH 2: Local Sacrifice (Indices 9-12)
+            // ==========================================
+            // Index 9
+            {
+                speaker: "The Taiwanese",
+                text: "None of you understand the stress. The fighter jets are flying closer every month, and the West just demands more production. I spend my life in a cleanroom suit so you can stream your music and run your digital companies!"
+            },
+            // Index 10
+            {
+                speaker: "The South American",
+                text: "It is true. The West treats Hsinchu like a technology gas station. They don't care about the safety or the people here, as long as the shipping containers of chips keep arriving on schedule."
+            },
+            // Index 11
+            {
+                speaker: "The German",
+                text: "I respect that work ethic – that's why I stayed and built my business here! I pay local taxes, I hire local engineers. I didn't run back to the safety of Germany. I am participating in this drive, not just consuming it!"
+            },
+            // Index 12 (CHOICE 2.1)
+            {
+                speaker: "The French Girl",
+                text: "She looks at the table, her voice trembling. The divide between creator and consumer is clear. How do you resolve this confrontation?",
+                choices: [
+                    {
+                        text: "Confront the exploitation: Validate the Taiwanese engineer's anger",
+                        consequence: "I spoke up for the Taiwanese. We must stop pretending this technology boom is a shared victory. It is built on asymmetric sacrifice. We are enjoying the fruits of a machine she is locked inside.",
+                        targetSceneIndex: 17
+                    },
+                    {
+                        text: "Stress mutual dependence: Argue that your paths are interconnected",
+                        consequence: "I argued that our paths, though unequal, are bound together. The German's business, the French girl's art, and the Taiwanese engineer's chips are all parts of the same global network. We need to support each other.",
+                        targetSceneIndex: 18
+                    }
+                ]
+            },
+
+            // ==========================================
+            // BRANCH 3: Nostalgia / Defusing (Indices 13-16)
+            // ==========================================
+            // Index 13
+            {
+                speaker: "The South American",
+                text: "Guys, remember the stinky tofu at Miaoli? Or the chaotic scooter rides into the mountains? We weren't debating supply chains back then. We were just four classmates sitting on a night market curb."
+            },
+            // Index 14
+            {
+                speaker: "The French Girl",
+                text: "Yes, but we were young and ignorant. We didn't see the Cleanroom suits or the migrant worker dorms. Our innocence was just blindness. Our friendship was easy because we didn't ask hard questions."
+            },
+            // Index 15
+            {
+                speaker: "The Taiwanese",
+                text: "I saw it. I knew my father was working three jobs while you guys were planning beach trips to the Philippines. I kept quiet because I wanted to feel normal, just for a semester. I wanted to pretend I was free like you."
+            },
+            // Index 16 (CHOICE 3.1)
+            {
+                speaker: "The German",
+                text: "He looks down, the silence heavy with the realization of our past ignorance. How do you address this hidden history?",
+                choices: [
+                    {
+                        text: "Acknowledge the class division: Accept that the illusion has shattered",
+                        consequence: "I admitted that our past friendship was built on an illusion. The class differences we ignored back then have now fully defined our adult lives. The innocence is gone, and we cannot go back.",
+                        targetSceneIndex: 17
+                    },
+                    {
+                        text: "Apologize and rebuild: Forge a new friendship based on honesty",
+                        consequence: "I apologized for our past blindness. But I argued that our connection doesn't have to end. Now that we see the truth, we can build a real friendship, one that acknowledges our different realities.",
+                        targetSceneIndex: 18
+                    }
+                ]
+            },
+
+            // ==========================================
+            // OUTCOME ENDINGS (Indices 17-19)
+            // ==========================================
+            // Index 17: Geopolitical Rift Ending
             {
                 speaker: "The Reunion — A Bar in Hsinchu",
-                text: "They raise their glasses. The clink of glass blends with the sound of cicadas outside the door, just like ten years ago. The rhythms of their lives were different, but for a brief moment, they dance to the same beat."
+                text: "We finish our beers in tense silence. The cicadas outside sound like a countdown. We pay the bill separately, shaking hands with a polite, professional distance. The semester is a ghost, and we are strangers now, divided by the global machinery of our time.",
+                nextSceneIndex: 19
             },
+            // Index 18: Shared Rhythm Ending
+            {
+                speaker: "The Reunion — A Bar in Hsinchu",
+                text: "We clink our glasses. The tension dissolves into a quiet, mutual respect. We are different, yes, and we carry unequal burdens. But for one hot semester, we shared the same rhythm. We promise to keep in touch and support each other.",
+                nextSceneIndex: 19
+            },
+            // Index 19: End Screen
             {
                 speaker: "The End",
                 text: "Thank you for playing! This project highlights how different socio-economic backgrounds and identities shape the experience of the exact same place — in the spirit of Zadie Smith's Swing Time."
@@ -336,6 +406,7 @@ let completedChars = new Set();
 let foundItems = new Set();
 let isAudioMuted = true; // Browser autoplay restriction safety
 let typewriterTimeout = null;
+let consequenceRedirectIndex = null; // Branching finale helper
 
 // Audio Playlist (plays continuously, next track loads when current track ends)
 const playlist = [
@@ -378,7 +449,7 @@ startBtn.addEventListener("click", () => transitionTo("intro"));
 toSelectBtn.addEventListener("click", () => transitionTo("select"));
 nextBtn.addEventListener("click", advanceScene);
 backToSelectBtn.addEventListener("click", () => {
-    playTrack("menu");
+    playTrack();
     transitionTo("select");
 });
 closeInspectionBtn.addEventListener("click", closeInspection);
@@ -431,15 +502,7 @@ function toggleAudio() {
         audioIcon.textContent = "🔊";
         audioToggle.classList.add("playing");
         audioToggle.innerHTML = '<span id="audio-icon">🔊</span> Music On';
-        
-        // Auto-play the correct track based on the state
-        if (gameState === "char_story" && selectedChar) {
-            playTrack(storyData.characters[selectedChar].audioTrack);
-        } else if (gameState === "finale") {
-            playTrack(storyData.finale.audioTrack);
-        } else {
-            playTrack("menu");
-        }
+        playTrack();
     }
 }
 
@@ -454,11 +517,11 @@ function transitionTo(state) {
 
     if (state === "intro") {
         introScreen.classList.add("active");
-        playTrack("menu");
+        playTrack();
     } 
     else if (state === "select") {
         selectScreen.classList.add("active");
-        playTrack("menu");
+        playTrack();
         updateSelectionScreen();
     } 
     else if (state === "char_story") {
@@ -466,17 +529,14 @@ function transitionTo(state) {
         currentSceneIndex = 0;
         foundItems.clear();
         backToSelectBtn.classList.remove("hidden");
-        
-        const charData = storyData.characters[selectedChar];
-        playTrack(charData.audioTrack);
+        playTrack();
         loadScene();
     } 
     else if (state === "finale") {
         gameScreen.classList.add("active");
         currentSceneIndex = 0;
         backToSelectBtn.classList.add("hidden"); // No going back in the finale
-        
-        playTrack(storyData.finale.audioTrack);
+        playTrack();
         loadScene();
     }
 }
@@ -595,11 +655,26 @@ function loadScene() {
 function makeChoice(opt) {
     choiceContainer.classList.add("hidden");
     typeWriterEffect(dialogueText, opt.consequence);
+    
+    if (opt.targetSceneIndex !== undefined) {
+        consequenceRedirectIndex = opt.targetSceneIndex;
+    } else {
+        consequenceRedirectIndex = null;
+    }
+    
     nextBtn.style.display = "inline-block";
 }
 
 // Advance scene
 function advanceScene() {
+    // Check if we have a consequence redirect queued up from a choice
+    if (consequenceRedirectIndex !== null) {
+        currentSceneIndex = consequenceRedirectIndex;
+        consequenceRedirectIndex = null;
+        loadScene();
+        return;
+    }
+
     let maxScenes = 0;
 
     if (gameState === "intro") {
@@ -620,12 +695,21 @@ function advanceScene() {
             loadScene();
         } else {
             completedChars.add(selectedChar);
-            playTrack("menu");
             transitionTo("select");
         }
     } 
     else if (gameState === "finale") {
-        maxScenes = storyData.finale.scenes.length;
+        const currentChapter = storyData.finale;
+        const scene = currentChapter.scenes[currentSceneIndex];
+        
+        // Check if this scene forces a jump to another index (e.g. skipping alternate endings)
+        if (scene.nextSceneIndex !== undefined) {
+            currentSceneIndex = scene.nextSceneIndex;
+            loadScene();
+            return;
+        }
+
+        maxScenes = currentChapter.scenes.length;
         currentSceneIndex++;
         
         if (currentSceneIndex < maxScenes) {
