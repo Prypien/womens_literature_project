@@ -517,13 +517,18 @@ body {
     background: #141624;
     border: 1px solid var(--accent-gold);
     border-radius: 16px;
-    width: 90%;
-    max-width: 650px;
-    padding: 35px;
-    text-align: center;
+    width: 92%;
+    max-width: 900px;
+    height: 80%;
+    max-height: 520px;
+    padding: 30px;
     box-shadow: var(--box-shadow);
     transform: scale(0.9);
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
 }
 
 #inspection-overlay:not(.hidden) .inspection-card {
@@ -535,15 +540,72 @@ body {
     font-size: 1.80rem;
     color: var(--accent-gold);
     margin-bottom: 18px;
+    text-align: center;
+    flex-shrink: 0;
 }
 
-.inspection-card p {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    color: #d1d4e6;
-    margin-bottom: 25px;
+.inspection-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    flex-grow: 1;
+    min-height: 0; /* Crucial for scrolling inside flexbox items */
+    margin-bottom: 20px;
+}
+
+.inspection-box {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 0; /* Allows inner content to compress and scroll */
     text-align: left;
+}
+
+.inspection-box h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    color: var(--accent-gold);
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    padding-bottom: 6px;
+    flex-shrink: 0;
+}
+
+.inspection-scroll-content {
+    overflow-y: auto;
+    flex-grow: 1;
+    padding-right: 8px;
+}
+
+.inspection-scroll-content p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: #d1d4e6;
     white-space: pre-line;
+}
+
+/* Scrollbar Customization for inspection cards */
+.inspection-scroll-content::-webkit-scrollbar {
+    width: 6px;
+}
+.inspection-scroll-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+}
+.inspection-scroll-content::-webkit-scrollbar-thumb {
+    background: rgba(212, 175, 55, 0.3);
+    border-radius: 3px;
+}
+.inspection-scroll-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(212, 175, 55, 0.5);
+}
+
+.inspection-card .secondary-btn {
+    align-self: center;
+    flex-shrink: 0;
 }
 
 /* Background gradients representing different locations/moods */
@@ -729,20 +791,39 @@ body {
     }
 
     /* Inspection Overlay Mobile */
+    /* Inspection Overlay Mobile */
     .inspection-card {
         padding: 20px;
         width: 92%;
+        height: 85%;
+        max-height: 85vh;
     }
 
     .inspection-card h3 {
         font-size: 1.35rem;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
 
-    .inspection-card p {
-        font-size: 0.88rem;
-        line-height: 1.55;
-        margin-bottom: 18px;
+    .inspection-columns {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+
+    .inspection-box {
+        padding: 12px;
+    }
+
+    .inspection-box h4 {
+        font-size: 1rem;
+        margin-bottom: 6px;
+        padding-bottom: 4px;
+    }
+
+    .inspection-scroll-content p {
+        font-size: 0.85rem;
+        line-height: 1.5;
     }
     
     .secondary-btn {

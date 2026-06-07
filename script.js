@@ -125,7 +125,7 @@ const storyData = {
                             y: "40%",
                             icon: "🛂",
                             title: "Inherited Shadows & Privilege",
-                            analysis: "Memory:\n»Being the \"white, privileged man\" in Taiwan felt bizarre. I was treated like a beauty ideal and an economic powerhouse based on a legacy that was already crumbling from the inside. My country had lost its focus on digital innovation, its cheap energy, its security, and its work ethic. I felt like the heir to a dying kingdom, enjoying the residual respect of a world that hadn't fully realized we were running on empty. Taiwan didn't make me feel superior; it forced me to look up. It made me realize that if the economic axis of the last century had been different, the global ideals of privilege would be completely reversed. I didn't want to be the maggot anymore. I wanted to build my own foundation. The intense drive of this island demanded more of me, setting a bar that I still fear I will never fully reach.«"
+                            analysis: "Memory:\n»Being the \"white, privileged man\" in Taiwan felt bizarre. I was treated like a beauty ideal and an economic powerhouse based on a legacy that was already crumbling from the inside. My country had lost its focus on digital innovation, its cheap energy, its security, and its work ethic. I felt like the heir to a dying kingdom, enjoying the residual respect of a world that hadn't fully realized we were running on empty.«\n\nReflection:\nTaiwan didn't make me feel superior; it forced me to look up. It made me realize that if the economic axis of the last century had been different, the global ideals of privilege would be completely reversed. I didn't want to be the maggot anymore. I wanted to build my own foundation. The intense drive of this island demanded more of me, setting a bar that I still fear I will never fully reach."
                         }
                     ]
                 },
@@ -368,7 +368,8 @@ const backToSelectBtn = document.getElementById("back-to-select");
 
 const inspectionOverlay = document.getElementById("inspection-overlay");
 const inspectionTitle = document.getElementById("inspection-title");
-const inspectionText = document.getElementById("inspection-text");
+const inspectionMemoryText = document.getElementById("inspection-memory-text");
+const inspectionReflectionText = document.getElementById("inspection-reflection-text");
 const closeInspectionBtn = document.getElementById("close-inspection-btn");
 
 const audioToggle = document.getElementById("audio-toggle");
@@ -631,7 +632,21 @@ function advanceScene() {
 // Item clicked
 function inspectItem(item) {
     inspectionTitle.textContent = item.title;
-    inspectionText.textContent = item.analysis;
+    
+    let memoryText = "";
+    let reflectionText = "";
+    
+    if (item.analysis.includes("\n\nReflection:\n")) {
+        const parts = item.analysis.split("\n\nReflection:\n");
+        memoryText = parts[0].replace(/^Memory:\n/, "");
+        reflectionText = parts[1];
+    } else {
+        memoryText = item.analysis.replace(/^Memory:\n/, "");
+        reflectionText = "";
+    }
+    
+    inspectionMemoryText.textContent = memoryText;
+    inspectionReflectionText.textContent = reflectionText;
     inspectionOverlay.classList.remove("hidden");
     
     foundItems.add(item.id);
