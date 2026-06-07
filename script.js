@@ -175,46 +175,54 @@ const storyData = {
         },
 
         south_american: {
-            name: "The South American",
+            name: "The Paraguayan",
             portrait: "🇵🇾",
-            role: "Cultural Diplomat",
+            role: "Civil Engineer",
             bgClass: "bg-southamerican-glow",
             audioTrack: "south_american",
             scenes: [
                 {
-                    speaker: "The South American",
-                    text: "Ten years ago, I left Paraguay for an exchange program in Hsinchu. It was a cultural shock. I was loud, emotional, and disorganized in a world that ran on microchips and absolute order. Today, I work as a cultural attaché, building bridges between South America and East Asia."
+                    speaker: "The Paraguayan",
+                    text: "I had not planned to attend the congress. Ten years had passed since I graduated from NYCU, and life had taken me far away from Taiwan. After finishing my studies, I returned to Paraguay and founded my own civil engineering company. At first, it was just a small office with a few employees and a handful of local projects. But over the years, the company grew. We designed roads, bridges, water infrastructure, and housing developments across the country. Recently, I began exploring opportunities abroad, and Taiwan was the first place that came to mind. So when I received the invitation to the alumni congress, I decided it was time to return."
                 },
                 {
-                    speaker: "The South American",
-                    text: "Walking the Guangfu campus, I realize how much Hsinchu has reshaped my concept of time and work. In Paraguay, we lived in the shadow of historical crises, learning to survive the present. Here, I learned to build for a future that is already planned years in advance."
+                    speaker: "The Paraguayan",
+                    text: "As I walked through the exhibition hall, I noticed a booth displaying engineering projects completed by alumni around the world. Among the models stood a small bridge. It was nothing extraordinary, yet it reminded me of a miniature bridge I had built during one of my classes at NYCU."
                 },
                 {
                     speaker: "Exploration",
                     type: "point_and_click",
-                    text: "Find the pieces of your identity scattered between two hemispheres.",
+                    text: "Search the exhibition area for symbols that represent your journey from student projects to global engineering.",
                     items: [
-                        {
-                            id: "polaroid",
-                            x: "55%",
-                            y: "50%",
-                            icon: "📸",
-                            title: "The Old Polaroid Photo",
-                            analysis: "Memory:\n»A photo of the four of us at the Miaoli night market, laughing, holding bubble tea and stinky tofu. We looked so young, convinced that our friendship would easily bridge the continents.«\n\nReflection:\nThis photo shows a lightheartedness that we all lost. Back then we were just students; today we represent our respective homelands and their geopolitical realities. Time shaped us, but also drew us apart."
-                        },
                         {
                             id: "mate-cup",
                             x: "35%",
                             y: "60%",
                             icon: "🧉",
-                            title: "The Mate Cup",
-                            analysis: "Memory:\n»I used to brew Mate in the NYCU library. The security guard would stare at me like I was doing something illegal. It was my only anchor to the southern hemisphere.«\n\nReflection:\nDisplacement forces you to distill your culture. In Taiwan, I truly became \"Paraguayan\". People appreciated my warmth and spontaneity, but I always remained the exotic outsider, filling the emotional voids of Hsinchu's technology-driven rush."
+                            title: "Tereré",
+                            analysis: "Memory:\n»I spent most of my time worrying about exams, reports, and whether my Chinese was good enough to communicate with everyone around me. I often felt like an outsider, usually the only Paraguayan in the room. One afternoon, after a particularly stressful week, I sat outside with a group of classmates. I brought a bag of Paraguayan yerba mate and introduced them to tereré. Most of them had never heard of it. They laughed at the strange metal straw and asked countless questions about my country.«\n\nReflection:\nFor the first time, I realized that being different was not a weakness. The things that made me feel isolated were the same things that made me interesting to others. This tereré reminds me of the day I stopped seeing myself as a foreigner and started seeing myself as a bridge between cultures."
+                        },
+                        {
+                            id: "bridge-blueprint",
+                            x: "60%",
+                            y: "50%",
+                            icon: "🌉",
+                            title: "Bridge Blueprint",
+                            analysis: "Memory:\n»During my engineering classes at NYCU, I spent hours designing structures, learning to build foundations and run calculations. We built miniature models, testing load capacities and stress points, wondering if these math formulas would ever carry real-world weight.«\n\nReflection:\nThis blueprint represents more than engineering. It reminds me that the most important structures I built were the connections between Paraguay and Taiwan, connections that eventually inspired me to expand my company across the world. Roads and bridges are important, but they are ultimately designed to connect communities. In a way, that idea began during those conversations over tereré."
                         }
                     ]
                 },
                 {
-                    speaker: "The South American",
-                    text: "I spot the German entrepreneur looking out the window, looking serious as always. Nearby, the Taiwanese engineer and the French singer are talking. The circle is closing. Ten years later, we are back where the journey started."
+                    speaker: "The Paraguayan",
+                    text: "As my company expanded, I started working with international partners. I realized that infrastructure projects are no longer purely local. The materials, technologies, and expertise often come from different countries. Globalization is not only about products moving across borders; it is also about ideas and people doing the same. My years in Taiwan showed me that collaboration across cultures creates stronger solutions than any country could achieve alone."
+                },
+                {
+                    speaker: "The Paraguayan",
+                    text: "That is why I returned. Not only to reconnect with old friends, but also because I want to establish a branch of my company in Taiwan. Ten years ago, I arrived here as a foreign student searching for opportunities. Today, I have come back hoping to create them."
+                },
+                {
+                    speaker: "The Paraguayan",
+                    text: "As I left the exhibition area, I spotted a refreshment table. Among the drinks was a large pitcher of iced tea. For a second, I smiled, imagining how much better it would taste mixed with tereré. Then someone called my name from across the room, and I turned around to see an old classmate waving at me."
                 }
             ]
         }
@@ -228,7 +236,7 @@ const storyData = {
             // Index 0
             {
                 speaker: "The Reunion — A Bar in Hsinchu",
-                text: "Later that evening. The noise of the congress has faded. The four of them sit in a small, dark bar in a side alley near East Gate in Hsinchu. On the table are cold Taiwan Beer, Oolong tea, and empanadas brought by the South American."
+                text: "Later that evening. The noise of the congress has faded. The four of them sit in a small, dark bar in a side alley near East Gate in Hsinchu. On the table are cold Taiwan Beer, Oolong tea, and empanadas brought by the Paraguayan."
             },
             // Index 1
             {
@@ -247,9 +255,9 @@ const storyData = {
             },
             // Index 4 (CHOICE 1)
             {
-                speaker: "The South American",
+                speaker: "The Paraguayan",
                 type: "choice",
-                text: "We all experienced the same hot summer here, but we carried different burdens. The French girl carried the guilt of consumption, the German the fear of decay, the Taiwanese the weight of survival, and I... the distance of the south. How do you respond to the growing tension?",
+                text: "We all experienced the same hot summer here, but we carried different burdens. The French girl carried the guilt of consumption, the German the fear of decay, the Taiwanese the weight of survival, and I... the distance of Paraguay. How do you respond to the growing tension?",
                 choices: [
                     {
                         text: "Critique Western Privilege: Challenge the European projection on Taiwan",
@@ -289,7 +297,7 @@ const storyData = {
             },
             // Index 8 (CHOICE 1.1)
             {
-                speaker: "The South American",
+                speaker: "The Paraguayan",
                 type: "choice",
                 text: "The clash is out in the open, exposing the deep socioeconomic divide between your lifestyles. How do you direct this heated debate?",
                 choices: [
@@ -316,7 +324,7 @@ const storyData = {
             },
             // Index 10
             {
-                speaker: "The South American",
+                speaker: "The Paraguayan",
                 text: "It is true. The West treats Hsinchu like a technology gas station. They don't care about the safety or the people here, as long as the shipping containers of chips keep arriving on schedule."
             },
             // Index 11
@@ -347,7 +355,7 @@ const storyData = {
             // ==========================================
             // Index 13
             {
-                speaker: "The South American",
+                speaker: "The Paraguayan",
                 text: "Guys, remember the stinky tofu at Miaoli? Or the chaotic scooter rides into the mountains? We weren't debating supply chains back then. We were just four classmates sitting on a night market curb."
             },
             // Index 14
