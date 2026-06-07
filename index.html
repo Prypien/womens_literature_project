@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYCU: Perspectives of a Semester</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="game-container">
+        
+        <!-- Ambient Music Controller (Top-Right) -->
+        <button id="audio-toggle" class="audio-btn">
+            <span id="audio-icon">🔇</span> Music Off
+        </button>
+        <audio id="bg-music" loop></audio>
+
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+            <h1>NYCU</h1>
+            <p class="subtitle">Perspectives of a Semester — Ten Years Later</p>
+            <p class="intro-text">An interactive visual novel inspired by Zadie Smith's <em>Swing Time</em>. Experience an exchange semester in Taiwan from four different viewpoints and see how they clash ten years later.</p>
+            <button id="start-btn" class="primary-btn">Start Game</button>
+        </div>
+
+        <!-- Intro Screen (Shared Beginning) -->
+        <div id="intro-screen" class="screen">
+            <div class="intro-content">
+                <h2>Guangfu Campus — June</h2>
+                <p class="shared-intro-text">
+                    June is scorching hot on the Guangfu campus. The air feels heavy and oppressive; the sound of cicadas fills the background while people hurry across the campus, eager to spend as little time as possible under the blazing sun and to reach the air-conditioned buildings.<br><br>
+                    On that day, the university is hosting a congress. All former students from the past ten years who are currently in Taiwan have been invited to gather and reconnect.
+                </p>
+                <button id="to-select-btn" class="primary-btn">Continue to Character Selection</button>
+            </div>
+        </div>
+
+        <!-- Character Selection Screen -->
+        <div id="character-select-screen" class="screen">
+            <h2>Choose a Perspective</h2>
+            <p class="select-desc">Play the stories of the four classmates to discover how the semester in Taiwan shaped their lives.</p>
+            
+            <div class="character-grid">
+                <!-- French Girl Card -->
+                <div class="char-card" id="char-french" data-char="french">
+                    <div class="char-portrait">🇫🇷</div>
+                    <h3>The French Girl</h3>
+                    <p class="char-role">Artist & Singer</p>
+                    <span class="status-badge">Ready</span>
+                </div>
+                <!-- German Guy Card -->
+                <div class="char-card" id="char-german" data-char="german">
+                    <div class="char-portrait">🇩🇪</div>
+                    <h3>The German</h3>
+                    <p class="char-role">IT Entrepreneur</p>
+                    <span class="status-badge">Ready</span>
+                </div>
+                <!-- Taiwanese Card -->
+                <div class="char-card" id="char-taiwanese" data-char="taiwanese">
+                    <div class="char-portrait">🇹🇼</div>
+                    <h3>The Taiwanese</h3>
+                    <p class="char-role">Semiconductor Engineer</p>
+                    <span class="status-badge">Ready</span>
+                </div>
+                <!-- South American Card -->
+                <div class="char-card" id="char-southamerican" data-char="south_american">
+                    <div class="char-portrait">🇦🇷</div>
+                    <h3>The South American</h3>
+                    <p class="char-role">Cultural Diplomat</p>
+                    <span class="status-badge">Ready</span>
+                </div>
+            </div>
+
+            <!-- Finale Button (Hidden until all 4 characters are completed) -->
+            <button id="start-finale-btn" class="primary-btn hidden">Start the Finale 🔓</button>
+        </div>
+
+        <!-- Game Screen (Visual Novel & Point-and-Click) -->
+        <div id="game-screen" class="screen">
+            <!-- Background Image / Color for the current scene -->
+            <div id="game-background"></div>
+            
+            <!-- Layer for interactive objects (Point and Click) -->
+            <div id="clickable-layer">
+                <!-- Objects will be injected here via JS -->
+            </div>
+
+            <!-- Dialogue / Story Text Box at the bottom -->
+            <div id="dialogue-box">
+                <div id="speaker-name"></div>
+                <div id="dialogue-text"></div>
+                
+                <!-- Multiple Choice Decisions Container (Hidden by default) -->
+                <div id="choice-container" class="choice-container hidden">
+                    <!-- Dynamic choice buttons will be injected here -->
+                </div>
+
+                <div class="dialogue-controls">
+                    <button id="back-to-select" class="secondary-btn btn-small">◀ Menu</button>
+                    <button id="next-btn" class="next-btn">Next ▶</button>
+                </div>
+            </div>
+            
+            <!-- Overlay for when a Point-and-Click item is inspected -->
+            <div id="inspection-overlay" class="hidden">
+                <div class="inspection-card">
+                    <h3 id="inspection-title">Title</h3>
+                    <p id="inspection-text">Text from the book or analysis...</p>
+                    <button id="close-inspection-btn" class="secondary-btn">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
