@@ -48,6 +48,7 @@ const storyData = {
                             x: "25%",
                             y: "55%",
                             icon: "🥥",
+                            image: "french_coconut.jpg",
                             title: "The Coconut Beach (Philippines)",
                             analysis: "Memory:\n»One visit, in particular, left a lasting impression on me. It was a Monday, but a few days earlier, I had been lying on a beach in the Philippines with a friend, my feet in the sand, the sun warming my skin, and a coconut in my hand.«\n\nReflection:\nThis tropical ease contrasted sharply with what followed. Just days later, I was back in Taiwan, entering a very different reality. The abrupt shift from a carefree vacation in a tropical paradise to the highly industrialized Hsinchu highlighted my privileged position as a European. I could travel wherever I pleased, consume, and view the world as a playground."
                         },
@@ -451,6 +452,9 @@ const inspectionTitle = document.getElementById("inspection-title");
 const inspectionMemoryText = document.getElementById("inspection-memory-text");
 const inspectionReflectionText = document.getElementById("inspection-reflection-text");
 const closeInspectionBtn = document.getElementById("close-inspection-btn");
+const inspectionCols = document.getElementById("inspection-cols");
+const inspectionImgBox = document.getElementById("inspection-img-box");
+const inspectionImg = document.getElementById("inspection-img");
 
 const audioToggle = document.getElementById("audio-toggle");
 const audioIcon = document.getElementById("audio-icon");
@@ -750,6 +754,18 @@ function inspectItem(item) {
     
     inspectionMemoryText.textContent = memoryText;
     inspectionReflectionText.textContent = reflectionText;
+    
+    // Dynamic image loading
+    if (item.image) {
+        inspectionImg.src = item.image;
+        inspectionImgBox.classList.remove("hidden");
+        inspectionCols.classList.add("has-image");
+    } else {
+        inspectionImg.src = "";
+        inspectionImgBox.classList.add("hidden");
+        inspectionCols.classList.remove("has-image");
+    }
+    
     inspectionOverlay.classList.remove("hidden");
     
     foundItems.add(item.id);
