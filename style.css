@@ -640,7 +640,7 @@ body {
 }
 
 .bg-german-glow {
-    background: radial-gradient(circle at top left, #1f2a38 0%, #06070a 75%) !important;
+    background: linear-gradient(rgba(10, 11, 18, 0.75), rgba(10, 11, 18, 0.9)), url("german_guy.jpg") center/cover no-repeat !important;
 }
 
 .bg-taiwanese-glow {
