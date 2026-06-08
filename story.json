@@ -296,26 +296,26 @@
                 "text": "The debate about Cheetah's connections and infrastructure is heating up. How do you respond?",
                 "choices": [
                     {
-                        "text": "De-escalate by emphasizing your shared history and student connections.",
-                        "consequence": "You speak words of peace and call for mutual respect.",
+                        "text": "De-escalate: Remind them of the shared laughter and common roots that transcend class.",
+                        "consequence": "You say: 'It's true we represent different systems now, but remember the chaotic scooter trips, the late-night tea? Our friendship was built before these roles defined us. Let's not let the system dictate how we treat each other.' The Cheetah smiles warmly, and even the Fox's expression softens as she takes a quiet sip of tea.",
                         "points": 2,
                         "targetSceneIndex": 7
                     },
                     {
-                        "text": "Take a neutral stance, acknowledging both sides of the argument.",
-                        "consequence": "You offer a balanced perspective on individual vs system responsibility.",
+                        "text": "Neutral: Acknowledge the value of infrastructure while validating the systemic critiques.",
+                        "consequence": "You say: 'Cheetah's bridges are real and help people cross rivers, but Fox is right that the global supply chain often exploits the vulnerable. Both things are true at the same time.' The Cheetah nods slowly, and the Fox acknowledges the nuance with a brief, quiet gesture of respect.",
                         "points": 1,
                         "targetSceneIndex": 7
                     },
                     {
-                        "text": "Acknowledge how much your paths and realities have diverged.",
-                        "consequence": "You acknowledge the gap between their different realities.",
+                        "text": "Diverge: Agree that nostalgia shouldn't blind us to our very different realities.",
+                        "consequence": "You say: 'We can't just pretend we're still students. Cheetah represents capital development now, and we can't ignore the economic distance between us.' The Cheetah looks down, slightly hurt, while the Wolf shrugs. 'That's just how the real world operates.'",
                         "points": 0,
                         "targetSceneIndex": 7
                     },
                     {
-                        "text": "Escalate by questioning the structural ethics of infrastructure projects.",
-                        "consequence": "You point out the structural inequality of Cheetah's business.",
+                        "text": "Escalate: Accuse Cheetah's infrastructure projects of perpetuating neo-colonial exploitation.",
+                        "consequence": "You say: 'Your bridges aren't just connections, Cheetah; they're pipelines for corporate interest that exploit local labor. You're part of the problem.' The Cheetah's smile vanishes, his face turning red. 'I employ hundreds of local families!' he says, slamming his glass down.",
                         "points": -1,
                         "targetSceneIndex": 7
                     }
@@ -343,26 +343,26 @@
                 "text": "The debate about the Fox's complicity and Western guilt is heating up. How do you respond?",
                 "choices": [
                     {
-                        "text": "De-escalate by focusing on mutual support and validating her empathy.",
-                        "consequence": "You validate both Fox's empathy and Bear's struggle.",
+                        "text": "De-escalate: Validate her artistic resistance while honoring the Bear's daily reality.",
+                        "consequence": "You say: 'We are all caught in this web, but using art to keep the human cost visible is a start. It's not a complete solution, but it's better than silence. Let's support each other instead of judging.' The Fox looks up, grateful, and the Bear nods softly. 'Yes... hearing your songs makes me feel like my long hours aren't entirely invisible.'",
                         "points": 2,
                         "targetSceneIndex": 7
                     },
                     {
-                        "text": "Take a neutral stance, acknowledging the complex paradox of modern life.",
-                        "consequence": "You offer a reflective view on the shared paradox of modern life.",
+                        "text": "Neutral: Reflect on the inevitable hypocrisy of living in a hyper-connected global economy.",
+                        "consequence": "You say: 'We all buy smartphones and participate in the system. Hypocrisy is the price of admission to modern life. The best we can do is stay aware.' The Fox sighs, nodding. 'You're right. No one's hands are clean.' The Wolf stares into his drink, silent.",
                         "points": 1,
                         "targetSceneIndex": 7
                     },
                     {
-                        "text": "Acknowledge the divide between artistic critique and daily survival.",
-                        "consequence": "You highlight the divide between artistic theory and daily survival.",
+                        "text": "Side with Bear: Prioritize concrete survival over the luxury of artistic guilt.",
+                        "consequence": "You say: 'Artistic guilt is fine, but Bear has to work those hours to support her family and keep the tech running. Her practical labor is what keeps us going.' The Bear looks slightly comforted, while the Fox looks away, biting her lip in quiet frustration.",
                         "points": 0,
                         "targetSceneIndex": 7
                     },
                     {
-                        "text": "Escalate by criticizing her activism as performative Western guilt.",
-                        "consequence": "You directly accuse the Fox of empty performance.",
+                        "text": "Escalate: Criticize the Fox's activism as empty, performative Western guilt.",
+                        "consequence": "You say: 'Critiquing high-tech capitalism is easy when you're touring and making money from it, Fox. It feels like performative guilt to make yourself feel better.' The Fox gasps, hurt. The Wolf smirks. 'Exactly my point. It's performative, empty savior complex.' A cold silence falls over the table.",
                         "points": -1,
                         "targetSceneIndex": 7
                     }
@@ -390,26 +390,26 @@
                 "text": "The debate about the Wolf's business and Hsinchu's work ethic is heating up. How do you respond?",
                 "choices": [
                     {
-                        "text": "De-escalate by validating the effort of building something from scratch.",
-                        "consequence": "You highlight the value of both their hard work and entrepreneurial efforts.",
+                        "text": "De-escalate: Appreciate the drive to build something real while reminding him of the human cost.",
+                        "consequence": "You say: 'It takes incredible drive to build a business from scratch, Wolf, and we should respect that. But the people working those tracks and cleanrooms deserve to share in that progress too.' The Wolf pauses, his cynical look fading slightly. He nods slowly. 'Fair enough. Value isn't created in a vacuum.'",
                         "points": 2,
                         "targetSceneIndex": 7
                     },
                     {
-                        "text": "Take a neutral stance on the balance between startup progress and human cost.",
-                        "consequence": "You weigh progress against the human cost of startup culture.",
+                        "text": "Neutral: Balance the necessity of business survival with the ethics of labor exploitation.",
+                        "consequence": "You say: 'Every startup must focus on survival and profit, or it dies. But ignoring the human cost will eventually destroy the community. It's a delicate balance.' The Wolf shrugs, but his eyes stay fixed on the table. The Cheetah nods. 'Balance is everything in engineering, and in business.'",
                         "points": 1,
                         "targetSceneIndex": 7
                     },
                     {
-                        "text": "Agree with the Wolf's practical focus on business necessity.",
-                        "consequence": "You choose practicality over moral critiques.",
+                        "text": "Side with Wolf: Agree that building businesses and jobs is more practical than moralizing.",
+                        "consequence": "You say: 'Moralizing doesn't pay the bills or create jobs. Wolf is actually contributing to the economy here, which is what Taiwan needs to stay strong.' The Wolf smiles, raising his beer glass. 'Exactly. Pragmatism over empty words.' The Fox shakes her head in disapproval.",
                         "points": 0,
                         "targetSceneIndex": 7
                     },
                     {
-                        "text": "Escalate by accusing him of exploiting burnout while keeping exit options open.",
-                        "consequence": "You critique the Wolf's privilege and his startup model.",
+                        "text": "Escalate: Accuse the Wolf of exploiting local burnout while keeping his Western exit options open.",
+                        "consequence": "You say: 'You praise Hsinchu's work ethic, Wolf, but you're capitalizing on their exhaustion while you have a German passport in your pocket. If things go wrong, you can just leave.' The Wolf's eyes narrow, his jaw tightening. 'You think I don't risk everything here? You know nothing about running a company!'",
                         "points": -1,
                         "targetSceneIndex": 7
                     }
@@ -437,26 +437,26 @@
                 "text": "The debate about the Bear's dreams, duty, and the silicon shield is heating up. How do you respond?",
                 "choices": [
                     {
-                        "text": "De-escalate by honoring her dedication and raising a glass to her sketches.",
-                        "consequence": "You honor her dedication and toast to her artistic dreams.",
+                        "text": "De-escalate: Raise a glass to honor both her vital work and her hidden artistic dreams.",
+                        "consequence": "You say: 'Your work protects this island, Bear, and that is truly honorable. But those sketches in your notebook margins are beautiful. Let's raise a glass to your drawings, and may you find time for them again.' The Bear's eyes well up with tears as she smiles, raising her glass. The Fox reaches over to squeeze her hand.",
                         "points": 2,
                         "targetSceneIndex": 7
                     },
                     {
-                        "text": "Take a neutral stance on the lifelong struggle of duty and personal dreams.",
-                        "consequence": "You recognize the immense difficulty of her path.",
+                        "text": "Neutral: Acknowledge the tragic necessity of sacrificing dreams for duty.",
+                        "consequence": "You say: 'It's a tragic choice many must make—putting dreams on hold for security and family duty. It's not fair, but it's a reality we must respect.' The Bear nods quietly. 'Yes. Sometimes there is no choice. We do what we must.' A quiet, somber understanding settles over the group.",
                         "points": 1,
                         "targetSceneIndex": 7
                     },
                     {
-                        "text": "Agree that national security and duty must come before personal aspirations.",
-                        "consequence": "You agree that geopolitical survival must come before personal aspirations.",
+                        "text": "Side with Duty: Agree that national security and economic reality must come first.",
+                        "consequence": "You say: 'In the real world, the silicon shield and your family's security are far more important than sketches. You made the responsible choice.' The Bear nods, her expression hardening. 'Yes, my parents worked hard for me to be here. I cannot let them down.' The Fox looks down, sighing.",
                         "points": 0,
                         "targetSceneIndex": 7
                     },
                     {
-                        "text": "Escalate by criticizing the social pressures that demand her burnout.",
-                        "consequence": "You critique the societal system and the Bear's acceptance of it.",
+                        "text": "Escalate: Critique the societal and geopolitical pressures that demand her burnout.",
+                        "consequence": "You say: 'It's heartbreaking that a system demands your complete burnout and the erasure of your dreams just to feel safe. We shouldn't glorify this sacrifice.' The Bear flinches, looking defensive. 'It's easy for you to criticize our society when you don't face our threats!' she says, her voice trembling.",
                         "points": -1,
                         "targetSceneIndex": 7
                     }
