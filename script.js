@@ -565,9 +565,11 @@ function updateSelectionScreen() {
         if (completedChars.has(charKey)) {
             card.classList.add("completed");
             badge.textContent = "Completed ✓";
+            badge.classList.remove("hidden");
         } else {
             card.classList.remove("completed");
-            badge.textContent = "Ready";
+            badge.textContent = "";
+            badge.classList.add("hidden");
         }
     });
 
