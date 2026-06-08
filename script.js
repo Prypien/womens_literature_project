@@ -560,16 +560,21 @@ function selectCharacter(charKey) {
 function updateSelectionScreen() {
     document.querySelectorAll(".char-card").forEach(card => {
         const charKey = card.dataset.char;
-        const badge = card.querySelector(".status-badge");
+        let badge = card.querySelector(".status-badge");
         
         if (completedChars.has(charKey)) {
             card.classList.add("completed");
+            if (!badge) {
+                badge = document.createElement("span");
+                badge.className = "status-badge";
+                card.appendChild(badge);
+            }
             badge.textContent = "Completed ✓";
-            badge.classList.remove("hidden");
         } else {
             card.classList.remove("completed");
-            badge.textContent = "";
-            badge.classList.add("hidden");
+            if (badge) {
+                badge.remove();
+            }
         }
     });
 
