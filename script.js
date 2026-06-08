@@ -443,11 +443,20 @@ function inspectItem(item) {
 function closeInspection() {
     inspectionOverlay.classList.add("hidden");
     
-    const charData = storyData.characters[selectedChar];
-    const scene = charData.scenes[currentSceneIndex];
+    let scene;
+    if (gameState === "finale") {
+        scene = storyData.finale.scenes[currentSceneIndex];
+    } else {
+        const charData = storyData.characters[selectedChar];
+        scene = charData.scenes[currentSceneIndex];
+    }
     
     if (foundItems.size === scene.items.length) {
-        dialogueText.textContent = "Excellent! You have analyzed all the key symbols of this memory. Click 'Next' to continue.";
+        if (gameState === "finale") {
+            dialogueText.textContent = "You are ready to enter. Click 'Next' to join the table.";
+        } else {
+            dialogueText.textContent = "Excellent! You have analyzed all the key symbols of this memory. Click 'Next' to continue.";
+        }
         nextBtn.style.display = "inline-block";
     }
 }
