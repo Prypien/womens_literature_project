@@ -684,24 +684,24 @@ body {
 }
 
 .bg-french-glow {
-    background: url("french_girl.jpg") center/cover no-repeat !important;
+    background: url("pictures/french_girl.jpg") center/cover no-repeat !important;
 }
 
 .bg-german-glow {
-    background: url("german_guy.jpg") center/cover no-repeat !important;
+    background: url("pictures/german_guy.jpg") center/cover no-repeat !important;
 }
 
 .bg-taiwanese-glow {
-    background: url("taiwanese_girl_padded.jpg") center/cover no-repeat !important; /* using padded version for nicer alignment if available */
+    background: url("pictures/taiwanese_girl_padded.jpg") center/cover no-repeat !important; /* using padded version for nicer alignment if available */
 }
 
 /* Fallback if padded taiwanese image isn't the primary one */
 .bg-taiwanese-glow-original {
-    background: url("taiwanese_girl.jpg") center/cover no-repeat !important;
+    background: url("pictures/taiwanese_girl.jpg") center/cover no-repeat !important;
 }
 
 .bg-southamerican-glow {
-    background: url("paraguayan_man.jpg") center/cover no-repeat !important;
+    background: url("pictures/paraguayan_man.jpg") center/cover no-repeat !important;
 }
 
 .bg-finale-glow {

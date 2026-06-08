@@ -24,18 +24,18 @@ const storyData = {
     // 2. Individual Character Stories (Now fully linear)
     characters: {
         french: {
-            name: "The French Girl",
+            name: "The Fox",
             portrait: "🇫🇷",
             role: "Artist & Singer",
             bgClass: "bg-french-glow",
             audioTrack: "french",
             scenes: [
                 {
-                    speaker: "The French Girl",
+                    speaker: "The Fox",
                     text: "My band was touring across Asia, and I had noticed the invitation to the event buried among my emails. I had started singing professionally seven years earlier, but my career had not exactly taken off at first ; things had changed only recently when our band gained unexpected popularity after composing the soundtrack for a successful film. I was on tour with my group as a singer, and I was certainly not the kind of alumnus NYCU had in mind when organizing this congress. Still, I decided to attend the event."
                 },
                 {
-                    speaker: "The French Girl",
+                    speaker: "The Fox",
                     text: "The conference I attended focused on the role of semiconductors in Taiwan and the world. It was a topic that this university had taught me a great deal about ten years ago. During my time there, I had taken a class exploring the complexity of global supply chains through geopolitics. One visit with this class, in particular, left a lasting impression on me. It was a Monday, but just a few days earlier, I had spent the weekend in the Philippines."
                 },
                 {
@@ -48,7 +48,7 @@ const storyData = {
                             x: "25%",
                             y: "55%",
                             icon: "🥥",
-                            image: "french_coconut.jpg",
+                            image: "pictures/french_coconut.jpg",
                             title: "The Coconut Beach",
                             analysis: "Memory:\n»I had been lying on a beach, my feet in the sand, the sun warming my skin, and a coconut in my hand.«\n\nReflection:\nAnd back at school, I visited an agency for Filipino migrant workers in Hsinchu with my teacher. They had left their country to work for major electronics and semiconductor companies. Many had not seen their families for several years and sent nearly everything they earned back home. They shared a single dormitory room for 12 people and had no privacy or intimacy. I remember how small I felt. They were sacrificing their lives for their families, while I had been lying on a beach in their country just days before. And being in Taiwan, we certainly did not have the same experience of the country."
                         },
@@ -63,29 +63,29 @@ const storyData = {
                     ]
                 },
                 {
-                    speaker: "The French Girl",
+                    speaker: "The Fox",
                     text: "But what could I do? I did not have an answer at the time, and I did not throw away my phone. I still have not done it ; I can feel it in my pocket right now. So what did I learn? Well, I decided not to work for big companies, and I am an artist now."
                 }
             ]
         },
 
         german: {
-            name: "The German",
+            name: "The Wolf",
             portrait: "🇩🇪",
             role: "IT Entrepreneur",
             bgClass: "bg-german-glow",
             audioTrack: "german",
             scenes: [
                 {
-                    speaker: "The German",
+                    speaker: "The Wolf",
                     text: "Ten years ago, I came to NYCU to study computer science. Today, I have my own companies running different businesses in Taiwan. I did not become what German society expected me to be: successful, secure, moving within the wealthy circles of Western Europe. Yet, returning to the Guangfu campus for this alumni congress feels less like a celebration and more like an audit of an unearned heritage. I walk through the air-conditioned halls of NYCU, carrying the invisible weight of a passport and a skin color that still open doors worldwide, doors I am no longer sure my generation has the strength to build ourselves."
                 },
                 {
-                    speaker: "The German",
+                    speaker: "The Wolf",
                     text: "I stand by the large glass facade of the auditorium, looking out into the shimmering, oppressive June heat. On stage, a panel discusses the shifting economic gravity from the West to Asia. Nearby, a delegation of recently arrived German exchange students is gathering. They look noticeably out of place, sluggish, carrying the physical weight of a culture back home that has grown comfortable and soft, their conversation lacking the sharp focus of the local students around them. They talk loudly, yet they seem disoriented in this hyper-modern, digital hub."
                 },
                 {
-                    speaker: "The German",
+                    speaker: "The Wolf",
                     text: "But as I watch them, my gaze locks onto one young man at the edge of their group. He isn't talking. He is staring out of the window, his eyes wide, a quiet expression of profound overwhelm and sudden clarity on his face. In his silent, intense gaze, I recognize myself exactly ten years ago. He is having the exact same realization I had: the shattering awareness that the Western bubble we came from is running on empty, and that the future is being built right here, by people who actually work for it. My eyes follow his gaze out the window, looking down at the university sports field."
                 },
                 {
@@ -112,30 +112,30 @@ const storyData = {
                     ]
                 },
                 {
-                    speaker: "The German",
+                    speaker: "The Wolf",
                     text: "A sudden, rhythmic notification melody chimes from my phone, a soundtrack cue sent by my lead developer. The memory fades, and I am back in the air-conditioned hall of the congress. I look over at the young German student one last time. He is still staring out at the track, the illusion of his privilege visibly cracking."
                 },
                 {
-                    speaker: "The German",
+                    speaker: "The Wolf",
                     text: "I smile softly, step away from the glass, and walk back into the crowd. I am no longer a ghost of a fading West; I am exactly where I belong, creating something that matters."
                 }
             ]
         },
 
         taiwanese: {
-            name: "The Taiwanese",
+            name: "The Bear",
             portrait: "🇹🇼",
             role: "Semiconductor Engineer",
             bgClass: "bg-taiwanese-glow",
             audioTrack: "taiwanese",
             scenes: [
                 {
-                    speaker: "The Taiwanese",
+                    speaker: "The Bear",
                     text: "I stayed in Hsinchu after graduation, taking a path not much different from that of my peers. Since stepping into NYCU, my future seemed to be set. Like everyone else, I worked for a master's degree and applied for a decent job in the Hsinchu Science Park. It was the most ordinary path an EE major could take. And though I was not a fan of conferences, since many of my acquaintances were attending, I decided I should go as well, given how close it was to campus."
                 },
                 {
-                    speaker: "The Taiwanese",
-                    text: "The conference was about the role of semiconductors in Taiwan and the world, which had everything to do with my job—or rather, my life ever since starting college. The topic was so entirely predictable it was almost boring. It’s not that I hate my job, but I couldn’t help but wonder how things might have been different."
+                    speaker: "The Bear",
+                    text: "The conference was about the role of semiconductors in Taiwan and the world, which had everything to do my job—or rather, my life ever since starting college. The topic was so entirely predictable it was almost boring. It’s not that I hate my job, but I couldn’t help but wonder how things might have been different."
                 },
                 {
                     speaker: "Exploration",
@@ -161,29 +161,29 @@ const storyData = {
                     ]
                 },
                 {
-                    speaker: "The Taiwanese",
+                    speaker: "The Bear",
                     text: "But here I am. My thoughts are always in vain, and I’m never brave enough for change. Maybe I get paid more now. Maybe people look up to me more. It’s busy, but it’s not a bad life. Though there’s always that pencil sketching out dreams in my head, dreams that I always claim never existed. I let that pencil cross them out again and again, but what’s there will always be there."
                 },
                 {
-                    speaker: "The Taiwanese",
+                    speaker: "The Bear",
                     text: "Sometimes I wonder if it’s really worth it, living this way. However, as of now, I’m still here. My life as an engineer will continue for the time being."
                 }
             ]
         },
 
         south_american: {
-            name: "The Paraguayan",
+            name: "The Cheetah",
             portrait: "🇵🇾",
             role: "Civil Engineer",
             bgClass: "bg-southamerican-glow",
             audioTrack: "south_american",
             scenes: [
                 {
-                    speaker: "The Paraguayan",
+                    speaker: "The Cheetah",
                     text: "I had not planned to attend the congress. Ten years had passed since I graduated from NYCU, and life had taken me far away from Taiwan. After finishing my studies, I returned to Paraguay and founded my own civil engineering company. At first, it was just a small office with a few employees and a handful of local projects. But over the years, the company grew. We designed roads, bridges, water infrastructure, and housing developments across the country. Recently, I began exploring opportunities abroad, and Taiwan was the first place that came to mind. So when I received the invitation to the alumni congress, I decided it was time to return."
                 },
                 {
-                    speaker: "The Paraguayan",
+                    speaker: "The Cheetah",
                     text: "As I walked through the exhibition hall, I noticed a booth displaying engineering projects completed by alumni around the world. Among the models stood a small bridge. It was nothing extraordinary, yet it reminded me of a miniature bridge I had built during one of my classes at NYCU."
                 },
                 {
@@ -210,15 +210,15 @@ const storyData = {
                     ]
                 },
                 {
-                    speaker: "The Paraguayan",
+                    speaker: "The Cheetah",
                     text: "As my company expanded, I started working with international partners. I realized that infrastructure projects are no longer purely local. The materials, technologies, and expertise often come from different countries. Globalization is not only about products moving across borders; it is also about ideas and people doing the same. My years in Taiwan showed me that collaboration across cultures creates stronger solutions than any country could achieve alone."
                 },
                 {
-                    speaker: "The Paraguayan",
+                    speaker: "The Cheetah",
                     text: "That is why I returned. Not only to reconnect with old friends, but also because I want to establish a branch of my company in Taiwan. Ten years ago, I arrived here as a foreign student searching for opportunities. Today, I have come back hoping to create them."
                 },
                 {
-                    speaker: "The Paraguayan",
+                    speaker: "The Cheetah",
                     text: "As I left the exhibition area, I spotted a refreshment table. Among the drinks was a large pitcher of iced tea. For a second, I smiled, imagining how much better it would taste mixed with tereré. Then someone called my name from across the room, and I turned around to see an old classmate waving at me."
                 }
             ]
@@ -235,49 +235,49 @@ const storyData = {
                 speaker: "National Auditorium — NYCU",
                 text: "The keynote presentation is underway. The slides display maps of global chip manufacturing, showing Taiwan at the center of the silicon shield. The four of them sit scattered in the audience, lost in their own thoughts..."
             },
-            // Index 1: French Girl Inner Monologue
+            // Index 1: French Girl Inner Monologue (Now The Fox)
             {
-                speaker: "The French Girl (Inner Monologue)",
+                speaker: "The Fox (Inner Monologue)",
                 text: "I look at the neat blue lines of the supply chain maps. They look so clean, so abstract. But under those lines are the Filipino workers in Hsinchu's dorms, sharing a single room of 12 people. We talk about high-tech sovereignty, but we hide the human cost behind corporate branding..."
             },
-            // Index 2: German Inner Monologue
+            // Index 2: German Inner Monologue (Now The Wolf)
             {
-                speaker: "The German (Inner Monologue)",
+                speaker: "The Wolf (Inner Monologue)",
                 text: "The speaker talks about the shift of economic power. My eyes wander to the local students taking meticulous notes. They want to build, to create. Back home, my peers spend their days complaining about comfort. Here, the future is written by those who actually run the track at night. I am glad I stayed..."
             },
-            // Index 3: Taiwanese Inner Monologue
+            // Index 3: Taiwanese Inner Monologue (Now The Bear)
             {
-                speaker: "The Taiwanese (Inner Monologue)",
+                speaker: "The Bear (Inner Monologue)",
                 text: "Predictable. The silicon shield, the EE master's degrees, the Hsinchu Science Park... it is my entire life. The topic is so entirely predictable it is almost boring. I think of my literature teacher's book. What if I had been braver? What if I had chased what I loved? I drew art but erased it all to write schematics. Sometimes I feel like a cog in a machine whose survival depends on my burnout..."
             },
-            // Index 4: Paraguayan Inner Monologue
+            // Index 4: Paraguayan Inner Monologue (Now The Cheetah)
             {
-                speaker: "The Paraguayan (Inner Monologue)",
+                speaker: "The Cheetah (Inner Monologue)",
                 text: "Looking at the engineering project blueprints, I see structures. But NYCU taught me that the hardest structures to build are human connections. Tereré cup by tereré cup, we bridged our differences ten years ago. Now we represent different worlds. Can we still build a bridge tonight?"
             },
             // Index 5: Transition to the Bar
             {
                 speaker: "The Reunion — A Bar in Hsinchu",
-                text: "Later that evening. The noise of the congress has faded. The four of them sit in a small, dark bar in a side alley near East Gate in Hsinchu. On the table are cold Taiwan Beer, Oolong tea, and empanadas brought by the Paraguayan."
+                text: "Later that evening. The noise of the congress has faded. The four of them sit in a small, dark bar in a side alley near East Gate in Hsinchu. On the table are cold Taiwan Beer, Oolong tea, and empanadas brought by the Cheetah."
             },
             // Index 6: Catching up
             {
-                speaker: "The Paraguayan",
+                speaker: "The Cheetah",
                 text: "¡Salud, friends! It has been ten years. Look at us—a singer, an entrepreneur, an engineer, and a company founder. Remember when we used to get stinky tofu in Miaoli? We had no money, but we had all the time in the world."
             },
             // Index 7: Transition to keynote
             {
-                speaker: "The German",
+                speaker: "The Wolf",
                 text: "Nostalgia is nice, but I'm glad we grew up. The presentation today was spot on. Hsinchu has this raw, disciplined drive. It demands execution, and that's why the future is built here. It makes you realize how soft the West has become."
             },
             // Index 8: Debate starts
             {
-                speaker: "The French Girl",
-                text: "Soft? Or just more aware of the cost? It's easy to praise the 'drive' when you're the one running a company, German guy. But that drive is built on the backs of migrant workers and sleep-deprived graduates. It's exploitation repackaged as meritocracy."
+                speaker: "The Fox",
+                text: "Soft? Or just more aware of the cost? It's easy to praise the 'drive' when you're the one running a company, Wolf. But that drive is built on the backs of migrant workers and sleep-deprived graduates. It's exploitation repackaged as meritocracy."
             },
-            // Index 9 (CHOICE 1: Paraguayan's choice)
+            // Index 9 (CHOICE 1: Paraguayan's choice -> Cheetah's choice)
             {
-                speaker: "The Paraguayan",
+                speaker: "The Cheetah",
                 type: "choice",
                 text: "The debate is heating up early. As the one who always tried to bring people together, how do you steer the conversation?",
                 choices: [
@@ -295,21 +295,21 @@ const storyData = {
             },
             // Index 10: Nostalgia branch response
             {
-                speaker: "The French Girl",
-                text: "I appreciate the thought, Paraguayan. But even our nostalgia is a privilege. I was on a beach in the Philippines while the local students were locked in cleanrooms and migrant workers had no privacy. We can't just drink beer and ignore it.",
+                speaker: "The Fox",
+                text: "I appreciate the thought, Cheetah. But even our nostalgia is a privilege. I was on a beach in the Philippines while the local students were locked in cleanrooms and migrant workers had no privacy. We can't just drink beer and ignore it.",
                 nextSceneIndex: 12
             },
             // Index 11: Geopolitical branch response
             {
-                speaker: "The German",
-                text: "Exactly. Let's be honest. The French girl sings about peace, but her tour runs on the very technology Hsinchu builds. You complain about the system, yet you consume its benefits every single day. That moral guilt is a luxury.",
+                speaker: "The Wolf",
+                text: "Exactly. Let's be honest. The Fox sings about peace, but her tour runs on the very technology Hsinchu builds. You complain about the system, yet you consume its benefits every single day. That moral guilt is a luxury.",
                 nextSceneIndex: 12
             },
-            // Index 12 (CHOICE 2: French Girl's choice)
+            // Index 12 (CHOICE 2: French Girl's choice -> Fox's choice)
             {
-                speaker: "The French Girl",
+                speaker: "The Fox",
                 type: "choice",
-                text: "The German challenges your artistic distancing. How do you respond to his accusation of hypocrisy?",
+                text: "The Wolf challenges your artistic distancing. How do you respond to his accusation of hypocrisy?",
                 choices: [
                     {
                         text: "Defend Critique: Acknowledge the complicity but double down on the critique",
@@ -317,29 +317,29 @@ const storyData = {
                         targetSceneIndex: 13
                     },
                     {
-                        text: "Empathetic Focus: Pivot the attention to the Taiwanese girl's exhaustion",
-                        consequence: "I turned to the Taiwanese girl. 'I'm sorry. We are debating this like it's a game. But you live this. You look exhausted. What is it really like for you?'",
+                        text: "Empathetic Focus: Pivot the attention to the Bear's exhaustion",
+                        consequence: "I turned to the Bear. 'I'm sorry. We are debating this like it's a game. But you live this. You look exhausted. What is it really like for you?'",
                         targetSceneIndex: 14
                     }
                 ]
             },
             // Index 13: Critique branch response
             {
-                speaker: "The Taiwanese",
+                speaker: "The Bear",
                 text: "You both talk about my life as a theoretical debate. 'Exploitation' vs 'meritocracy'. But for me, it is structural pressure. If I don't work, my family has no security, and our tech shield crumbles. It is survival, not a choice.",
                 nextSceneIndex: 15
             },
             // Index 14: Empathy branch response
             {
-                speaker: "The Taiwanese",
+                speaker: "The Bear",
                 text: "It is exhausting. The fighter jets fly closer every month, and the pressure to produce never stops. I spend my life in cleanrooms so the world can enjoy their digital lives. I wanted to draw art, but I erased it to write schematics. Sometimes I feel like a cog in a machine whose survival depends on my burnout.",
                 nextSceneIndex: 15
             },
-            // Index 15 (CHOICE 3: German's choice)
+            // Index 15 (CHOICE 3: German's choice -> Wolf's choice)
             {
-                speaker: "The German",
+                speaker: "The Wolf",
                 type: "choice",
-                text: "The Taiwanese girl's raw reality exposes the divide. How do you respond to her exhaustion and the accusation of privilege?",
+                text: "The Bear's raw reality exposes the divide. How do you respond to her exhaustion and the accusation of privilege?",
                 choices: [
                     {
                         text: "Unapologetic Action: Defend the necessity of hard work and creation",
@@ -355,25 +355,25 @@ const storyData = {
             },
             // Index 16: Action branch response
             {
-                speaker: "The French Girl",
-                text: "You call it a shield, German guy, but you're not the one standing in the cleanroom. You're the one selling the services. You've commodified their survival drive to feed your own IT company.",
+                speaker: "The Fox",
+                text: "You call it a shield, Wolf, but you're not the one standing in the cleanroom. You're the one selling the services. You've commodified their survival drive to feed your own IT company.",
                 nextSceneIndex: 18
             },
             // Index 17: Vulnerable branch response
             {
-                speaker: "The Paraguayan",
+                speaker: "The Cheetah",
                 text: "At least you admit it. We all carried different weights. I spent my time here feeling like an outsider, learning Chinese, trying to fit in. I built my company in Paraguay from scratch. We all had to build our own foundations.",
                 nextSceneIndex: 18
             },
-            // Index 18 (CHOICE 4: Taiwanese Girl's choice)
+            // Index 18 (CHOICE 4: Taiwanese Girl's choice -> Bear's choice)
             {
-                speaker: "The Taiwanese",
+                speaker: "The Bear",
                 type: "choice",
                 text: "The clash has stripped away the polite congress facades. The table is silent, waiting for your response. How do you close the night?",
                 choices: [
                     {
                         text: "The Geopolitical Rift: Acknowledge that the differences are too deep to bridge",
-                        consequence: "I looked at them. The French girl's guilt, the German's drive, the Paraguayan's distance... we are no longer the same. The class and privilege gaps are too wide. The semester is a ghost, and we must live in our separate realities.",
+                        consequence: "I looked at them. The Fox's guilt, the Wolf's drive, the Cheetah's distance... we are no longer the same. The class and privilege gaps are too wide. The semester is a ghost, and we must live in our separate realities.",
                         targetSceneIndex: 19
                     },
                     {
