@@ -230,178 +230,175 @@ const storyData = {
         bgClass: "bg-finale-glow",
         audioTrack: "finale",
         scenes: [
-            // Index 0
+            // Index 0: Congress Keynote Presentation
+            {
+                speaker: "National Auditorium — NYCU",
+                text: "The keynote presentation is underway. The slides display maps of global chip manufacturing, showing Taiwan at the center of the silicon shield. The four of them sit scattered in the audience, lost in their own thoughts..."
+            },
+            // Index 1: French Girl Inner Monologue
+            {
+                speaker: "The French Girl (Inner Monologue)",
+                text: "I look at the neat blue lines of the supply chain maps. They look so clean, so abstract. But under those lines are the Filipino workers in Hsinchu's dorms, sharing a single room of 12 people. We talk about high-tech sovereignty, but we hide the human cost behind corporate branding..."
+            },
+            // Index 2: German Inner Monologue
+            {
+                speaker: "The German (Inner Monologue)",
+                text: "The speaker talks about the shift of economic power. My eyes wander to the local students taking meticulous notes. They want to build, to create. Back home, my peers spend their days complaining about comfort. Here, the future is written by those who actually run the track at night. I am glad I stayed..."
+            },
+            // Index 3: Taiwanese Inner Monologue
+            {
+                speaker: "The Taiwanese (Inner Monologue)",
+                text: "Predictable. The silicon shield, the EE master's degrees, the Hsinchu Science Park... it is my entire life. The topic is so entirely predictable it is almost boring. I think of my literature teacher's book. What if I had been braver? What if I had chased what I loved? I drew art but erased it all to write schematics. Sometimes I feel like a cog in a machine whose survival depends on my burnout..."
+            },
+            // Index 4: Paraguayan Inner Monologue
+            {
+                speaker: "The Paraguayan (Inner Monologue)",
+                text: "Looking at the engineering project blueprints, I see structures. But NYCU taught me that the hardest structures to build are human connections. Tereré cup by tereré cup, we bridged our differences ten years ago. Now we represent different worlds. Can we still build a bridge tonight?"
+            },
+            // Index 5: Transition to the Bar
             {
                 speaker: "The Reunion — A Bar in Hsinchu",
                 text: "Later that evening. The noise of the congress has faded. The four of them sit in a small, dark bar in a side alley near East Gate in Hsinchu. On the table are cold Taiwan Beer, Oolong tea, and empanadas brought by the Paraguayan."
             },
-            // Index 1
+            // Index 6: Catching up
             {
-                speaker: "The French Girl",
-                text: "It feels so strange being back. When I look at the university now, all I see are the structures of globalization. It feels like the innocence we had ten years ago was just an illusion."
+                speaker: "The Paraguayan",
+                text: "¡Salud, friends! It has been ten years. Look at us—a singer, an entrepreneur, an engineer, and a company founder. Remember when we used to get stinky tofu in Miaoli? We had no money, but we had all the time in the world."
             },
-            // Index 2
+            // Index 7: Transition to keynote
             {
                 speaker: "The German",
-                text: "Maybe. But innocence doesn't build anything. Taiwan taught me that the West is living in a dream. If you want a future, you have to work for it, just like the people running on that track every single night."
+                text: "Nostalgia is nice, but I'm glad we grew up. The presentation today was spot on. Hsinchu has this raw, disciplined drive. It demands execution, and that's why the future is built here. It makes you realize how soft the West has become."
             },
-            // Index 3
+            // Index 8: Debate starts
             {
-                speaker: "The Taiwanese",
-                text: "You both talk about Taiwan like it's a concept. For me, it's my daily life. The chips we design are not just 'globalization' or 'energy' – they are the only reason we are still a free country. Our work is our survival. But it is exhausting."
+                speaker: "The French Girl",
+                text: "Soft? Or just more aware of the cost? It's easy to praise the 'drive' when you're the one running a company, German guy. But that drive is built on the backs of migrant workers and sleep-deprived graduates. It's exploitation repackaged as meritocracy."
             },
-            // Index 4 (CHOICE 1)
+            // Index 9 (CHOICE 1: Paraguayan's choice)
             {
                 speaker: "The Paraguayan",
                 type: "choice",
-                text: "We all experienced the same hot summer here, but we carried different burdens. The French girl carried the guilt of consumption, the German the fear of decay, the Taiwanese the weight of survival, and I... the distance of Paraguay. How do you respond to the growing tension?",
+                text: "The debate is heating up early. As the one who always tried to bring people together, how do you steer the conversation?",
                 choices: [
                     {
-                        text: "Critique Western Privilege: Challenge the European projection on Taiwan",
-                        consequence: "I looked at the French girl and the German. We spent our semester consuming the island's energy, projecting our hopes and fears onto it. We treated it like our playground, ignoring the physical labor keeping it afloat.",
-                        targetSceneIndex: 5
+                        text: "Nostalgic De-escalation: Try to keep the mood light and recall student days",
+                        consequence: "I raised my glass, smiling. 'Guys, let's keep the supply chain debates in the auditorium. We came here to catch up, not to argue about global economics. Remember our chaotic scooter trips?'",
+                        targetSceneIndex: 10
                     },
                     {
-                        text: "Defend the Local Sacrifice: Highlight the real human cost of technology",
-                        consequence: "I supported the Taiwanese engineer. Her exhaustion is the price of our global connectivity. The West demands progress but remains blind to the cleanrooms and sleepless labs that build it.",
-                        targetSceneIndex: 9
-                    },
+                        text: "Geopolitical Honesty: Push them to confront their socioeconomic differences",
+                        consequence: "I leaned forward. 'No, let them speak. The keynote showed how unequal our worlds are. We can't pretend we are still the same students. We represent different realities now.'",
+                        targetSceneIndex: 11
+                    }
+                ]
+            },
+            // Index 10: Nostalgia branch response
+            {
+                speaker: "The French Girl",
+                text: "I appreciate the thought, Paraguayan. But even our nostalgia is a privilege. I was on a beach in the Philippines while the local students were locked in cleanrooms and migrant workers had no privacy. We can't just drink beer and ignore it.",
+                nextSceneIndex: 12
+            },
+            // Index 11: Geopolitical branch response
+            {
+                speaker: "The German",
+                text: "Exactly. Let's be honest. The French girl sings about peace, but her tour runs on the very technology Hsinchu builds. You complain about the system, yet you consume its benefits every single day. That moral guilt is a luxury.",
+                nextSceneIndex: 12
+            },
+            // Index 12 (CHOICE 2: French Girl's choice)
+            {
+                speaker: "The French Girl",
+                type: "choice",
+                text: "The German challenges your artistic distancing. How do you respond to his accusation of hypocrisy?",
+                choices: [
                     {
-                        text: "Defuse the Tension: Recall the night market nostalgia",
-                        consequence: "I tried to break the heavy silence. I reminded them of our shared youth. We were just students once, sharing bubble tea and stinky tofu in the scorching heat, unaware of the structures dividing us.",
+                        text: "Defend Critique: Acknowledge the complicity but double down on the critique",
+                        consequence: "I looked him in the eye. 'Yes, I use a smartphone. I benefit from it. But that doesn't mean I have to stay silent about the exploitation that builds it. Your business theory just sanitizes the human cost.'",
                         targetSceneIndex: 13
+                    },
+                    {
+                        text: "Empathetic Focus: Pivot the attention to the Taiwanese girl's exhaustion",
+                        consequence: "I turned to the Taiwanese girl. 'I'm sorry. We are debating this like it's a game. But you live this. You look exhausted. What is it really like for you?'",
+                        targetSceneIndex: 14
                     }
                 ]
             },
-
-            // ==========================================
-            // BRANCH 1: Western Privilege (Indices 5-8)
-            // ==========================================
-            // Index 5
-            {
-                speaker: "The French Girl",
-                text: "I know I benefit from the system. I sing about peace, but I bought the phone built by underpaid workers. But at least I don't pretend it's a pure meritocracy like you do, German guy! You act like the hustle makes the exploitation moral."
-            },
-            // Index 6
-            {
-                speaker: "The German",
-                text: "It IS raw execution! The developers and engineers here work because they want to build something. Your moral guilt is just the luxury of a decaying European welfare state that has forgotten how to innovate and now hides behind grandstanding!"
-            },
-            // Index 7
+            // Index 13: Critique branch response
             {
                 speaker: "The Taiwanese",
-                text: "You call my exhaustion 'meritocracy'? It is structural pressure! If I don't work, my family has no security, and our tech shield crumbles. Don't romanticize my long hours just to feed your IT business theories. It's not a choice for me!"
+                text: "You both talk about my life as a theoretical debate. 'Exploitation' vs 'meritocracy'. But for me, it is structural pressure. If I don't work, my family has no security, and our tech shield crumbles. It is survival, not a choice.",
+                nextSceneIndex: 15
             },
-            // Index 8 (CHOICE 1.1)
+            // Index 14: Empathy branch response
             {
-                speaker: "The Paraguayan",
+                speaker: "The Taiwanese",
+                text: "It is exhausting. The fighter jets fly closer every month, and the pressure to produce never stops. I spend my life in cleanrooms so the world can enjoy their digital lives. I wanted to draw art, but I erased it to write schematics. Sometimes I feel like a cog in a machine whose survival depends on my burnout.",
+                nextSceneIndex: 15
+            },
+            // Index 15 (CHOICE 3: German's choice)
+            {
+                speaker: "The German",
                 type: "choice",
-                text: "The clash is out in the open, exposing the deep socioeconomic divide between your lifestyles. How do you direct this heated debate?",
+                text: "The Taiwanese girl's raw reality exposes the divide. How do you respond to her exhaustion and the accusation of privilege?",
                 choices: [
                     {
-                        text: "Escalate the rift: Acknowledge that your differences are irreconcilable",
-                        consequence: "I realized we couldn't bridge this. Our national identities and privileges had solidified over the decade. We are no longer friends; we are players on opposite sides of a global system.",
-                        targetSceneIndex: 17
+                        text: "Unapologetic Action: Defend the necessity of hard work and creation",
+                        consequence: "I took a sip of beer. 'I respect your work, and that's why I'm here. I didn't go back to the comfortable stagnation of Germany. I stayed to build something. Hard work is the only shield Taiwan has.'",
+                        targetSceneIndex: 16
                     },
                     {
-                        text: "Bridge the gap: Try to find mutual understanding despite the privilege",
-                        consequence: "I asked them to stop arguing. We cannot erase our differences, but we can acknowledge them and listen. We owe it to the semester that shaped us to try to understand each other's burdens.",
-                        targetSceneIndex: 18
+                        text: "Vulnerable Confession: Admit your passport and skin color gave you an exit option",
+                        consequence: "I looked down at my glass. 'You're right. I romanticize it because I have a choice. If things go wrong, my passport lets me leave. I inherit a wealth I didn't build, and I'm afraid of never matching your drive.'",
+                        targetSceneIndex: 17
                     }
                 ]
             },
-
-            // ==========================================
-            // BRANCH 2: Local Sacrifice (Indices 9-12)
-            // ==========================================
-            // Index 9
-            {
-                speaker: "The Taiwanese",
-                text: "None of you understand the stress. The fighter jets are flying closer every month, and the West just demands more production. I spend my life in a cleanroom suit so you can stream your music and run your digital companies!"
-            },
-            // Index 10
-            {
-                speaker: "The Paraguayan",
-                text: "It is true. The West treats Hsinchu like a technology gas station. They don't care about the safety or the people here, as long as the shipping containers of chips keep arriving on schedule."
-            },
-            // Index 11
-            {
-                speaker: "The German",
-                text: "I respect that work ethic – that's why I stayed and built my business here! I pay local taxes, I hire local engineers. I didn't run back to the safety of Germany. I am participating in this drive, not just consuming it!"
-            },
-            // Index 12 (CHOICE 2.1)
+            // Index 16: Action branch response
             {
                 speaker: "The French Girl",
-                text: "She looks at the table, her voice trembling. The divide between creator and consumer is clear. How do you resolve this confrontation?",
-                choices: [
-                    {
-                        text: "Confront the exploitation: Validate the Taiwanese engineer's anger",
-                        consequence: "I spoke up for the Taiwanese. We must stop pretending this technology boom is a shared victory. It is built on asymmetric sacrifice. We are enjoying the fruits of a machine she is locked inside.",
-                        targetSceneIndex: 17
-                    },
-                    {
-                        text: "Stress mutual dependence: Argue that your paths are interconnected",
-                        consequence: "I argued that our paths, though unequal, are bound together. The German's business, the French girl's art, and the Taiwanese engineer's chips are all parts of the same global network. We need to support each other.",
-                        targetSceneIndex: 18
-                    }
-                ]
+                text: "You call it a shield, German guy, but you're not the one standing in the cleanroom. You're the one selling the services. You've commodified their survival drive to feed your own IT company.",
+                nextSceneIndex: 18
             },
-
-            // ==========================================
-            // BRANCH 3: Nostalgia / Defusing (Indices 13-16)
-            // ==========================================
-            // Index 13
+            // Index 17: Vulnerable branch response
             {
                 speaker: "The Paraguayan",
-                text: "Guys, remember the stinky tofu at Miaoli? Or the chaotic scooter rides into the mountains? We weren't debating supply chains back then. We were just four classmates sitting on a night market curb."
+                text: "At least you admit it. We all carried different weights. I spent my time here feeling like an outsider, learning Chinese, trying to fit in. I built my company in Paraguay from scratch. We all had to build our own foundations.",
+                nextSceneIndex: 18
             },
-            // Index 14
-            {
-                speaker: "The French Girl",
-                text: "Yes, but we were young and ignorant. We didn't see the Cleanroom suits or the migrant worker dorms. Our innocence was just blindness. Our friendship was easy because we didn't ask hard questions."
-            },
-            // Index 15
+            // Index 18 (CHOICE 4: Taiwanese Girl's choice)
             {
                 speaker: "The Taiwanese",
-                text: "I saw it. I knew my father was working three jobs while you guys were planning beach trips to the Philippines. I kept quiet because I wanted to feel normal, just for a semester. I wanted to pretend I was free like you."
-            },
-            // Index 16 (CHOICE 3.1)
-            {
-                speaker: "The German",
-                text: "He looks down, the silence heavy with the realization of our past ignorance. How do you address this hidden history?",
+                type: "choice",
+                text: "The clash has stripped away the polite congress facades. The table is silent, waiting for your response. How do you close the night?",
                 choices: [
                     {
-                        text: "Acknowledge the class division: Accept that the illusion has shattered",
-                        consequence: "I admitted that our past friendship was built on an illusion. The class differences we ignored back then have now fully defined our adult lives. The innocence is gone, and we cannot go back.",
-                        targetSceneIndex: 17
+                        text: "The Geopolitical Rift: Acknowledge that the differences are too deep to bridge",
+                        consequence: "I looked at them. The French girl's guilt, the German's drive, the Paraguayan's distance... we are no longer the same. The class and privilege gaps are too wide. The semester is a ghost, and we must live in our separate realities.",
+                        targetSceneIndex: 19
                     },
                     {
-                        text: "Apologize and rebuild: Forge a new friendship based on honesty",
-                        consequence: "I apologized for our past blindness. But I argued that our connection doesn't have to end. Now that we see the truth, we can build a real friendship, one that acknowledges our different realities.",
-                        targetSceneIndex: 18
+                        text: "The Shared Rhythm: Choose to clink glasses and honor the shared connection",
+                        consequence: "I smiled faintly. 'We carry unequal weights, and we live in different worlds now. But for one hot semester, we shared the same rhythm, the same classes, and the same dreams. Let's not let the global machinery tear us apart.'",
+                        targetSceneIndex: 20
                     }
                 ]
             },
-
-            // ==========================================
-            // OUTCOME ENDINGS (Indices 17-19)
-            // ==========================================
-            // Index 17: Geopolitical Rift Ending
+            // Index 19: Geopolitical Rift Ending
             {
                 speaker: "The Reunion — A Bar in Hsinchu",
-                text: "We finish our beers in tense silence. The cicadas outside sound like a countdown. We pay the bill separately, shaking hands with a polite, professional distance. The semester is a ghost, and we are strangers now, divided by the global machinery of our time.",
-                nextSceneIndex: 19
+                text: "We finish our drinks in tense silence. The sound of cicadas outside feels like a countdown. We pay the bill separately, shaking hands with a polite, professional distance. The semester is a ghost, and we are strangers now, divided by the global machinery of our time.",
+                nextSceneIndex: 21
             },
-            // Index 18: Shared Rhythm Ending
+            // Index 20: Shared Rhythm Ending
             {
                 speaker: "The Reunion — A Bar in Hsinchu",
-                text: "We clink our glasses. The tension dissolves into a quiet, mutual respect. We are different, yes, and we carry unequal burdens. But for one hot semester, we shared the same rhythm. We promise to keep in touch and support each other.",
-                nextSceneIndex: 19
+                text: "We clink our glasses. The tension dissolves into a quiet, mutual respect. We are different, and we carry unequal burdens. But we promise to keep in touch, to support each other, and to remember that we once shared the same rhythm under Hsinchu's blazing sun.",
+                nextSceneIndex: 21
             },
-            // Index 19: End Screen
+            // Index 21: End Screen
             {
                 speaker: "The End",
-                text: "Thank you for playing! This project highlights how different socio-economic backgrounds and identities shape the experience of the exact same place — in the spirit of Zadie Smith's Swing Time."
+                text: "Thank you for playing! This project highlights how different socio-economic backgrounds, privileges, and identities shape the experience of the exact same place — in the spirit of Zadie Smith's Swing Time."
             }
         ]
     }
