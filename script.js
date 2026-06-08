@@ -219,11 +219,11 @@ function loadScene() {
         bgClass = charData.bgClass;
     } 
     else if (gameState === "finale") {
-        if (currentSceneIndex === 7 && askedFinaleChars.size === 4) {
-            currentSceneIndex = 28;
+        if (currentSceneIndex === 8 && askedFinaleChars.size === 4) {
+            currentSceneIndex = 29;
         }
         scene = storyData.finale.scenes[currentSceneIndex];
-        if (currentSceneIndex === 33) {
+        if (currentSceneIndex === 34) {
             scene = {
                 ...scene,
                 text: scene.text.replace("{score}", finaleScore)
@@ -243,6 +243,15 @@ function loadScene() {
     choiceContainer.innerHTML = "";
     choiceContainer.classList.add("hidden");
     dialogueText.classList.remove("hidden");
+
+    // Reset speaker styles
+    speakerName.classList.remove("speaker-you");
+    dialogueBox.classList.remove("speaker-you");
+
+    if (scene.speaker === "You") {
+        speakerName.classList.add("speaker-you");
+        dialogueBox.classList.add("speaker-you");
+    }
 
     if (scene.type === "point_and_click") {
         nextBtn.style.display = "none";
@@ -277,7 +286,7 @@ function loadScene() {
         // Render choice buttons
         choiceContainer.innerHTML = "";
         scene.choices.forEach(opt => {
-            if (currentSceneIndex === 7 && opt.char && askedFinaleChars.has(opt.char)) {
+            if (currentSceneIndex === 8 && opt.char && askedFinaleChars.has(opt.char)) {
                 return; // Skip already questioned characters
             }
             const btn = document.createElement("button");
@@ -355,16 +364,16 @@ function advanceScene() {
         const currentChapter = storyData.finale;
         const scene = currentChapter.scenes[currentSceneIndex];
         
-        // Dynamic ending routing at the end of the bar discussion (scene index 28)
-        if (currentSceneIndex === 28) {
+        // Dynamic ending routing at the end of the bar discussion (scene index 29)
+        if (currentSceneIndex === 29) {
             if (finaleScore >= 6) {
-                currentSceneIndex = 29; // Ending D: The Shared Rhythm
+                currentSceneIndex = 30; // Ending D: The Shared Rhythm
             } else if (finaleScore >= 3 && finaleScore < 6) {
-                currentSceneIndex = 30; // Ending C: Pragmatic Acceptance
+                currentSceneIndex = 31; // Ending C: Pragmatic Acceptance
             } else if (finaleScore >= 0 && finaleScore < 3) {
-                currentSceneIndex = 31; // Ending B: Uneasy Truce
+                currentSceneIndex = 32; // Ending B: Uneasy Truce
             } else {
-                currentSceneIndex = 32; // Ending A: The Burning Bridge
+                currentSceneIndex = 33; // Ending A: The Burning Bridge
             }
             loadScene();
             return;

@@ -981,3 +981,14 @@ body {
         font-size: 0.85rem;
     }
 }
+
+/* Visual shift when the player (You) is speaking */
+#speaker-name.speaker-you {
+    color: #c93b2b; /* Bold red checking pencil color */
+    font-style: italic;
+    font-weight: 700;
+}
+
+#dialogue-box.speaker-you {
+    border-left: 5px solid #c93b2b; /* Red margin indicator */
+}
