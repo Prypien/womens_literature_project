@@ -1,1 +1,13 @@
-# Ignore nothing for this static site
+# Dependency directories
+node_modules/
+package-lock.json
+
+# Test and utility scripts
+test_game.js
+integrate_images.js
+shift_story.js
+test_*.js
+
+# Logs and OS metadata
+*.log
+.DS_Store
