@@ -159,6 +159,7 @@ function transitionTo(state) {
         currentSceneIndex = 0;
         askedFinaleChars.clear(); // Clear the questioned characters track
         finaleScore = 0; // Reset score
+        foundItems.clear(); // Reset item inspection track for the finale
         backToSelectBtn.classList.add("hidden"); // No going back in the finale
         playTrack();
         loadScene();
@@ -258,6 +259,7 @@ function loadScene() {
     }
 
     if (scene.type === "point_and_click") {
+        foundItems.clear(); // Clear found items list for the new scene
         nextBtn.style.display = "none";
         speakerName.textContent = scene.speaker;
         typeWriterEffect(dialogueText, scene.text);
@@ -455,7 +457,8 @@ function closeInspection() {
         scene = charData.scenes[currentSceneIndex];
     }
     
-    if (foundItems.size === scene.items.length) {
+    const allFound = scene.items.every(item => foundItems.has(item.id));
+    if (allFound) {
         if (gameState === "finale") {
             dialogueText.textContent = "You are ready to enter. Click 'Next' to join the table.";
         } else {
