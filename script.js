@@ -714,6 +714,13 @@ function updateSelectionScreen() {
             }
         }
     });
+    
+    // Unlock finale if all 4 are completed
+    if (completedChars.size === 4) {
+        startFinaleBtn.classList.remove("hidden");
+    } else {
+        startFinaleBtn.classList.add("hidden");
+    }
 }
 
 // Render scene
