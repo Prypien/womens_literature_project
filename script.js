@@ -260,145 +260,280 @@ const storyData = {
                 speaker: "The Reunion — A Bar in Hsinchu",
                 text: "Later that evening. The noise of the congress has faded. The four of them sit in a small, dark bar in a side alley near East Gate in Hsinchu. On the table are cold Taiwan Beer, Oolong tea, and empanadas brought by the Cheetah."
             },
-            // Index 6: Catching up
+            // Index 6: Bar Reunion Intro
             {
-                speaker: "The Cheetah",
-                text: "¡Salud, friends! It has been ten years. Look at us—a singer, an entrepreneur, an engineer, and a company founder. Remember when we used to get stinky tofu in Miaoli? We had no money, but we had all the time in the world."
+                speaker: "The Reunion",
+                text: "Ten years have passed. The class and economic differences are obvious. The air is thick with unresolved questions. You decide to address them directly by asking a question."
             },
-            // Index 7: Transition to keynote
+            // Index 7: Choice: Whom to Ask?
             {
-                speaker: "The Wolf",
-                text: "Nostalgia is nice, but I'm glad we grew up. The presentation today was spot on. Hsinchu has this raw, disciplined drive. It demands execution, and that's why the future is built here. It makes you realize how soft the West has become."
-            },
-            // Index 8: Debate starts
-            {
-                speaker: "The Fox",
-                text: "Soft? Or just more aware of the cost? It's easy to praise the 'drive' when you're the one running a company, Wolf. But that drive is built on the backs of migrant workers and sleep-deprived graduates. It's exploitation repackaged as meritocracy."
-            },
-            // Index 9 (CHOICE 1: Paraguayan's choice -> Cheetah's choice)
-            {
-                speaker: "The Cheetah",
+                speaker: "The Reunion",
                 type: "choice",
-                text: "The debate is heating up early. As the one who always tried to bring people together, how do you steer the conversation?",
+                text: "Who do you want to ask a question to?",
                 choices: [
                     {
-                        text: "Nostalgic De-escalation: Try to keep the mood light and recall student days",
-                        consequence: "I raised my glass, smiling. 'Guys, let's keep the supply chain debates in the auditorium. We came here to catch up, not to argue about global economics. Remember our chaotic scooter trips?'",
-                        targetSceneIndex: 10
+                        text: "Ask The Cheetah about his return to Taiwan and infrastructure projects.",
+                        consequence: "You turn to the Cheetah to ask about his engineering company.",
+                        targetSceneIndex: 8
                     },
                     {
-                        text: "Geopolitical Honesty: Push them to confront their socioeconomic differences",
-                        consequence: "I leaned forward. 'No, let them speak. The keynote showed how unequal our worlds are. We can't pretend we are still the same students. We represent different realities now.'",
-                        targetSceneIndex: 11
-                    }
-                ]
-            },
-            // Index 10: Nostalgia branch response
-            {
-                speaker: "The Fox",
-                text: "I appreciate the thought, Cheetah. But even our nostalgia is a privilege. I was on a beach in the Philippines while the local students were locked in cleanrooms and migrant workers had no privacy. We can't just drink beer and ignore it.",
-                nextSceneIndex: 12
-            },
-            // Index 11: Geopolitical branch response
-            {
-                speaker: "The Wolf",
-                text: "Exactly. Let's be honest. The Fox sings about peace, but her tour runs on the very technology Hsinchu builds. You complain about the system, yet you consume its benefits every single day. That moral guilt is a luxury.",
-                nextSceneIndex: 12
-            },
-            // Index 12 (CHOICE 2: French Girl's choice -> Fox's choice)
-            {
-                speaker: "The Fox",
-                type: "choice",
-                text: "The Wolf challenges your artistic distancing. How do you respond to his accusation of hypocrisy?",
-                choices: [
-                    {
-                        text: "Defend Critique: Acknowledge the complicity but double down on the critique",
-                        consequence: "I looked him in the eye. 'Yes, I use a smartphone. I benefit from it. But that doesn't mean I have to stay silent about the exploitation that builds it. Your business theory just sanitizes the human cost.'",
+                        text: "Ask The Fox about her world tour and critique of capitalism.",
+                        consequence: "You turn to the Fox to ask about her songs and social critiques.",
                         targetSceneIndex: 13
                     },
                     {
-                        text: "Empathetic Focus: Pivot the attention to the Bear's exhaustion",
-                        consequence: "I turned to the Bear. 'I'm sorry. We are debating this like it's a game. But you live this. You look exhausted. What is it really like for you?'",
-                        targetSceneIndex: 14
-                    }
-                ]
-            },
-            // Index 13: Critique branch response
-            {
-                speaker: "The Bear",
-                text: "You both talk about my life as a theoretical debate. 'Exploitation' vs 'meritocracy'. But for me, it is structural pressure. If I don't work, my family has no security, and our tech shield crumbles. It is survival, not a choice.",
-                nextSceneIndex: 15
-            },
-            // Index 14: Empathy branch response
-            {
-                speaker: "The Bear",
-                text: "It is exhausting. The fighter jets fly closer every month, and the pressure to produce never stops. I spend my life in cleanrooms so the world can enjoy their digital lives. I wanted to draw art, but I erased it to write schematics. Sometimes I feel like a cog in a machine whose survival depends on my burnout.",
-                nextSceneIndex: 15
-            },
-            // Index 15 (CHOICE 3: German's choice -> Wolf's choice)
-            {
-                speaker: "The Wolf",
-                type: "choice",
-                text: "The Bear's raw reality exposes the divide. How do you respond to her exhaustion and the accusation of privilege?",
-                choices: [
-                    {
-                        text: "Unapologetic Action: Defend the necessity of hard work and creation",
-                        consequence: "I took a sip of beer. 'I respect your work, and that's why I'm here. I didn't go back to the comfortable stagnation of Germany. I stayed to build something. Hard work is the only shield Taiwan has.'",
-                        targetSceneIndex: 16
+                        text: "Ask The Wolf about his IT business and Hsinchu's work ethic.",
+                        consequence: "You turn to the Wolf to ask about his startup and drive.",
+                        targetSceneIndex: 18
                     },
                     {
-                        text: "Vulnerable Confession: Admit your passport and skin color gave you an exit option",
-                        consequence: "I looked down at my glass. 'You're right. I romanticize it because I have a choice. If things go wrong, my passport lets me leave. I inherit a wealth I didn't build, and I'm afraid of never matching your drive.'",
-                        targetSceneIndex: 17
+                        text: "Ask The Bear about her exhaustion and life under the silicon shield.",
+                        consequence: "You turn to the Bear to ask about her work and sketches.",
+                        targetSceneIndex: 23
                     }
                 ]
             },
-            // Index 16: Action branch response
+            // ==================== BRANCH 1: THE CHEETAH ====================
+            // Index 8: Cheetah Question
             {
-                speaker: "The Fox",
-                text: "You call it a shield, Wolf, but you're not the one standing in the cleanroom. You're the one selling the services. You've commodified their survival drive to feed your own IT company.",
-                nextSceneIndex: 18
+                speaker: "You",
+                text: "You ask the Cheetah: 'Your company builds bridges and infrastructure. Do you think that the human connections we built as classmates ten years ago can still bridge our different worlds today?'"
             },
-            // Index 17: Vulnerable branch response
+            // Index 9: Cheetah Response
             {
                 speaker: "The Cheetah",
-                text: "At least you admit it. We all carried different weights. I spent my time here feeling like an outsider, learning Chinese, trying to fit in. I built my company in Paraguay from scratch. We all had to build our own foundations.",
-                nextSceneIndex: 18
+                text: "He smiles warmly, raising his glass. 'I believe they can. Look at us—we are from completely different continents, yet we are here. The connections are real. Remember our chaotic scooter trips?'"
             },
-            // Index 18 (CHOICE 4: Taiwanese Girl's choice -> Bear's choice)
+            // Index 10: Fox Chimes In
             {
-                speaker: "The Bear",
+                speaker: "The Fox",
+                text: "She shakes her head. 'It's a nice thought, Cheetah. But even our nostalgia is a privilege. Your bridges are built in a system of massive inequality. The Wolf's tech empire runs on exploitation of migrant workers. We are not just classmates anymore; we represent different sides of a global system.'"
+            },
+            // Index 11: Wolf Chimes In
+            {
+                speaker: "The Wolf",
+                text: "He scoffs. 'And your art tours run on that same tech, Fox. This constant moralizing is exhausting. Cheetah is actually building structures, not just writing songs about them.'"
+            },
+            // Index 12: Choice: Cheetah's 4 Answers
+            {
+                speaker: "The Climax of the Discussion",
                 type: "choice",
-                text: "The clash has stripped away the polite congress facades. The table is silent, waiting for your response. How do you close the night?",
+                text: "The debate about Cheetah's connections and infrastructure is heating up. How do you respond?",
                 choices: [
                     {
-                        text: "The Geopolitical Rift: Acknowledge that the differences are too deep to bridge",
-                        consequence: "I looked at them. The Fox's guilt, the Wolf's drive, the Cheetah's distance... we are no longer the same. The class and privilege gaps are too wide. The semester is a ghost, and we must live in our separate realities.",
-                        targetSceneIndex: 19
+                        text: "De-escalate: 'Let's honor Cheetah's perspective. We all carried different weights, but we shared a genuine connection that can rise above global systems.'",
+                        consequence: "You speak words of peace and call for mutual respect.",
+                        points: 2,
+                        targetSceneIndex: 28
                     },
                     {
-                        text: "The Shared Rhythm: Choose to clink glasses and honor the shared connection",
-                        consequence: "I smiled faintly. 'We carry unequal weights, and we live in different worlds now. But for one hot semester, we shared the same rhythm, the same classes, and the same dreams. Let's not let the global machinery tear us apart.'",
-                        targetSceneIndex: 20
+                        text: "Neutral: 'Both sides have a point. We are part of the system, but we can still choose how we relate to each other as individuals.'",
+                        consequence: "You offer a balanced perspective on individual vs system responsibility.",
+                        points: 1,
+                        targetSceneIndex: 29
+                    },
+                    {
+                        text: "Strained: 'The Wolf is right about practicality, but the Fox is right about the cost. We cannot ignore how much our paths have diverged.'",
+                        consequence: "You acknowledge the gap between their different realities.",
+                        points: 0,
+                        targetSceneIndex: 30
+                    },
+                    {
+                        text: "Escalate: 'It is hypocrisy to talk about bridges when your company benefits from the unequal geopolitical status quo.'",
+                        consequence: "You point out the structural inequality of Cheetah's business.",
+                        points: -1,
+                        targetSceneIndex: 31
                     }
                 ]
             },
-            // Index 19: Geopolitical Rift Ending
+            // ==================== BRANCH 2: THE FOX ====================
+            // Index 13: Fox Question
             {
-                speaker: "The Reunion — A Bar in Hsinchu",
-                text: "We finish our drinks in tense silence. The sound of cicadas outside feels like a countdown. We pay the bill separately, shaking hands with a polite, professional distance. The semester is a ghost, and we are strangers now, divided by the global machinery of our time.",
-                nextSceneIndex: 21
+                speaker: "You",
+                text: "You ask the Fox: 'You sing about human rights and critique high-tech capitalism. How do you cope with the feeling of being complicit in the very system you criticize?'"
             },
-            // Index 20: Shared Rhythm Ending
+            // Index 14: Fox Response
             {
-                speaker: "The Reunion — A Bar in Hsinchu",
-                text: "We clink our glasses. The tension dissolves into a quiet, mutual respect. We are different, and we carry unequal burdens. But we promise to keep in touch, to support each other, and to remember that we once shared the same rhythm under Hsinchu's blazing sun.",
-                nextSceneIndex: 21
+                speaker: "The Fox",
+                text: "She sighs, looking down. 'It's a heavy weight. I know my phone and my tours rely on these supply chains. I write songs to process that guilt and make sure the human cost isn't forgotten. It's my way of resisting.'"
             },
-            // Index 21: End Screen
+            // Index 15: Wolf Chimes In
+            {
+                speaker: "The Wolf",
+                text: "He smiles cynically. 'Resisting? You consume the benefits and ease your conscience with art. Your moral guilt is a luxury paid for by the people who actually work. It's a savior complex.'"
+            },
+            // Index 16: Bear Chimes In
+            {
+                speaker: "The Bear",
+                text: "She looks up quietly. 'You talk about my life as a debate. For me, the cleanroom pressure is not an artistic critique. It is daily survival. We don't have the luxury of Western guilt.'"
+            },
+            // Index 17: Choice: Fox's 4 Answers
+            {
+                speaker: "The Climax of the Discussion",
+                type: "choice",
+                text: "The debate about the Fox's complicity and Western guilt is heating up. How do you respond?",
+                choices: [
+                    {
+                        text: "De-escalate: 'It's not about guilt, but about caring. The Fox's empathy is genuine, and the Bear's reality is heavy. Let's support each other instead of pointing fingers.'",
+                        consequence: "You validate both Fox's empathy and Bear's struggle.",
+                        points: 2,
+                        targetSceneIndex: 28
+                    },
+                    {
+                        text: "Neutral: 'It is a complex paradox. We are all complicit to some degree, and acknowledging it is the first step toward understanding.'",
+                        consequence: "You offer a reflective view on the shared paradox of modern life.",
+                        points: 1,
+                        targetSceneIndex: 29
+                    },
+                    {
+                        text: "Strained: 'The Wolf has a point about practicality, but the Bear's struggle shows that artistic critiques are often disconnected from real survival.'",
+                        consequence: "You highlight the divide between artistic theory and daily survival.",
+                        points: 0,
+                        targetSceneIndex: 30
+                    },
+                    {
+                        text: "Escalate: 'The Fox's critique is just performative activism. It does nothing to change the hard reality of the workers she sings about.'",
+                        consequence: "You directly accuse the Fox of empty performance.",
+                        points: -1,
+                        targetSceneIndex: 31
+                    }
+                ]
+            },
+            // ==================== BRANCH 3: THE WOLF ====================
+            // Index 18: Wolf Question
+            {
+                speaker: "You",
+                text: "You ask the Wolf: 'You praise Hsinchu's relentless work ethic and startup culture. Do you feel a sense of responsibility to the community that welcomed you, or is it just about profit?'"
+            },
+            // Index 19: Wolf Response
+            {
+                speaker: "The Wolf",
+                text: "He sits up straight. 'I stayed because I wanted to build, not just inherit comfort. My business creates value and jobs. That is my responsibility. Hard work is the only shield this island has.'"
+            },
+            // Index 20: Fox Chimes In
+            {
+                speaker: "The Fox",
+                text: "'You call it a shield, Wolf, but you're not the one standing in the cleanroom,' Fox retorts. 'You've commodified their survival drive to feed your startup. It's exploitation repackaged as merit.'"
+            },
+            // Index 21: Cheetah Chimes In
+            {
+                speaker: "The Cheetah",
+                text: "He raises a hand. 'Let's be fair. Building a company is hard. I built mine from scratch in Paraguay. But we must also remember where we came from and the privileges we had.'"
+            },
+            // Index 22: Choice: Wolf's 4 Answers
+            {
+                speaker: "The Climax of the Discussion",
+                type: "choice",
+                text: "The debate about the Wolf's business and Hsinchu's work ethic is heating up. How do you respond?",
+                choices: [
+                    {
+                        text: "De-escalate: 'Creating value and hard work are respectable, just like Cheetah's effort. Let's appreciate that we all tried to build something in our own ways.'",
+                        consequence: "You highlight the value of both their hard work and entrepreneurial efforts.",
+                        points: 2,
+                        targetSceneIndex: 28
+                    },
+                    {
+                        text: "Neutral: 'It is a double-edged sword. Entrepreneurship drives progress, but we must stay mindful of the human cost.'",
+                        consequence: "You weigh progress against the human cost of startup culture.",
+                        points: 1,
+                        targetSceneIndex: 29
+                    },
+                    {
+                        text: "Strained: 'The Fox is right that the system is harsh, but without business builders like the Wolf, there would be no resources to debate about.'",
+                        consequence: "You choose practicality over moral critiques.",
+                        points: 0,
+                        targetSceneIndex: 30
+                    },
+                    {
+                        text: "Escalate: 'The Wolf's success is built on a toxic grind that exploits local burnout while keeping his own exit options open.'",
+                        consequence: "You critique the Wolf's privilege and his startup model.",
+                        points: -1,
+                        targetSceneIndex: 31
+                    }
+                ]
+            },
+            // ==================== BRANCH 4: THE BEAR ====================
+            // Index 23: Bear Question
+            {
+                speaker: "You",
+                text: "You ask the Bear: 'You carry a massive burden for your family and country in the semiconductor industry. I remember the sketches you used to draw. Are you still chasing your art dreams?'"
+            },
+            // Index 24: Bear Response
+            {
+                speaker: "The Bear",
+                text: "She smiles faintly, eyes softening. 'Only in the margins of my notebooks. The silicon shield is what keeps my home safe, so I work. It is exhausting, but it is my duty.'"
+            },
+            // Index 25: Fox Chimes In
+            {
+                speaker: "The Fox",
+                text: "'It shouldn't be your duty to burn out for global supply chains,' Fox says gently. 'You shouldn't have to erase your dreams to write schematics. The pressure is too high.'"
+            },
+            // Index 26: Wolf Chimes In
+            {
+                speaker: "The Wolf",
+                text: "He shakes his head. 'That's naive, Fox. Without the semiconductor industry, Taiwan wouldn't have its silicon shield. Her work is vital. It's about survival, not just personal dreams.'"
+            },
+            // Index 27: Choice: Bear's 4 Answers
+            {
+                speaker: "The Climax of the Discussion",
+                type: "choice",
+                text: "The debate about the Bear's dreams, duty, and the silicon shield is heating up. How do you respond?",
+                choices: [
+                    {
+                        text: "De-escalate: 'The Bear's dedication is heroic, but her dreams still matter. Let's raise a glass to her sketches and to finding balance amidst the heavy pressure.'",
+                        consequence: "You honor her dedication and toast to her artistic dreams.",
+                        points: 2,
+                        targetSceneIndex: 28
+                    },
+                    {
+                        text: "Neutral: 'It is a heavy reality. Balancing national security, family duty, and personal dreams is a lifelong struggle.'",
+                        consequence: "You recognize the immense difficulty of her path.",
+                        points: 1,
+                        targetSceneIndex: 29
+                    },
+                    {
+                        text: "Strained: 'The Wolf is correct about the harsh geopolitical reality, even if it means personal dreams must be put on hold.'",
+                        consequence: "You agree that geopolitical survival must come before personal aspirations.",
+                        points: 0,
+                        targetSceneIndex: 30
+                    },
+                    {
+                        text: "Escalate: 'The system is forcing her to burn out for corporate profits under the guise of duty, and it's tragic that she accepts it.'",
+                        consequence: "You critique the societal system and the Bear's acceptance of it.",
+                        points: -1,
+                        targetSceneIndex: 31
+                    }
+                ]
+            },
+            // ==================== ENDINGS ====================
+            // Index 28: Ending D: The Shared Rhythm
+            {
+                speaker: "Ending: The Shared Rhythm",
+                text: "Your words bring a warm, unifying calm to the table. The tension dissolves into a soft, shared laugh. You all raise your glasses. 'We carry unequal weights,' Cheetah says, 'but ten years ago we shared the same tracks and same dreams.' You promise to support each other, honoring your bond above all.",
+                nextSceneIndex: 32
+            },
+            // Index 29: Ending C: Pragmatic Acceptance
+            {
+                speaker: "Ending: Pragmatic Acceptance",
+                text: "Your neutral, balanced stance brings a mature calm to the table. 'We live in different worlds now,' Fox says, 'but we can still respect each other's paths.' You pay the bill together. There is no fake nostalgia, but a realistic, respectful acceptance of who you all have become.",
+                nextSceneIndex: 32
+            },
+            // Index 30: Ending B: Uneasy Truce
+            {
+                speaker: "Ending: Uneasy Truce",
+                text: "Your response cools the conversation, but the warmth does not return. You finish your drinks in polite, strained silence. You pay the bill separately. Handshakes are brief and professional. You part realizing that you have grown too far apart to ever be close friends again.",
+                nextSceneIndex: 32
+            },
+            // Index 31: Ending A: The Burning Bridge
+            {
+                speaker: "Ending: The Burning Bridge",
+                text: "Your provocative stance pushes the argument over the edge. 'You understand nothing!' Fox shouts, while the Bear stands up, eyes filled with tears. The bill is paid in tense, angry silence. No handshakes, no goodbyes. The group walks away in separate directions. The bridge is completely burnt.",
+                nextSceneIndex: 32
+            },
+            // Index 32: End Screen
             {
                 speaker: "The End",
-                text: "Thank you for playing! This project highlights how different socio-economic backgrounds, privileges, and identities shape the experience of the exact same place — in the spirit of Zadie Smith's Swing Time."
+                text: "Thank you for playing the revised Finale! Your final choices determined the outcome: {score} points.<br><br>This visual novel explores how differing socioeconomic realities, national security pressures, and privileges shape our lives — even for those who once shared the same university halls."
             }
         ]
     }
@@ -413,6 +548,7 @@ let foundItems = new Set();
 let isAudioMuted = true; // Browser autoplay restriction safety
 let typewriterTimeout = null;
 let consequenceRedirectIndex = null; // Branching finale helper
+let finaleScore = 0; // Tracks the de-escalation points (2, 1, 0, -1) chosen in the Finale
 
 // Audio Playlist (plays continuously, next track loads when current track ends)
 const playlist = [
@@ -544,6 +680,7 @@ function transitionTo(state) {
     else if (state === "finale") {
         gameScreen.classList.add("active");
         currentSceneIndex = 0;
+        finaleScore = 0; // Reset score
         backToSelectBtn.classList.add("hidden"); // No going back in the finale
         playTrack();
         loadScene();
@@ -577,11 +714,6 @@ function updateSelectionScreen() {
             }
         }
     });
-
-    // Unlock finale if all 4 are completed
-    if (completedChars.size === 4) {
-        startFinaleBtn.classList.remove("hidden");
-    }
 }
 
 // Render scene
@@ -603,6 +735,12 @@ function loadScene() {
     } 
     else if (gameState === "finale") {
         scene = storyData.finale.scenes[currentSceneIndex];
+        if (currentSceneIndex === 32) {
+            scene = {
+                ...scene,
+                text: scene.text.replace("{score}", finaleScore)
+            };
+        }
         title = "The Finale";
         bgClass = storyData.finale.bgClass;
     }
@@ -671,6 +809,10 @@ function loadScene() {
 function makeChoice(opt) {
     choiceContainer.classList.add("hidden");
     typeWriterEffect(dialogueText, opt.consequence);
+    
+    if (opt.points !== undefined) {
+        finaleScore = opt.points;
+    }
     
     if (opt.targetSceneIndex !== undefined) {
         consequenceRedirectIndex = opt.targetSceneIndex;
