@@ -233,6 +233,10 @@ function loadScene() {
         bgClass = storyData.finale.bgClass;
     }
 
+    if (scene && scene.bgClass) {
+        bgClass = scene.bgClass;
+    }
+
     gameBg.className = "";
     gameBg.classList.add(bgClass);
 

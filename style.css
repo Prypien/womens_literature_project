@@ -728,6 +728,10 @@ body {
     background-blend-mode: normal !important;
 }
 
+.bg-reunion-bar {
+    background: url("pictures/reunion_bar.jpg") center/cover no-repeat !important;
+}
+
 .bg-game-over {
     background: linear-gradient(to bottom, #fcfbfa 0%, #e2ded5 100%) !important;
     background-blend-mode: normal !important;
