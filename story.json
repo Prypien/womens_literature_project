@@ -240,7 +240,7 @@
                 "text": "Looking at the engineering project blueprints, I see structures. But NYCU taught me that the hardest structures to build are human connections. Tereré cup by tereré cup, we bridged our differences ten years ago. Now we represent different worlds. Can we still build a bridge tonight?"
             },
             {
-                "speaker": "The Bar Door",
+                "speaker": "You",
                 "type": "point_and_click",
                 "text": "Push open the door to enter the bar and join the table.",
                 "items": [
@@ -256,17 +256,17 @@
                 "bgClass": "bg-reunion-bar"
             },
             {
-                "speaker": "The Reunion — A Bar in Hsinchu",
+                "speaker": "You",
                 "text": "You push open the heavy wooden door. A bell chimes above. The four of them stop talking and look up, their eyes locking onto you. You pull up a chair and sit down at the table. A cold bottle of Taiwan Beer is placed in front of you. You are no longer just an observer; you are sitting at the table.",
                 "bgClass": "bg-reunion-bar"
             },
             {
-                "speaker": "The Reunion",
+                "speaker": "You",
                 "text": "Ten years have passed. The class and economic differences are obvious. The air is thick with unresolved questions. You decide to address them directly.",
                 "bgClass": "bg-reunion-bar"
             },
             {
-                "speaker": "The Reunion",
+                "speaker": "You",
                 "type": "choice",
                 "text": "Who do you want to ask a question to next?",
                 "choices": [
@@ -318,7 +318,7 @@
                 "bgClass": "bg-reunion-bar"
             },
             {
-                "speaker": "The Climax of the Discussion",
+                "speaker": "You",
                 "type": "choice",
                 "text": "The debate about Cheetah's connections and infrastructure is heating up. How do you respond?",
                 "choices": [
@@ -370,7 +370,7 @@
                 "bgClass": "bg-reunion-bar"
             },
             {
-                "speaker": "The Climax of the Discussion",
+                "speaker": "You",
                 "type": "choice",
                 "text": "The debate about the Fox's complicity and Western guilt is heating up. How do you respond?",
                 "choices": [
@@ -422,7 +422,7 @@
                 "bgClass": "bg-reunion-bar"
             },
             {
-                "speaker": "The Climax of the Discussion",
+                "speaker": "You",
                 "type": "choice",
                 "text": "The debate about the Wolf's business and Hsinchu's work ethic is heating up. How do you respond?",
                 "choices": [
@@ -474,7 +474,7 @@
                 "bgClass": "bg-reunion-bar"
             },
             {
-                "speaker": "The Climax of the Discussion",
+                "speaker": "You",
                 "type": "choice",
                 "text": "The debate about the Bear's dreams, duty, and the silicon shield is heating up. How do you respond?",
                 "choices": [
@@ -511,26 +511,26 @@
                 "bgClass": "bg-reunion-bar"
             },
             {
-                "speaker": "Ending: The Shared Rhythm",
-                "text": "Your words bring a warm, unifying calm to the table. The tension dissolves into a soft, shared laugh. You all raise your glasses. 'We carry unequal weights,' Cheetah says, 'but ten years ago we shared the same tracks and same dreams.' You promise to support each other, honoring your bond above all.",
+                "speaker": "You",
+                "text": "<strong>Ending: The Shared Rhythm</strong><br><br>Your words bring a warm, unifying calm to the table. The tension dissolves into a soft, shared laugh. You all raise your glasses. 'We carry unequal weights,' Cheetah says, 'but ten years ago we shared the same tracks and same dreams.' You promise to support each other, honoring your bond above all.",
                 "nextSceneIndex": 34,
                 "bgClass": "bg-reunion-bar"
             },
             {
-                "speaker": "Ending: Pragmatic Acceptance",
-                "text": "Your neutral, balanced stance brings a mature calm to the table. 'We live in different worlds now,' Fox says, 'but we can still respect each other's paths.' You pay the bill together. There is no fake nostalgia, but a realistic, respectful acceptance of who you all have become.",
+                "speaker": "You",
+                "text": "<strong>Ending: Pragmatic Acceptance</strong><br><br>Your neutral, balanced stance brings a mature calm to the table. 'We live in different worlds now,' Fox says, 'but we can still respect each other's paths.' You pay the bill together. There is no fake nostalgia, but a realistic, respectful acceptance of who you all have become.",
                 "nextSceneIndex": 34,
                 "bgClass": "bg-reunion-bar"
             },
             {
-                "speaker": "Ending: Uneasy Truce",
-                "text": "Your response cools the conversation, but the warmth does not return. You finish your drinks in polite, strained silence. You pay the bill separately. Handshakes are brief and professional. You part realizing that you have grown too far apart to ever be close friends again.",
+                "speaker": "You",
+                "text": "<strong>Ending: Uneasy Truce</strong><br><br>Your response cools the conversation, but the warmth does not return. You finish your drinks in polite, strained silence. You pay the bill separately. Handshakes are brief and professional. You part realizing that you have grown too far apart to ever be close friends again.",
                 "nextSceneIndex": 34,
                 "bgClass": "bg-reunion-bar"
             },
             {
-                "speaker": "Ending: The Burning Bridge",
-                "text": "Your provocative stance pushes the argument over the edge. 'You understand nothing!' Fox shouts, while the Bear stands up, eyes filled with tears. The bill is paid in tense, angry silence. No handshakes, no goodbyes. The group walks away in separate directions. The bridge is completely burnt.",
+                "speaker": "You",
+                "text": "<strong>Ending: The Burning Bridge</strong><br><br>Your provocative stance pushes the argument over the edge. 'You understand nothing!' Fox shouts, while the Bear stands up, eyes filled with tears. The bill is paid in tense, angry silence. No handshakes, no goodbyes. The group walks away in separate directions. The bridge is completely burnt.",
                 "nextSceneIndex": 34,
                 "bgClass": "bg-reunion-bar"
             },
