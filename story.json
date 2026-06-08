@@ -1,0 +1,495 @@
+{
+    "intro": {
+        "bgClass": "bg-campus-sun",
+        "scenes": [
+            {
+                "speaker": "Guangfu Campus — Hsinchu",
+                "text": "June is scorching hot on the Guangfu campus. The air feels heavy and oppressive; the sound of cicadas fills the background while people hurry across the campus, eager to spend as little time as possible under the blazing sun and to reach the air-conditioned buildings."
+            },
+            {
+                "speaker": "Guangfu Campus — Hsinchu",
+                "text": "On that day, the university is hosting a congress. All former students from the past ten years who are currently in Taiwan have been invited to gather and reconnect."
+            }
+        ]
+    },
+    "characters": {
+        "french": {
+            "name": "The Fox",
+            "portrait": "🇫🇷",
+            "role": "Artist & Singer",
+            "bgClass": "bg-french-glow",
+            "audioTrack": "french",
+            "scenes": [
+                {
+                    "speaker": "The Fox",
+                    "text": "My band was touring across Asia, and I had noticed the invitation to the event buried among my emails. I had started singing professionally seven years earlier, but my career had not exactly taken off at first ; things had changed only recently when our band gained unexpected popularity after composing the soundtrack for a successful film. I was on tour with my group as a singer, and I was certainly not the kind of alumnus NYCU had in mind when organizing this congress. Still, I decided to attend the event."
+                },
+                {
+                    "speaker": "The Fox",
+                    "text": "The conference I attended focused on the role of semiconductors in Taiwan and the world. It was a topic that this university had taught me a great deal about ten years ago. During my time there, I had taken a class exploring the complexity of global supply chains through geopolitics. One visit with this class, in particular, left a lasting impression on me. It was a Monday, but just a few days earlier, I had spent the weekend in the Philippines."
+                },
+                {
+                    "speaker": "Exploration",
+                    "type": "point_and_click",
+                    "text": "Search the room for objects that remind you of that crucial class visit ten years ago.",
+                    "items": [
+                        {
+                            "id": "coconut",
+                            "x": "25%",
+                            "y": "55%",
+                            "icon": "🥥",
+                            "image": "pictures/french_coconut.jpg",
+                            "title": "The Coconut Beach",
+                            "analysis": "Memory:\n»I had been lying on a beach, my feet in the sand, the sun warming my skin, and a coconut in my hand.«\n\nReflection:\nAnd back at school, I visited an agency for Filipino migrant workers in Hsinchu with my teacher. They had left their country to work for major electronics and semiconductor companies. Many had not seen their families for several years and sent nearly everything they earned back home. They shared a single dormitory room for 12 people and had no privacy or intimacy. I remember how small I felt. They were sacrificing their lives for their families, while I had been lying on a beach in their country just days before. And being in Taiwan, we certainly did not have the same experience of the country."
+                        },
+                        {
+                            "id": "smartphone",
+                            "x": "70%",
+                            "y": "45%",
+                            "icon": "📱",
+                            "title": "The Smartphone",
+                            "analysis": "Memory:\n»The course was about the inequalities embedded in globalization mechanisms and about the tiny components in our phones that circulate across all these countries.«\n\nReflection:\nAnd as a European who could afford the latest iPhone, I was part of that system. I was benefiting from it because I was born on the “right” side of the world."
+                        }
+                    ]
+                },
+                {
+                    "speaker": "The Fox",
+                    "text": "But what could I do? I did not have an answer at the time, and I did not throw away my phone. I still have not done it ; I can feel it in my pocket right now. So what did I learn? Well, I decided not to work for big companies, and I am an artist now."
+                }
+            ]
+        },
+        "german": {
+            "name": "The Wolf",
+            "portrait": "🇩🇪",
+            "role": "IT Entrepreneur",
+            "bgClass": "bg-german-glow",
+            "audioTrack": "german",
+            "scenes": [
+                {
+                    "speaker": "The Wolf",
+                    "text": "Ten years ago, I came to NYCU to study computer science. Today, I have my own companies running different businesses in Taiwan. I did not become what German society expected me to be: successful, secure, moving within the wealthy circles of Western Europe. Yet, returning to the Guangfu campus for this alumni congress feels less like a celebration and more like an audit of an unearned heritage. I walk through the air-conditioned halls of NYCU, carrying the invisible weight of a passport and a skin color that still open doors worldwide, doors I am no longer sure my generation has the strength to build ourselves."
+                },
+                {
+                    "speaker": "The Wolf",
+                    "text": "I stand by the large glass facade of the auditorium, looking out into the shimmering, oppressive June heat. On stage, a panel discusses the shifting economic gravity from the West to Asia. Nearby, a delegation of recently arrived German exchange students is gathering. They look noticeably out of place, sluggish, carrying the physical weight of a culture back home that has grown comfortable and soft, their conversation lacking the sharp focus of the local students around them. They talk loudly, yet they seem disoriented in this hyper-modern, digital hub."
+                },
+                {
+                    "speaker": "The Wolf",
+                    "text": "But as I watch them, my gaze locks onto one young man at the edge of their group. He isn't talking. He is staring out of the window, his eyes wide, a quiet expression of profound overwhelm and sudden clarity on his face. In his silent, intense gaze, I recognize myself exactly ten years ago. He is having the exact same realization I had: the shattering awareness that the Western bubble we came from is running on empty, and that the future is being built right here, by people who actually work for it. My eyes follow his gaze out the window, looking down at the university sports field."
+                },
+                {
+                    "speaker": "Exploration",
+                    "type": "point_and_click",
+                    "text": "Look down at the sports field and search the window sill for objects of focus.",
+                    "items": [
+                        {
+                            "id": "running-track",
+                            "x": "50%",
+                            "y": "60%",
+                            "icon": "🏃",
+                            "title": "The NYCU Running Track at Night",
+                            "analysis": "Memory:\n»I remember the NYCU running track at night. It was never empty. Under the harsh floodlights, through the thick, heavy air, people were running. Students who had spent twelve hours in the labs, professors, local residents, they didn't just exercise; they strived. There was an absolute focus on performance, an unapologetic culture of merit and execution. I used to go there after the gym, drinking my creatine, watching them, maybe even admiring them.«\n\nReflection:\nWhile my home country back then was already settling into a comfortable, sluggish decadence, complaining about minor inconveniences while living off the accumulated wealth of past decades, Taiwan was a revelation of raw, disciplined energy. In Germany, we had become comfortable living like maggots in bacon, inheriting a massive economic empire we didn't create, losing our drive, hiding our stagnation behind moral grandstanding and pretending to be the world’s police. But here, nobody was pretending. People just put their heads down and worked. From the high-tech engineers to the night market vendors shouting into the neon-lit night, there was a shared conviction: your worth is defined by what you create, not by what your ancestors left behind."
+                        },
+                        {
+                            "id": "passport",
+                            "x": "30%",
+                            "y": "40%",
+                            "icon": "🛂",
+                            "title": "Inherited Shadows & Privilege",
+                            "analysis": "Memory:\n»Being the \"white, privileged man\" in Taiwan felt bizarre. I was treated like a beauty ideal and an economic powerhouse based on a legacy that was already crumbling from the inside. My country had lost its focus on digital innovation, its cheap energy, its security, and its work ethic. I felt like the heir to a dying kingdom, enjoying the residual respect of a world that hadn't fully realized we were running on empty.«\n\nReflection:\nTaiwan didn't make me feel superior; it forced me to look up. It made me realize that if the economic axis of the last century had been different, the global ideals of privilege would be completely reversed. I didn't want to be the maggot anymore. I wanted to build my own foundation. The intense drive of this island demanded more of me, setting a bar that I still fear I will never fully reach."
+                        }
+                    ]
+                },
+                {
+                    "speaker": "The Wolf",
+                    "text": "A sudden, rhythmic notification melody chimes from my phone, a soundtrack cue sent by my lead developer. The memory fades, and I am back in the air-conditioned hall of the congress. I look over at the young German student one last time. He is still staring out at the track, the illusion of his privilege visibly cracking."
+                },
+                {
+                    "speaker": "The Wolf",
+                    "text": "I smile softly, step away from the glass, and walk back into the crowd. I am no longer a ghost of a fading West; I am exactly where I belong, creating something that matters."
+                }
+            ]
+        },
+        "taiwanese": {
+            "name": "The Bear",
+            "portrait": "🇹🇼",
+            "role": "Semiconductor Engineer",
+            "bgClass": "bg-taiwanese-glow",
+            "audioTrack": "taiwanese",
+            "scenes": [
+                {
+                    "speaker": "The Bear",
+                    "text": "I stayed in Hsinchu after graduation, taking a path not much different from that of my peers. Since stepping into NYCU, my future seemed to be set. Like everyone else, I worked for a master's degree and applied for a decent job in the Hsinchu Science Park. It was the most ordinary path an EE major could take. And though I was not a fan of conferences, since many of my acquaintances were attending, I decided I should go as well, given how close it was to campus."
+                },
+                {
+                    "speaker": "The Bear",
+                    "text": "The conference was about the role of semiconductors in Taiwan and the world, which had everything to do my job—or rather, my life ever since starting college. The topic was so entirely predictable it was almost boring. It’s not that I hate my job, but I couldn’t help but wonder how things might have been different."
+                },
+                {
+                    "speaker": "Exploration",
+                    "type": "point_and_click",
+                    "text": "Search the room for objects that recall your hidden interests and the choices you made.",
+                    "items": [
+                        {
+                            "id": "teachers-book",
+                            "x": "40%",
+                            "y": "55%",
+                            "icon": "📖",
+                            "title": "Teacher's Book",
+                            "analysis": "Memory:\n»I thought of my writing teacher and that book of hers she handed me, long ago. I wonder how it would have felt to be her, changing paths from engineering to literature in college. When reading that book, I could smell the bitter yet floral taste of the tea she wrote, as if she had carved down the aroma with her pencil, and it made me sober.«\n\nReflection:\nI couldn’t help but think back to my choices. What if I had chosen what I was most interested in? She had already chosen what she would, when she was in my place. If she were at this conference now, she would have enjoyed listening to stories from different walks of life. If I had made a different choice back then, maybe I would have, too."
+                        },
+                        {
+                            "id": "pencil",
+                            "x": "60%",
+                            "y": "45%",
+                            "icon": "✏️",
+                            "title": "The Drafting Pencil",
+                            "analysis": "Memory:\n»My pencil stays only as a pencil. Back in school, I wrote down equations. I wrote schematics. I drew art, but then erased them. But what if I hadn’t? What if I had been braver, what if I hadn't gone with the flow, what if I had ignored the fact that I had no talent and went after what I loved?«\n\nReflection:\nThough there’s always that pencil sketching out dreams in my head, dreams that I always claim never existed. I let that pencil cross them out again and again, but what’s there will always be there. Sometimes I wonder if it’s really worth it, living this way."
+                        }
+                    ]
+                },
+                {
+                    "speaker": "The Bear",
+                    "text": "But here I am. My thoughts are always in vain, and I’m never brave enough for change. Maybe I get paid more now. Maybe people look up to me more. It’s busy, but it’s not a bad life. Though there’s always that pencil sketching out dreams in my head, dreams that I always claim never existed. I let that pencil cross them out again and again, but what’s there will always be there."
+                },
+                {
+                    "speaker": "The Bear",
+                    "text": "Sometimes I wonder if it’s really worth it, living this way. However, as of now, I’m still here. My life as an engineer will continue for the time being."
+                }
+            ]
+        },
+        "south_american": {
+            "name": "The Cheetah",
+            "portrait": "🇵🇾",
+            "role": "Civil Engineer",
+            "bgClass": "bg-southamerican-glow",
+            "audioTrack": "south_american",
+            "scenes": [
+                {
+                    "speaker": "The Cheetah",
+                    "text": "I had not planned to attend the congress. Ten years had passed since I graduated from NYCU, and life had taken me far away from Taiwan. After finishing my studies, I returned to Paraguay and founded my own civil engineering company. At first, it was just a small office with a few employees and a handful of local projects. But over the years, the company grew. We designed roads, bridges, water infrastructure, and housing developments across the country. Recently, I began exploring opportunities abroad, and Taiwan was the first place that came to mind. So when I received the invitation to the alumni congress, I decided it was time to return."
+                },
+                {
+                    "speaker": "The Cheetah",
+                    "text": "As I walked through the exhibition hall, I noticed a booth displaying engineering projects completed by alumni around the world. Among the models stood a small bridge. It was nothing extraordinary, yet it reminded me of a miniature bridge I had built during one of my classes at NYCU."
+                },
+                {
+                    "speaker": "Exploration",
+                    "type": "point_and_click",
+                    "text": "Search the exhibition area for symbols that represent your journey from student projects to global engineering.",
+                    "items": [
+                        {
+                            "id": "mate-cup",
+                            "x": "35%",
+                            "y": "60%",
+                            "icon": "🧉",
+                            "title": "Tereré",
+                            "analysis": "Memory:\n»I spent most of my time worrying about exams, reports, and whether my Chinese was good enough to communicate with everyone around me. I often felt like an outsider, usually the only Paraguayan in the room. One afternoon, after a particularly stressful week, I sat outside with a group of classmates. I brought a bag of Paraguayan yerba mate and introduced them to tereré. Most of them had never heard of it. They laughed at the strange metal straw and asked countless questions about my country.«\n\nReflection:\nFor the first time, I realized that being different was not a weakness. The things that made me feel isolated were the same things that made me interesting to others. This tereré reminds me of the day I stopped seeing myself as a foreigner and started seeing myself as a bridge between cultures."
+                        },
+                        {
+                            "id": "bridge-blueprint",
+                            "x": "60%",
+                            "y": "50%",
+                            "icon": "🌉",
+                            "title": "Bridge Blueprint",
+                            "analysis": "Memory:\n»During my engineering classes at NYCU, I spent hours designing structures, learning to build foundations and run calculations. We built miniature models, testing load capacities and stress points, wondering if these math formulas would ever carry real-world weight.«\n\nReflection:\nThis blueprint represents more than engineering. It reminds me that the most important structures I built were the connections between Paraguay and Taiwan, connections that eventually inspired me to expand my company across the world. Roads and bridges are important, but they are ultimately designed to connect communities. In a way, that idea began during those conversations over tereré."
+                        }
+                    ]
+                },
+                {
+                    "speaker": "The Cheetah",
+                    "text": "As my company expanded, I started working with international partners. I realized that infrastructure projects are no longer purely local. The materials, technologies, and expertise often come from different countries. Globalization is not only about products moving across borders; it is also about ideas and people doing the same. My years in Taiwan showed me that collaboration across cultures creates stronger solutions than any country could achieve alone."
+                },
+                {
+                    "speaker": "The Cheetah",
+                    "text": "That is why I returned. Not only to reconnect with old friends, but also because I want to establish a branch of my company in Taiwan. Ten years ago, I arrived here as a foreign student searching for opportunities. Today, I have come back hoping to create them."
+                },
+                {
+                    "speaker": "The Cheetah",
+                    "text": "As I left the exhibition area, I spotted a refreshment table. Among the drinks was a large pitcher of iced tea. For a second, I smiled, imagining how much better it would taste mixed with tereré. Then someone called my name from across the room, and I turned around to see an old classmate waving at me."
+                }
+            ]
+        }
+    },
+    "finale": {
+        "bgClass": "bg-finale-glow",
+        "audioTrack": "finale",
+        "scenes": [
+            {
+                "speaker": "National Auditorium — NYCU",
+                "text": "The keynote presentation is underway. The slides display maps of global chip manufacturing, showing Taiwan at the center of the silicon shield. The four of them sit scattered in the audience, lost in their own thoughts..."
+            },
+            {
+                "speaker": "The Fox (Inner Monologue)",
+                "text": "I look at the neat blue lines of the supply chain maps. They look so clean, so abstract. But under those lines are the Filipino workers in Hsinchu's dorms, sharing a single room of 12 people. We talk about high-tech sovereignty, but we hide the human cost behind corporate branding..."
+            },
+            {
+                "speaker": "The Wolf (Inner Monologue)",
+                "text": "The speaker talks about the shift of economic power. My eyes wander to the local students taking meticulous notes. They want to build, to create. Back home, my peers spend their days complaining about comfort. Here, the future is written by those who actually run the track at night. I am glad I stayed..."
+            },
+            {
+                "speaker": "The Bear (Inner Monologue)",
+                "text": "Predictable. The silicon shield, the EE master's degrees, the Hsinchu Science Park... it is my entire life. The topic is so entirely predictable it is almost boring. I think of my literature teacher's book. What if I had been braver? What if I had chased what I loved? I drew art but erased it all to write schematics. Sometimes I feel like a cog in a machine whose survival depends on my burnout..."
+            },
+            {
+                "speaker": "The Cheetah (Inner Monologue)",
+                "text": "Looking at the engineering project blueprints, I see structures. But NYCU taught me that the hardest structures to build are human connections. Tereré cup by tereré cup, we bridged our differences ten years ago. Now we represent different worlds. Can we still build a bridge tonight?"
+            },
+            {
+                "speaker": "The Reunion — A Bar in Hsinchu",
+                "text": "Later that evening. The noise of the congress has faded. The four of them sit in a small, dark bar in Hsinchu. On the table are cold Taiwan Beer, Oolong tea, and empanadas. You sit with them, listening to their memories and feeling the unspoken tension."
+            },
+            {
+                "speaker": "The Reunion",
+                "text": "Ten years have passed. The class and economic differences are obvious. The air is thick with unresolved questions. You decide to address them directly."
+            },
+            {
+                "speaker": "The Reunion",
+                "type": "choice",
+                "text": "Who do you want to ask a question to next?",
+                "choices": [
+                    {
+                        "char": "cheetah",
+                        "text": "Ask The Cheetah about his return to Taiwan and infrastructure projects.",
+                        "consequence": "You turn to the Cheetah to ask about his engineering company.",
+                        "targetSceneIndex": 8
+                    },
+                    {
+                        "char": "fox",
+                        "text": "Ask The Fox about her world tour and critique of capitalism.",
+                        "consequence": "You turn to the Fox to ask about her songs and social critiques.",
+                        "targetSceneIndex": 13
+                    },
+                    {
+                        "char": "wolf",
+                        "text": "Ask The Wolf about his IT business and Hsinchu's work ethic.",
+                        "consequence": "You turn to the Wolf to ask about his startup and drive.",
+                        "targetSceneIndex": 18
+                    },
+                    {
+                        "char": "bear",
+                        "text": "Ask The Bear about her exhaustion and life under the silicon shield.",
+                        "consequence": "You turn to the Bear to ask about her work and sketches.",
+                        "targetSceneIndex": 23
+                    }
+                ]
+            },
+            {
+                "speaker": "You",
+                "text": "You ask the Cheetah: 'Your company builds bridges and infrastructure. Do you think that the human connections we built as classmates ten years ago can still bridge our different worlds today?'"
+            },
+            {
+                "speaker": "The Cheetah",
+                "text": "He smiles warmly, raising his glass. 'I believe they can. Look at us—we are from completely different continents, yet we are here. The connections are real. Remember our chaotic scooter trips?'"
+            },
+            {
+                "speaker": "The Fox",
+                "text": "She shakes her head. 'It's a nice thought, Cheetah. But even our nostalgia is a privilege. Your bridges are built in a system of massive inequality. The Wolf's tech empire runs on exploitation of migrant workers. We are not just classmates anymore; we represent different sides of a global system.'"
+            },
+            {
+                "speaker": "The Wolf",
+                "text": "He scoffs. 'And your art tours run on that same tech, Fox. This constant moralizing is exhausting. Cheetah is actually building structures, not just writing songs about them.'"
+            },
+            {
+                "speaker": "The Climax of the Discussion",
+                "type": "choice",
+                "text": "The debate about Cheetah's connections and infrastructure is heating up. How do you respond?",
+                "choices": [
+                    {
+                        "text": "De-escalate by emphasizing your shared history and student connections.",
+                        "consequence": "You speak words of peace and call for mutual respect.",
+                        "points": 2,
+                        "targetSceneIndex": 7
+                    },
+                    {
+                        "text": "Take a neutral stance, acknowledging both sides of the argument.",
+                        "consequence": "You offer a balanced perspective on individual vs system responsibility.",
+                        "points": 1,
+                        "targetSceneIndex": 7
+                    },
+                    {
+                        "text": "Acknowledge how much your paths and realities have diverged.",
+                        "consequence": "You acknowledge the gap between their different realities.",
+                        "points": 0,
+                        "targetSceneIndex": 7
+                    },
+                    {
+                        "text": "Escalate by questioning the structural ethics of infrastructure projects.",
+                        "consequence": "You point out the structural inequality of Cheetah's business.",
+                        "points": -1,
+                        "targetSceneIndex": 7
+                    }
+                ]
+            },
+            {
+                "speaker": "You",
+                "text": "You ask the Fox: 'You sing about human rights and critique high-tech capitalism. How do you cope with the feeling of being complicit in the very system you criticize?'"
+            },
+            {
+                "speaker": "The Fox",
+                "text": "She sighs, looking down. 'It's a heavy weight. I know my phone and my tours rely on these supply chains. I write songs to process that guilt and make sure the human cost isn't forgotten. It's my way of resisting.'"
+            },
+            {
+                "speaker": "The Wolf",
+                "text": "He smiles cynically. 'Resisting? You consume the benefits and ease your conscience with art. Your moral guilt is a luxury paid for by the people who actually work. It's a savior complex.'"
+            },
+            {
+                "speaker": "The Bear",
+                "text": "She looks up quietly. 'You talk about my life as a debate. For me, the cleanroom pressure is not an artistic critique. It is daily survival. We don't have the luxury of Western guilt.'"
+            },
+            {
+                "speaker": "The Climax of the Discussion",
+                "type": "choice",
+                "text": "The debate about the Fox's complicity and Western guilt is heating up. How do you respond?",
+                "choices": [
+                    {
+                        "text": "De-escalate by focusing on mutual support and validating her empathy.",
+                        "consequence": "You validate both Fox's empathy and Bear's struggle.",
+                        "points": 2,
+                        "targetSceneIndex": 7
+                    },
+                    {
+                        "text": "Take a neutral stance, acknowledging the complex paradox of modern life.",
+                        "consequence": "You offer a reflective view on the shared paradox of modern life.",
+                        "points": 1,
+                        "targetSceneIndex": 7
+                    },
+                    {
+                        "text": "Acknowledge the divide between artistic critique and daily survival.",
+                        "consequence": "You highlight the divide between artistic theory and daily survival.",
+                        "points": 0,
+                        "targetSceneIndex": 7
+                    },
+                    {
+                        "text": "Escalate by criticizing her activism as performative Western guilt.",
+                        "consequence": "You directly accuse the Fox of empty performance.",
+                        "points": -1,
+                        "targetSceneIndex": 7
+                    }
+                ]
+            },
+            {
+                "speaker": "You",
+                "text": "You ask the Wolf: 'You praise Hsinchu's relentless work ethic and startup culture. Do you feel a sense of responsibility to the community that welcomed you, or is it just about profit?'"
+            },
+            {
+                "speaker": "The Wolf",
+                "text": "He sits up straight. 'I stayed because I wanted to build, not just inherit comfort. My business creates value and jobs. That is my responsibility. Hard work is the only shield this island has.'"
+            },
+            {
+                "speaker": "The Fox",
+                "text": "'You call it a shield, Wolf, but you're not the one standing in the cleanroom,' Fox retorts. 'You've commodified their survival drive to feed your startup. It's exploitation repackaged as merit.'"
+            },
+            {
+                "speaker": "The Cheetah",
+                "text": "He raises a hand. 'Let's be fair. Building a company is hard. I built mine from scratch in Paraguay. But we must also remember where we came from and the privileges we had.'"
+            },
+            {
+                "speaker": "The Climax of the Discussion",
+                "type": "choice",
+                "text": "The debate about the Wolf's business and Hsinchu's work ethic is heating up. How do you respond?",
+                "choices": [
+                    {
+                        "text": "De-escalate by validating the effort of building something from scratch.",
+                        "consequence": "You highlight the value of both their hard work and entrepreneurial efforts.",
+                        "points": 2,
+                        "targetSceneIndex": 7
+                    },
+                    {
+                        "text": "Take a neutral stance on the balance between startup progress and human cost.",
+                        "consequence": "You weigh progress against the human cost of startup culture.",
+                        "points": 1,
+                        "targetSceneIndex": 7
+                    },
+                    {
+                        "text": "Agree with the Wolf's practical focus on business necessity.",
+                        "consequence": "You choose practicality over moral critiques.",
+                        "points": 0,
+                        "targetSceneIndex": 7
+                    },
+                    {
+                        "text": "Escalate by accusing him of exploiting burnout while keeping exit options open.",
+                        "consequence": "You critique the Wolf's privilege and his startup model.",
+                        "points": -1,
+                        "targetSceneIndex": 7
+                    }
+                ]
+            },
+            {
+                "speaker": "You",
+                "text": "You ask the Bear: 'You carry a massive burden for your family and country in the semiconductor industry. I remember the sketches you used to draw. Are you still chasing your art dreams?'"
+            },
+            {
+                "speaker": "The Bear",
+                "text": "She smiles faintly, eyes softening. 'Only in the margins of my notebooks. The silicon shield is what keeps my home safe, so I work. It is exhausting, but it is my duty.'"
+            },
+            {
+                "speaker": "The Fox",
+                "text": "'It shouldn't be your duty to burn out for global supply chains,' Fox says gently. 'You shouldn't have to erase your dreams to write schematics. The pressure is too high.'"
+            },
+            {
+                "speaker": "The Wolf",
+                "text": "He shakes his head. 'That's naive, Fox. Without the semiconductor industry, Taiwan wouldn't have its silicon shield. Her work is vital. It's about survival, not just personal dreams.'"
+            },
+            {
+                "speaker": "The Climax of the Discussion",
+                "type": "choice",
+                "text": "The debate about the Bear's dreams, duty, and the silicon shield is heating up. How do you respond?",
+                "choices": [
+                    {
+                        "text": "De-escalate by honoring her dedication and raising a glass to her sketches.",
+                        "consequence": "You honor her dedication and toast to her artistic dreams.",
+                        "points": 2,
+                        "targetSceneIndex": 7
+                    },
+                    {
+                        "text": "Take a neutral stance on the lifelong struggle of duty and personal dreams.",
+                        "consequence": "You recognize the immense difficulty of her path.",
+                        "points": 1,
+                        "targetSceneIndex": 7
+                    },
+                    {
+                        "text": "Agree that national security and duty must come before personal aspirations.",
+                        "consequence": "You agree that geopolitical survival must come before personal aspirations.",
+                        "points": 0,
+                        "targetSceneIndex": 7
+                    },
+                    {
+                        "text": "Escalate by criticizing the social pressures that demand her burnout.",
+                        "consequence": "You critique the societal system and the Bear's acceptance of it.",
+                        "points": -1,
+                        "targetSceneIndex": 7
+                    }
+                ]
+            },
+            {
+                "speaker": "The Climax of the Night",
+                "text": "The questions have all been asked, and the tensions of ten years have fully surfaced. The silence at the table is heavy as the bill arrives. The outcome of this reunion depends on how much conflict was generated tonight..."
+            },
+            {
+                "speaker": "Ending: The Shared Rhythm",
+                "text": "Your words bring a warm, unifying calm to the table. The tension dissolves into a soft, shared laugh. You all raise your glasses. 'We carry unequal weights,' Cheetah says, 'but ten years ago we shared the same tracks and same dreams.' You promise to support each other, honoring your bond above all.",
+                "nextSceneIndex": 33
+            },
+            {
+                "speaker": "Ending: Pragmatic Acceptance",
+                "text": "Your neutral, balanced stance brings a mature calm to the table. 'We live in different worlds now,' Fox says, 'but we can still respect each other's paths.' You pay the bill together. There is no fake nostalgia, but a realistic, respectful acceptance of who you all have become.",
+                "nextSceneIndex": 33
+            },
+            {
+                "speaker": "Ending: Uneasy Truce",
+                "text": "Your response cools the conversation, but the warmth does not return. You finish your drinks in polite, strained silence. You pay the bill separately. Handshakes are brief and professional. You part realizing that you have grown too far apart to ever be close friends again.",
+                "nextSceneIndex": 33
+            },
+            {
+                "speaker": "Ending: The Burning Bridge",
+                "text": "Your provocative stance pushes the argument over the edge. 'You understand nothing!' Fox shouts, while the Bear stands up, eyes filled with tears. The bill is paid in tense, angry silence. No handshakes, no goodbyes. The group walks away in separate directions. The bridge is completely burnt.",
+                "nextSceneIndex": 33
+            },
+            {
+                "speaker": "The End",
+                "text": "Thank you for playing the revised Finale! Your final choices determined the outcome: {score} points.<br><br>This visual novel explores how differing socioeconomic realities, national security pressures, and privileges shape our lives — even for those who once shared the same university halls."
+            }
+        ]
+    }
+}
