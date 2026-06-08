@@ -728,7 +728,16 @@ body {
     }
 
     .screen {
-        padding: 20px;
+        padding: 20px 15px;
+        overflow-y: auto;
+        justify-content: flex-start; /* Support vertical scroll for taller contents */
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #game-screen {
+        overflow: hidden !important;
+        justify-content: flex-start;
+        padding: 0;
     }
 
     /* Audio button adjustments for mobile */
@@ -740,43 +749,60 @@ body {
     }
 
     /* Start Screen Mobile */
+    #start-screen {
+        padding-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #start-screen h1 {
-        font-size: 3rem;
+        font-size: 2.6rem;
         margin-bottom: 10px;
         letter-spacing: 1px;
     }
 
     .subtitle {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
         margin-bottom: 20px;
     }
 
     .intro-text {
-        font-size: 0.9rem;
+        font-size: 0.88rem;
         margin-bottom: 30px;
-        line-height: 1.5;
+        line-height: 1.55;
     }
 
     /* Intro Screen Mobile */
+    #intro-screen {
+        padding-top: 6vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .intro-content h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin-bottom: 12px;
     }
 
     .shared-intro-text {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        padding: 15px;
+        font-size: 0.92rem;
+        line-height: 1.55;
+        padding: 18px 15px;
         margin-bottom: 25px;
     }
 
     /* Character Selection Mobile (2 columns grid) */
     #character-select-screen {
-        padding-top: 25px;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #character-select-screen h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin-bottom: 6px;
     }
 
@@ -861,34 +887,42 @@ body {
     }
 
     /* Choices Mobile adjustments */
+    .choice-container {
+        max-height: 55%;
+        overflow-y: auto;
+        gap: 6px;
+    }
+
     .choice-btn {
         padding: 8px 12px;
-        font-size: 0.82rem;
+        font-size: 0.85rem;
+        margin-bottom: 2px;
     }
 
     .dialogue-controls {
-        margin-top: auto;
+        margin-top: 6px;
     }
 
     /* Inspection Overlay Mobile */
-    /* Inspection Overlay Mobile */
     .inspection-card {
-        padding: 20px;
-        width: 92%;
-        height: 85%;
-        max-height: 85vh;
+        padding: 18px 15px;
+        width: 94%;
+        height: 88%;
+        max-height: 88vh;
     }
 
     .inspection-card h3 {
-        font-size: 1.35rem;
-        margin-bottom: 12px;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
     }
 
     .inspection-columns {
         grid-template-columns: 1fr !important;
         grid-template-rows: auto !important;
         gap: 12px;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
+        overflow-y: auto; /* Enable outer scrolling for stacked content */
+        padding-right: 4px;
     }
 
     .inspection-columns.has-image {
@@ -896,27 +930,35 @@ body {
     }
 
     .inspection-image-box {
-        height: 180px;
+        height: 160px;
         flex-shrink: 0;
+        padding: 8px 8px 20px 8px;
     }
 
     .inspection-box {
         padding: 12px;
+        height: auto !important;
+        min-height: auto !important;
     }
 
     .inspection-box h4 {
-        font-size: 1rem;
+        font-size: 0.95rem;
         margin-bottom: 6px;
         padding-bottom: 4px;
     }
 
+    .inspection-scroll-content {
+        overflow-y: visible !important; /* Prevent nested scrollbar */
+        max-height: none !important;
+    }
+
     .inspection-scroll-content p {
-        font-size: 0.85rem;
-        line-height: 1.5;
+        font-size: 0.84rem;
+        line-height: 1.45;
     }
     
     .secondary-btn {
-        padding: 8px 18px;
-        font-size: 0.9rem;
+        padding: 6px 14px;
+        font-size: 0.85rem;
     }
 }
