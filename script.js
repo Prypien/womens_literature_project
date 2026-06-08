@@ -32,11 +32,11 @@ const storyData = {
             scenes: [
                 {
                     speaker: "The French Girl",
-                    text: "My band was touring across Asia, and I had noticed the invitation to the event buried among my emails. I had started singing professionally seven years earlier, but my career had not exactly taken off at first; things had changed only recently when our band gained unexpected popularity after composing the soundtrack for a successful film. I was on tour with my group as a singer, and I was certainly not the kind of alumnus NYCU had in mind when organizing this congress. Still, I decided to attend the event."
+                    text: "My band was touring across Asia, and I had noticed the invitation to the event buried among my emails. I had started singing professionally seven years earlier, but my career had not exactly taken off at first ; things had changed only recently when our band gained unexpected popularity after composing the soundtrack for a successful film. I was on tour with my group as a singer, and I was certainly not the kind of alumnus NYCU had in mind when organizing this congress. Still, I decided to attend the event."
                 },
                 {
                     speaker: "The French Girl",
-                    text: "The conference I attended focused on the role of semiconductors in Taiwan and the world. It was a topic that this university had taught me a great deal about ten years ago. During my time there, I had taken a class exploring the complexity of global supply chains through geopolitics."
+                    text: "The conference I attended focused on the role of semiconductors in Taiwan and the world. It was a topic that this university had taught me a great deal about ten years ago. During my time there, I had taken a class exploring the complexity of global supply chains through geopolitics. One visit with this class, in particular, left a lasting impression on me. It was a Monday, but just a few days earlier, I had spent the weekend in the Philippines."
                 },
                 {
                     speaker: "Exploration",
@@ -49,26 +49,22 @@ const storyData = {
                             y: "55%",
                             icon: "🥥",
                             image: "french_coconut.jpg",
-                            title: "The Coconut Beach (Philippines)",
-                            analysis: "Memory:\n»One visit, in particular, left a lasting impression on me. It was a Monday, but a few days earlier, I had been lying on a beach in the Philippines with a friend, my feet in the sand, the sun warming my skin, and a coconut in my hand.«\n\nReflection:\nThis tropical ease contrasted sharply with what followed. Just days later, I was back in Taiwan, entering a very different reality. The abrupt shift from a carefree vacation in a tropical paradise to the highly industrialized Hsinchu highlighted my privileged position as a European. I could travel wherever I pleased, consume, and view the world as a playground."
+                            title: "The Coconut Beach",
+                            analysis: "Memory:\n»I had been lying on a beach, my feet in the sand, the sun warming my skin, and a coconut in my hand.«\n\nReflection:\nAnd back at school, I visited an agency for Filipino migrant workers in Hsinchu with my teacher. They had left their country to work for major electronics and semiconductor companies. Many had not seen their families for several years and sent nearly everything they earned back home. They shared a single dormitory room for 12 people and had no privacy or intimacy. I remember how small I felt. They were sacrificing their lives for their families, while I had been lying on a beach in their country just days before. And being in Taiwan, we certainly did not have the same experience of the country."
                         },
                         {
                             id: "smartphone",
                             x: "70%",
                             y: "45%",
                             icon: "📱",
-                            title: "Filipino Migrant Workers Agency",
-                            analysis: "Memory:\n»And back at school, I visited an agency for Filipino migrant workers in Hsinchu with my teacher. They had left their country to work for major electronics and semiconductor companies. Many had not seen their families for several years and sent nearly everything they earned back home. They shared a single dormitory room for 12 people and had no privacy or intimacy. I remember how small I felt. They were sacrificing their lives for their families, while I had been lying on a beach in their country just days before. And being in Taiwan, we certainly did not have the same experience of the country.«\n\nReflection:\nThis highlighted the stark inequalities embedded in globalization mechanisms and the tiny components in our phones that circulate across all these countries. As a European who could afford the latest iPhone, I was part of that system, benefiting because I was born on the \"right\" side of the world."
+                            title: "The Smartphone",
+                            analysis: "Memory:\n»The course was about the inequalities embedded in globalization mechanisms and about the tiny components in our phones that circulate across all these countries.«\n\nReflection:\nAnd as a European who could afford the latest iPhone, I was part of that system. I was benefiting from it because I was born on the “right” side of the world."
                         }
                     ]
                 },
                 {
                     speaker: "The French Girl",
-                    text: "The course was about the inequalities embedded in globalization mechanisms and about the tiny components in our phones that circulate across all these countries. And as a European who could afford the latest iPhone, I was part of that system. I was benefiting from it because I was born on the “right” side of the world."
-                },
-                {
-                    speaker: "The French Girl",
-                    text: "But what could I do? I did not have an answer at the time, and I did not throw away my phone. I still have not done it; I can feel it in my pocket right now. So what did I learn? Well, I decided not to work for big companies, and I am an artist now."
+                    text: "But what could I do? I did not have an answer at the time, and I did not throw away my phone. I still have not done it ; I can feel it in my pocket right now. So what did I learn? Well, I decided not to work for big companies, and I am an artist now."
                 }
             ]
         },
