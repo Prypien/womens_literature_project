@@ -13,8 +13,37 @@ fetch("./story.json")
     .then(res => res.json())
     .then(data => {
         storyData = data;
+        preloadGameImages();
     })
     .catch(err => console.error("Error loading story script JSON:", err));
+
+// Preload all game images in the background to avoid loading lag during gameplay
+function preloadGameImages() {
+    const imagesToPreload = [
+        "pictures/large/french_girl.jpg",
+        "pictures/large/german_guy.jpg",
+        "pictures/large/taiwanese_girl_padded.jpg",
+        "pictures/large/taiwanese_girl.jpg",
+        "pictures/large/paraguayan_man.jpg",
+        "pictures/large/reunion_bar.jpg",
+        "pictures/large/nycu_auditorium_speech.jpg",
+        "pictures/large/four_characters_listening.jpg",
+        "pictures/small/reunion_bar_door.jpg",
+        "pictures/small/french_coconut.jpg",
+        "pictures/small/french_smartphone.jpg",
+        "pictures/small/german_sports_field.jpg",
+        "pictures/small/german_passport.jpg",
+        "pictures/small/teachers_book.jpg",
+        "pictures/small/taiwanese_pencil.jpg",
+        "pictures/small/paraguayan_terere_blueprint.jpg"
+    ];
+    if (typeof Image !== 'undefined') {
+        imagesToPreload.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+    }
+}
 
 // Game variables
 let gameState = "start"; // start, intro, select, char_story, finale
