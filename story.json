@@ -271,7 +271,7 @@
                         "analysis": "Memory:\n»You stand outside the small bar in Hsinchu. Neon light glows through the glass, showing the four of them, Cheetah, Fox, Wolf, and Bear, already sitting together. The distance between them is tangible even in their postures.«\n\nReflection:\nIt is time to step inside. Pushing this door open means stepping into their past and present. Click the Next button to walk in."
                     }
                 ],
-                "bgClass": "bg-reunion-bar"
+                "bgClass": "bg-bar-door"
             },
             {
                 "speaker": "You",
