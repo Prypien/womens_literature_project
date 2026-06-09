@@ -234,19 +234,23 @@
             },
             {
                 "speaker": "The Fox (Inner Monologue)",
-                "text": "I look at the neat blue lines of the supply chain maps. They look so clean, so abstract. But under those lines are the workers we don’t talk about, like those I met 10 years later. I’m wondering why they don’t talk about the hidden cost behind corporate successes..."
+                "text": "I look at the neat blue lines of the supply chain maps. They look so clean, so abstract. But under those lines are the workers we don’t talk about, like those I met 10 years later. I’m wondering why they don’t talk about the hidden cost behind corporate successes...",
+                "bgClass": "bg-characters-listening"
             },
             {
                 "speaker": "The Wolf (Inner Monologue)",
-                "text": "The speaker talks about the shift of economic power. My eyes wander to the local students taking meticulous notes. They want to build, to create. Back home, my peers spend their days complaining about comfort. Here, the future is written by those who actually run the track at night. I am glad I stayed..."
+                "text": "The speaker talks about the shift of economic power. My eyes wander to the local students taking meticulous notes. They want to build, to create. Back home, my peers spend their days complaining about comfort. Here, the future is written by those who actually run the track at night. I am glad I stayed...",
+                "bgClass": "bg-characters-listening"
             },
             {
                 "speaker": "The Bear (Inner Monologue)",
-                "text": "Predictable. The silicon shield, the EE master's degrees, the Hsinchu Science Park... it is my entire life. The topic is so entirely predictable it is almost boring. What if I had been braver?I look at the supply chain diagrams, the equations, if I adjust my perspective, if I clear my eyes of habit, I can almost find something poetic in them."
+                "text": "Predictable. The silicon shield, the EE master's degrees, the Hsinchu Science Park... it is my entire life. The topic is so entirely predictable it is almost boring. What if I had been braver?I look at the supply chain diagrams, the equations, if I adjust my perspective, if I clear my eyes of habit, I can almost find something poetic in them.",
+                "bgClass": "bg-characters-listening"
             },
             {
                 "speaker": "The Cheetah (Inner Monologue)",
-                "text": "Looking at the engineering project blueprints, I see structures. But NYCU taught me that the hardest structures to build are human connections. I’m wondering if 10 years later, I will be able to still build bridges with my former peers."
+                "text": "Looking at the engineering project blueprints, I see structures. But NYCU taught me that the hardest structures to build are human connections. I’m wondering if 10 years later, I will be able to still build bridges with my former peers.",
+                "bgClass": "bg-characters-listening"
             },
             {
                 "speaker": "You",
