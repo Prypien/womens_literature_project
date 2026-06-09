@@ -106,7 +106,7 @@ body {
 
 /* Start Screen */
 #start-screen {
-    background: url("pictures/large/start_cover.jpg") center/cover no-repeat;
+    background: var(--bg-glow);
     text-align: center;
 }
 
@@ -137,7 +137,7 @@ body {
 
 /* Intro Screen Layout */
 #intro-screen {
-    background: url("pictures/large/guangfu_campus.jpg") center/cover no-repeat;
+    background: var(--bg-glow);
     justify-content: center;
     align-items: center;
 }
@@ -698,7 +698,8 @@ body {
 
 /* Background gradients representing different locations/moods */
 .bg-campus-sun {
-    background: url("pictures/large/guangfu_campus.jpg") center/cover no-repeat !important;
+    background: linear-gradient(to bottom, #fdecd8 0%, #f7f5f0 100%) !important;
+    background-blend-mode: normal !important;
 }
 
 .bg-french-glow {
@@ -723,7 +724,8 @@ body {
 }
 
 .bg-finale-glow {
-    background: url("pictures/large/finale_end.jpg") center/cover no-repeat !important;
+    background: radial-gradient(circle at center, #ffffff 0%, #ebe7e0 100%) !important;
+    background-blend-mode: normal !important;
 }
 
 .bg-reunion-bar {
@@ -739,7 +741,8 @@ body {
 }
 
 .bg-game-over {
-    background: url("pictures/large/finale_end.jpg") center/cover no-repeat !important;
+    background: linear-gradient(to bottom, #fcfbfa 0%, #e2ded5 100%) !important;
+    background-blend-mode: normal !important;
 }
 
 /* ==========================================================================

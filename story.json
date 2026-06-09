@@ -190,7 +190,7 @@
                             "icon": "🧉",
                             "title": "Tereré",
                             "analysis": "Memory:\n»I spent most of my time worrying about exams, reports, and whether my Chinese was good enough to communicate with everyone around me. I often felt like an outsider, usually the only Paraguayan in the room. One afternoon, after a particularly stressful week, I sat outside with a group of classmates. I brought a bag of Paraguayan yerba mate and introduced them to tereré. Most of them had never heard of it. They laughed at the strange metal straw and asked countless questions about my country.«\n\nReflection:\nFor the first time, I realized that being different was not a weakness. The things that made me feel isolated were the same things that made me interesting to others. This tereré reminds me of the day I stopped seeing myself as a foreigner and started seeing myself as a bridge between cultures.",
-                            "image": "pictures/small/paraguayan_terere.jpg"
+                            "image": "pictures/small/paraguayan_terere_blueprint.jpg"
                         },
                         {
                             "id": "bridge-blueprint",
@@ -199,7 +199,7 @@
                             "icon": "🌉",
                             "title": "Bridge Blueprint",
                             "analysis": "Memory:\n»During my engineering classes at NYCU, I spent hours designing structures, learning to build foundations and run calculations. We built miniature models, testing load capacities and stress points, wondering if these math formulas would ever carry real-world weight.«\n\nReflection:\nThis blueprint represents more than engineering. It reminds me that the most important structures I built were the connections between Paraguay and Taiwan, connections that eventually inspired me to expand my company across the world. Roads and bridges are important, but they are ultimately designed to connect communities. In a way, that idea began during those conversations over tereré.",
-                            "image": "pictures/small/paraguayan_bridge_blueprint.jpg"
+                            "image": "pictures/small/paraguayan_terere_blueprint.jpg"
                         }
                     ]
                 },
