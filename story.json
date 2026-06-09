@@ -255,7 +255,7 @@
             {
                 "speaker": "You",
                 "text": "After the presentation at a semiconductor industry conference, the attendees gather around the buffet. As you pick up a drink, you suddenly recognize four familiar faces: the Fox, the Wolf, the Bear, and the Cheetah. You all attended the same class ten years ago, but have not seen each other since. They invite you out for a drink at a bar.",
-                "bgClass": "bg-campus-sun"
+                "bgClass": "bg-bar-door"
             },
             {
                 "speaker": "You",
@@ -268,8 +268,7 @@
                         "y": "50%",
                         "icon": "🚪",
                         "title": "Hsinchu Bar Door",
-                        "analysis": "Memory:\n»You stand outside the small bar in Hsinchu. Neon light glows through the glass, showing the four of them, Cheetah, Fox, Wolf, and Bear, already sitting together. The distance between them is tangible even in their postures.«\n\nReflection:\nIt is time to step inside. Pushing this door open means stepping into their past and present. Click the Next button to walk in.",
-                        "image": "pictures/small/reunion_bar_door.jpg"
+                        "analysis": "Memory:\n»You stand outside the small bar in Hsinchu. Neon light glows through the glass, showing the four of them, Cheetah, Fox, Wolf, and Bear, already sitting together. The distance between them is tangible even in their postures.«\n\nReflection:\nIt is time to step inside. Pushing this door open means stepping into their past and present. Click the Next button to walk in."
                     }
                 ],
                 "bgClass": "bg-reunion-bar"

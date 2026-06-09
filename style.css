@@ -732,6 +732,10 @@ body {
     background: url("pictures/large/reunion_bar.jpg") center/cover no-repeat !important;
 }
 
+.bg-bar-door {
+    background: url("pictures/small/reunion_bar_door.jpg") center/cover no-repeat !important;
+}
+
 .bg-auditorium-speech {
     background: url("pictures/large/nycu_auditorium_speech.jpg") center/cover no-repeat !important;
 }
