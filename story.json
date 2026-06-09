@@ -224,7 +224,13 @@
         "scenes": [
             {
                 "speaker": "You",
-                "text": "You look at the presentation that displays maps of global chip manufacturing, showing Taiwan at the center of the silicon shield. You look around you and you see the four of them sit scattered in the audience, lost in their own thoughts…"
+                "text": "You look at the presentation that displays maps of global chip manufacturing, showing Taiwan at the center of the silicon shield.",
+                "bgClass": "bg-auditorium-speech"
+            },
+            {
+                "speaker": "You",
+                "text": "You look around you and you see the four of them sit scattered in the audience, lost in their own thoughts…",
+                "bgClass": "bg-characters-listening"
             },
             {
                 "speaker": "The Fox (Inner Monologue)",
@@ -283,25 +289,25 @@
                         "char": "cheetah",
                         "text": "Ask The Cheetah about his return to Taiwan and infrastructure projects.",
                         "consequence": "You turn to the Cheetah to ask about his engineering company.",
-                        "targetSceneIndex": 10
+                        "targetSceneIndex": 11
                     },
                     {
                         "char": "fox",
                         "text": "Ask The Fox about her world tour and critique of capitalism.",
                         "consequence": "You turn to the Fox to ask about her songs and social critiques.",
-                        "targetSceneIndex": 15
+                        "targetSceneIndex": 16
                     },
                     {
                         "char": "wolf",
                         "text": "Ask The Wolf about his IT business and Hsinchu's work ethic.",
                         "consequence": "You turn to the Wolf to ask about his startup and drive.",
-                        "targetSceneIndex": 20
+                        "targetSceneIndex": 21
                     },
                     {
                         "char": "bear",
                         "text": "Ask The Bear about her exhaustion and life under the silicon shield.",
                         "consequence": "You turn to the Bear to ask about her work and sketches.",
-                        "targetSceneIndex": 25
+                        "targetSceneIndex": 26
                     }
                 ],
                 "bgClass": "bg-reunion-bar"
@@ -335,25 +341,25 @@
                         "text": "De-escalate : Remind them of the shared laughter and common roots that transcend class.",
                         "consequence": "You say: It's true that we represent different systems now, but remember when we were students? Back then, we weren't defined by our roles or status. We were curious about the world and eager to learn from one another. Let's not allow the system to dictate how we treat each other.",
                         "points": 2,
-                        "targetSceneIndex": 9
+                        "targetSceneIndex": 10
                     },
                     {
                         "text": "Neutral: Acknowledge the value of infrastructure while validating the systemic critiques.",
                         "consequence": "You say: Cheetah's bridges are real and help people cross rivers, but Fox is right that the global supply chain often exploits the vulnerable. Both things are true at the same time. The Cheetah nods slowly, and the Fox acknowledges the nuance. ",
                         "points": 1,
-                        "targetSceneIndex": 9
+                        "targetSceneIndex": 10
                     },
                     {
                         "text": "Diverge: Agree that nostalgia shouldn't blind us to our very different realities.",
                         "consequence": "You say: We can't just pretend we're still students. Cheetah represents capital and development now, and we can't ignore the impact that has on our lives. The choices we make, the institutions we serve, the power we hold, they shape the world around us.. The Cheetah looks down, slightly hurt, while the Wolf shrugs. That's just how the real world operates.",
                         "points": 0,
-                        "targetSceneIndex": 9
+                        "targetSceneIndex": 10
                     },
                     {
                         "text": "Escalate: Accuse Cheetah's infrastructure projects of perpetuating neo-colonial exploitation.",
                         "consequence": "You say: Your bridges aren't just connections, Cheetah; they're pipelines for corporate interest that exploit local labor. You're part of the problem. The Cheetah's smile vanishes, his face turning red. I employ hundreds of local families! he says, slamming his glass down.",
                         "points": -1,
-                        "targetSceneIndex": 9
+                        "targetSceneIndex": 10
                     }
                 ],
                 "bgClass": "bg-reunion-bar"
@@ -387,25 +393,25 @@
                         "text": "De-escalate: Validate her artistic resistance while honoring the Bear's daily reality.",
                         "consequence": "You say: We are all caught in this web, but using art to keep the human cost visible is a start. It's not a complete solution, but it's better than silence. Let's support each other instead of judging.",
                         "points": 2,
-                        "targetSceneIndex": 9
+                        "targetSceneIndex": 10
                     },
                     {
                         "text": "Neutral: Reflect on the inevitable hypocrisy of living in a hyper-connected global economy.",
                         "consequence": "You say: We all buy smartphones and participate in the system. Hypocrisy is the price of admission to modern life. The best we can do is stay aware. No one's hands are clean. The Wolf stares into his drink, silent.",
                         "points": 1,
-                        "targetSceneIndex": 9
+                        "targetSceneIndex": 10
                     },
                     {
                         "text": "Side with Bear: Prioritize concrete survival over the luxury of artistic guilt.",
                         "consequence": "You say: Artistic guilt is fine, but some have to work hours to support their family and keep the tech running. The practical labor is what keeps us going.",
                         "points": 0,
-                        "targetSceneIndex": 9
+                        "targetSceneIndex": 10
                     },
                     {
                         "text": "Escalate: Criticize the Fox's activism as empty, performative Western guilt.",
                         "consequence": "You say: Critiquing high-tech capitalism is easy when you're touring and making money from it, Fox. It feels like performative guilt to make yourself feel better. A cold silence falls over the table.",
                         "points": -1,
-                        "targetSceneIndex": 9
+                        "targetSceneIndex": 10
                     }
                 ],
                 "bgClass": "bg-reunion-bar"
@@ -439,25 +445,25 @@
                         "text": "De-escalate: Appreciate the drive to build something real while reminding him of the human cost.",
                         "consequence": "You say: It takes incredible drive to build a business from scratch, Wolf, and we should respect that. But the people working those tracks deserve to share in that progress too. The Wolf pauses, his cynical look fading slightly. He nods slowly. Fair enough. Value isn't created in a vacuum.",
                         "points": 2,
-                        "targetSceneIndex": 9
+                        "targetSceneIndex": 10
                     },
                     {
                         "text": "Neutral: Balance the necessity of business survival with the ethics of labor exploitation.",
                         "consequence": "You say: Every startup must focus on survival and profit, or it dies. But ignoring the human cost will eventually destroy the community. It's a delicate balance.",
                         "points": 1,
-                        "targetSceneIndex": 9
+                        "targetSceneIndex": 10
                     },
                     {
                         "text": "Side with Wolf: Agree that building businesses and jobs is more practical than moralizing.",
                         "consequence": "You say: Moralizing doesn't pay the bills or create jobs. Wolf is actually contributing to the economy here, which is what Taiwan needs to stay strong. The Wolf smiles, raising his beer glass. Exactly. Pragmatism over empty words. The Fox shakes her head in disapproval.",
                         "points": 0,
-                        "targetSceneIndex": 9
+                        "targetSceneIndex": 10
                     },
                     {
                         "text": "Escalate: Accuse the Wolf of exploiting local burnout while keeping his Western exit options open.",
                         "consequence": "You say: You praise Hsinchu's work ethic, Wolf, but you're capitalizing on their exhaustion while you have a German passport in your pocket. If things go wrong, you can just leave. The Wolf's eyes narrow, his jaw tightening. You think I don't risk everything here? You know nothing about running a company!",
                         "points": -1,
-                        "targetSceneIndex": 9
+                        "targetSceneIndex": 10
                     }
                 ],
                 "bgClass": "bg-reunion-bar"
@@ -491,25 +497,25 @@
                         "text": "De-escalate: Raise a glass to honor both her vital work and her hidden artistic dreams.",
                         "consequence": "You say: Your work protects this island, Bear, and that is truly honorable. But those sketches in your notebook margins are beautiful. Let's raise a glass to your drawings, and may you find time for them again. The Bear's eyes well up with tears as she smiles, raising her glass. The Fox reaches over to squeeze her hand.",
                         "points": 2,
-                        "targetSceneIndex": 9
+                        "targetSceneIndex": 10
                     },
                     {
                         "text": "Neutral: Acknowledge the tragic necessity of sacrificing dreams for duty.",
                         "consequence": "You say: It's a tragic choice many must make, putting dreams on hold for security and family duty. It's not fair, but it's a reality we must respect. The Bear nods quietly. Yes. Sometimes there is no choice. We do what we must.",
                         "points": 1,
-                        "targetSceneIndex": 9
+                        "targetSceneIndex": 10
                     },
                     {
                         "text": "Side with Duty: Agree that national security and economic reality must come first.",
                         "consequence": "You say: In the real world, the silicon shield and your family's security are far more important than sketches. You made the responsible choice. The Bear nods, her expression hardening. Yes, my parents worked hard for me to be here. I cannot let them down.",
                         "points": 0,
-                        "targetSceneIndex": 9
+                        "targetSceneIndex": 10
                     },
                     {
                         "text": "Escalate: Critique the societal and geopolitical pressures that demand her burnout.",
                         "consequence": "You say: It's heartbreaking that a system demands your complete burnout and the erasure of your dreams just to feel safe. We shouldn't glorify this sacrifice.",
                         "points": -1,
-                        "targetSceneIndex": 9
+                        "targetSceneIndex": 10
                     }
                 ],
                 "bgClass": "bg-reunion-bar"
@@ -522,25 +528,25 @@
             {
                 "speaker": "You",
                 "text": "<strong>Ending: The Shared Rhythm</strong><br><br>Your words bring a warm, unifying calm to the table. The tension dissolves into a soft, shared laugh. You all raise your glasses. We carry unequal weights, Cheetah says, but ten years ago we shared the same tracks and same dreams. You promise to support each other, honoring your bond above all.",
-                "nextSceneIndex": 35,
+                "nextSceneIndex": 36,
                 "bgClass": "bg-reunion-bar"
             },
             {
                 "speaker": "You",
                 "text": "<strong>Ending: Pragmatic Acceptance</strong><br><br>Your neutral, balanced stance brings a mature calm to the table. We live in different worlds now, Fox says, but we can still respect each other's paths. You pay the bill together. There is no fake nostalgia, but a realistic, respectful acceptance of who you all have become.",
-                "nextSceneIndex": 35,
+                "nextSceneIndex": 36,
                 "bgClass": "bg-reunion-bar"
             },
             {
                 "speaker": "You",
                 "text": "<strong>Ending: Uneasy Truce</strong><br><br>Your response cools the conversation, but the warmth does not return. You finish your drinks in polite, strained silence. You pay the bill separately. Handshakes are brief and professional. You part realizing that you have grown too far apart to ever be close friends again.",
-                "nextSceneIndex": 35,
+                "nextSceneIndex": 36,
                 "bgClass": "bg-reunion-bar"
             },
             {
                 "speaker": "You",
                 "text": "<strong>Ending: The Burning Bridge</strong><br><br>Your provocative stance pushes the argument over the edge. You understand nothing! Fox shouts, while the Bear stands up, eyes filled with tears. The bill is paid in tense, angry silence. No handshakes, no goodbyes. The group walks away in separate directions. The bridge is completely burnt.",
-                "nextSceneIndex": 35,
+                "nextSceneIndex": 36,
                 "bgClass": "bg-reunion-bar"
             },
             {

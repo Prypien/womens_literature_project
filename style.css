@@ -732,6 +732,14 @@ body {
     background: url("pictures/large/reunion_bar.jpg") center/cover no-repeat !important;
 }
 
+.bg-auditorium-speech {
+    background: url("pictures/large/nycu_auditorium_speech.jpg") center/cover no-repeat !important;
+}
+
+.bg-characters-listening {
+    background: url("pictures/large/four_characters_listening.jpg") center/cover no-repeat !important;
+}
+
 .bg-game-over {
     background: linear-gradient(to bottom, #fcfbfa 0%, #e2ded5 100%) !important;
     background-blend-mode: normal !important;

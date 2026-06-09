@@ -220,11 +220,11 @@ function loadScene() {
         bgClass = charData.bgClass;
     } 
     else if (gameState === "finale") {
-        if (currentSceneIndex === 9 && askedFinaleChars.size === 4) {
-            currentSceneIndex = 30;
+        if (currentSceneIndex === 10 && askedFinaleChars.size === 4) {
+            currentSceneIndex = 31;
         }
         scene = storyData.finale.scenes[currentSceneIndex];
-        if (currentSceneIndex === 35) {
+        if (currentSceneIndex === 36) {
             scene = {
                 ...scene,
                 text: scene.text.replace("{score}", finaleScore)
@@ -292,7 +292,7 @@ function loadScene() {
         // Render choice buttons
         choiceContainer.innerHTML = "";
         scene.choices.forEach(opt => {
-            if (currentSceneIndex === 9 && opt.char && askedFinaleChars.has(opt.char)) {
+            if (currentSceneIndex === 10 && opt.char && askedFinaleChars.has(opt.char)) {
                 return; // Skip already questioned characters
             }
             const btn = document.createElement("button");
@@ -370,16 +370,16 @@ function advanceScene() {
         const currentChapter = storyData.finale;
         const scene = currentChapter.scenes[currentSceneIndex];
         
-        // Dynamic ending routing at the end of the bar discussion (scene index 30)
-        if (currentSceneIndex === 30) {
+        // Dynamic ending routing at the end of the bar discussion (scene index 31)
+        if (currentSceneIndex === 31) {
             if (finaleScore >= 6) {
-                currentSceneIndex = 31; // Ending D: The Shared Rhythm
+                currentSceneIndex = 32; // Ending D: The Shared Rhythm
             } else if (finaleScore >= 3 && finaleScore < 6) {
-                currentSceneIndex = 32; // Ending C: Pragmatic Acceptance
+                currentSceneIndex = 33; // Ending C: Pragmatic Acceptance
             } else if (finaleScore >= 0 && finaleScore < 3) {
-                currentSceneIndex = 33; // Ending B: Uneasy Truce
+                currentSceneIndex = 34; // Ending B: Uneasy Truce
             } else {
-                currentSceneIndex = 34; // Ending A: The Burning Bridge
+                currentSceneIndex = 35; // Ending A: The Burning Bridge
             }
             loadScene();
             return;
