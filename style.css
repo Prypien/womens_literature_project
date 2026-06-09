@@ -749,11 +749,15 @@ body {
    Responsive & Smartphone Portrait Optimization
    ========================================================================== */
 @media (max-width: 768px) {
+    body {
+        height: 100dvh;
+    }
+
     #game-container {
         width: 100vw;
-        height: 100vh;
+        height: 100dvh;
         max-width: 100vw;
-        max-height: 100vh;
+        max-height: 100dvh;
         border-radius: 0;
         border: none;
     }
@@ -761,11 +765,14 @@ body {
     .screen {
         padding: 20px 15px;
         overflow-y: auto;
-        justify-content: flex-start; /* Support vertical scroll for taller contents */
+        justify-content: flex-start;
         -webkit-overflow-scrolling: touch;
     }
 
     #game-screen {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
         overflow: hidden !important;
         justify-content: flex-start;
         padding: 0;
@@ -781,114 +788,124 @@ body {
 
     /* Start Screen Mobile */
     #start-screen {
-        padding-top: 10vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #start-screen h1 {
-        font-size: 2.6rem;
-        margin-bottom: 10px;
-        letter-spacing: 1px;
-    }
-
-    .subtitle {
-        font-size: 1.05rem;
-        margin-bottom: 20px;
-    }
-
-    .intro-text {
-        font-size: 0.88rem;
-        margin-bottom: 30px;
-        line-height: 1.55;
-    }
-
-    /* Intro Screen Mobile */
-    #intro-screen {
         padding-top: 6vh;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #start-screen h1 {
+        font-size: 2.4rem;
+        margin-bottom: 8px;
+        letter-spacing: 1px;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .intro-text {
+        font-size: 0.85rem;
+        margin-bottom: 25px;
+        line-height: 1.5;
+        max-width: 90%;
+    }
+
+    /* Intro Screen Mobile */
+    #intro-screen {
+        padding-top: 4vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .intro-content h2 {
-        font-size: 1.6rem;
-        margin-bottom: 12px;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
     }
 
     .shared-intro-text {
-        font-size: 0.92rem;
-        line-height: 1.55;
-        padding: 18px 15px;
-        margin-bottom: 25px;
+        font-size: 0.88rem;
+        line-height: 1.5;
+        padding: 15px 12px;
+        margin-bottom: 20px;
     }
 
     /* Character Selection Mobile (2 columns grid) */
     #character-select-screen {
-        padding-top: 40px;
+        padding-top: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     #character-select-screen h2 {
-        font-size: 1.6rem;
-        margin-bottom: 6px;
+        font-size: 1.5rem;
+        margin-bottom: 4px;
     }
 
     .select-desc {
-        font-size: 0.85rem;
-        margin-bottom: 20px;
+        font-size: 0.8rem;
+        margin-bottom: 15px;
         text-align: center;
     }
 
     .character-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-        margin-bottom: 20px;
+        gap: 10px;
+        margin-bottom: 15px;
         max-width: 100%;
     }
 
     .char-card {
-        padding: 15px 10px;
-        border-radius: 10px;
+        padding: 12px 8px;
+        border-radius: 8px;
     }
 
     .char-portrait {
-        font-size: 2.2rem;
-        width: 60px;
-        height: 60px;
-        margin-bottom: 10px;
+        font-size: 1.8rem;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
     }
 
     .char-card h3 {
-        font-size: 1rem;
-        margin-bottom: 4px;
+        font-size: 0.9rem;
+        margin-bottom: 2px;
     }
 
     .char-role {
-        font-size: 0.75rem;
-        margin-bottom: 12px;
+        font-size: 0.7rem;
+        margin-bottom: 8px;
     }
 
     .status-badge {
-        font-size: 0.7rem;
-        padding: 3px 10px;
+        font-size: 0.65rem;
+        padding: 2px 8px;
     }
 
     .primary-btn {
-        padding: 12px 30px;
-        font-size: 1rem;
+        padding: 10px 24px;
+        font-size: 0.95rem;
     }
 
-    /* Game Screen Proportional Split (52% background/clicks, 48% text) */
+    /* Game Screen Proportional Flex Layout */
     #game-background {
-        height: 52%;
+        flex: 1 1 auto;
+        height: auto;
+        position: relative;
     }
 
     #clickable-layer {
-        height: 52%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
     .clickable-item {
@@ -898,62 +915,82 @@ body {
     }
 
     #dialogue-box {
-        height: 48%;
-        padding: 16px 15px 16px 32px;
+        flex: 0 0 auto;
+        height: auto;
+        min-height: 38%;
+        max-height: 58%;
+        padding: 14px 15px 12px 30px;
         border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
+
     #dialogue-box::before {
-        left: 20px;
+        left: 18px;
     }
 
     #speaker-name {
-        font-size: 1.1rem;
-        margin-bottom: 6px;
+        font-size: 1.05rem;
+        margin-bottom: 4px;
+        flex-shrink: 0;
     }
 
     #dialogue-text {
         font-size: 0.88rem;
-        line-height: 1.5;
+        line-height: 1.45;
         margin-bottom: 6px;
+        flex: 0 1 auto;
+        overflow-y: auto;
     }
 
     /* Choices Mobile adjustments */
     .choice-container {
-        max-height: 55%;
+        flex: 0 1 auto;
+        max-height: 160px;
         overflow-y: auto;
-        gap: 6px;
+        gap: 5px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        padding-right: 4px;
     }
 
     .choice-btn {
-        padding: 8px 12px;
-        font-size: 0.85rem;
-        margin-bottom: 2px;
+        padding: 6px 10px;
+        font-size: 0.82rem;
+        margin-bottom: 0px;
+        line-height: 1.35;
     }
 
     .dialogue-controls {
-        margin-top: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+        flex-shrink: 0;
     }
 
     /* Inspection Overlay Mobile */
     .inspection-card {
-        padding: 18px 15px;
-        width: 94%;
-        height: 88%;
-        max-height: 88vh;
+        padding: 15px 12px;
+        width: 95%;
+        height: 90%;
+        max-height: 90dvh;
     }
 
     .inspection-card h3 {
-        font-size: 1.3rem;
-        margin-bottom: 10px;
+        font-size: 1.2rem;
+        margin-bottom: 8px;
     }
 
     .inspection-columns {
         grid-template-columns: 1fr !important;
         grid-template-rows: auto !important;
-        gap: 12px;
-        margin-bottom: 12px;
-        overflow-y: auto; /* Enable outer scrolling for stacked content */
-        padding-right: 4px;
+        gap: 10px;
+        margin-bottom: 10px;
+        overflow-y: auto;
+        padding-right: 2px;
+        -webkit-overflow-scrolling: touch;
     }
 
     .inspection-columns.has-image {
@@ -961,36 +998,36 @@ body {
     }
 
     .inspection-image-box {
-        height: 160px;
+        height: 140px;
         flex-shrink: 0;
-        padding: 8px 8px 20px 8px;
+        padding: 6px 6px 16px 6px;
     }
 
     .inspection-box {
-        padding: 12px;
+        padding: 10px;
         height: auto !important;
         min-height: auto !important;
     }
 
     .inspection-box h4 {
-        font-size: 0.95rem;
-        margin-bottom: 6px;
-        padding-bottom: 4px;
+        font-size: 0.88rem;
+        margin-bottom: 4px;
+        padding-bottom: 2px;
     }
 
     .inspection-scroll-content {
-        overflow-y: visible !important; /* Prevent nested scrollbar */
+        overflow-y: visible !important;
         max-height: none !important;
     }
 
     .inspection-scroll-content p {
-        font-size: 0.84rem;
-        line-height: 1.45;
+        font-size: 0.8rem;
+        line-height: 1.4;
     }
     
     .secondary-btn {
-        padding: 6px 14px;
-        font-size: 0.85rem;
+        padding: 5px 12px;
+        font-size: 0.8rem;
     }
 }
 
