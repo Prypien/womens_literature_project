@@ -745,8 +745,7 @@ body {
 }
 
 .bg-game-over {
-    background: linear-gradient(to bottom, #fcfbfa 0%, #e2ded5 100%) !important;
-    background-blend-mode: normal !important;
+    background: url("pictures/large/End.png") center/cover no-repeat !important;
 }
 
 /* ==========================================================================

@@ -28,6 +28,7 @@ function preloadGameImages() {
         "pictures/large/reunion_bar.jpg",
         "pictures/large/nycu_auditorium_speech.jpg",
         "pictures/large/four_characters_listening.jpg",
+        "pictures/large/End.png",
         "pictures/small/reunion_bar_door.jpg",
         "pictures/small/french_coconut.jpg",
         "pictures/small/french_smartphone.jpg",
