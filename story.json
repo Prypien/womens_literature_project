@@ -375,7 +375,7 @@
             },
             {
                 "speaker": "The Bear",
-                "text": "She looks up quietly. 'You talk about my life as a debate. I don't claim to have all the answers. What I do know is that my art helps people.'",
+                "text": "She looks up quietly. 'You both talk about my life as a theoretical debate. \"Exploitation\" vs \"meritocracy\". But for me, it is structural pressure. If I don't work, my family has no security, and our tech shield crumbles. It is survival, not a choice.'",
                 "bgClass": "bg-reunion-bar"
             },
             {
@@ -385,7 +385,7 @@
                 "choices": [
                     {
                         "text": "De-escalate: Validate her artistic resistance while honoring the Bear's daily reality.",
-                        "consequence": "You say: 'We are all caught in this web, but using art to keep the human cost visible is a start. It's not a complete solution, but it's better than silence. Let's support each other instead of judging.' The Fox looks up, grateful, and the Bear nods softly. 'Yes, I really enjoy listening to your songs. They make my long hours feel a little shorter.'",
+                        "consequence": "You say: 'We are all caught in this web, but using art to keep the human cost visible is a start. It's not a complete solution, but it's better than silence. Let's support each other instead of judging.'",
                         "points": 2,
                         "targetSceneIndex": 9
                     },
@@ -507,7 +507,7 @@
                     },
                     {
                         "text": "Escalate: Critique the societal and geopolitical pressures that demand her burnout.",
-                        "consequence": "You say: 'It's heartbreaking that a system demands your complete burnout and the erasure of your dreams just to feel safe. We shouldn't glorify this sacrifice.' The Bear flinches, looking defensive. 'It's easy for you to criticize our society when you don't face our threats!' she says, her voice trembling.",
+                        "consequence": "You say: 'It's heartbreaking that a system demands your complete burnout and the erasure of your dreams just to feel safe. We shouldn't glorify this sacrifice.'",
                         "points": -1,
                         "targetSceneIndex": 9
                     }
