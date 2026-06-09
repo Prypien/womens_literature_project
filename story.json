@@ -38,7 +38,7 @@
                             "x": "25%",
                             "y": "55%",
                             "icon": "🥥",
-                            "image": "pictures/french_coconut.jpg",
+                            "image": "pictures/small/french_coconut.jpg",
                             "title": "The Coconut Beach",
                             "analysis": "Memory:\n»I had been lying on a beach, my feet in the sand, the sun warming my skin, and a coconut in my hand.«\n\nReflection:\nAnd back at school, I visited an agency for Filipino migrant workers in Hsinchu with my teacher. They had left their country to work for major electronics and semiconductor companies. Many had not seen their families for several years and sent nearly everything they earned back home. They shared a single dormitory room for 12 people and had no privacy or intimacy. I remember how small I felt. They were sacrificing their lives for their families, while I had been lying on a beach in their country just days before. And being in Taiwan, we certainly did not have the same experience of the country."
                         },
@@ -48,7 +48,8 @@
                             "y": "45%",
                             "icon": "📱",
                             "title": "The Smartphone",
-                            "analysis": "Memory:\n»The course was about the inequalities embedded in globalization mechanisms and about the tiny components in our phones that circulate across all these countries.«\n\nReflection:\nAnd as a European who could afford the latest iPhone, I was part of that system. I was benefiting from it because I was born on the “right” side of the world."
+                            "analysis": "Memory:\n»The course was about the inequalities embedded in globalization mechanisms and about the tiny components in our phones that circulate across all these countries.«\n\nReflection:\nAnd as a European who could afford the latest iPhone, I was part of that system. I was benefiting from it because I was born on the “right” side of the world.",
+                            "image": "pictures/small/french_smartphone.jpg"
                         }
                     ]
                 },
@@ -89,7 +90,7 @@
                             "icon": "🏃",
                             "title": "The NYCU Running Track at Night",
                             "analysis": "Memory:\n»I remember the NYCU running track at night. It was never empty. Under the harsh floodlights, through the thick, heavy air, people were running. Students who had spent twelve hours in the labs, professors, local residents, they didn't just exercise; they strived. There was an absolute focus on performance, an unapologetic culture of merit and execution. I used to go there after the gym, drinking my creatine, watching them, maybe even admiring them.«\n\nReflection:\nWhile my home country back then was already settling into a comfortable, sluggish decadence, complaining about minor inconveniences while living off the accumulated wealth of past decades, Taiwan was a revelation of raw, disciplined energy. In Germany, we had become comfortable living like maggots in bacon, inheriting a massive economic empire we didn't create, losing our drive, hiding our stagnation behind moral grandstanding and pretending to be the world’s police. But here, nobody was pretending. People just put their heads down and worked. From the high-tech engineers to the night market vendors shouting into the neon-lit night, there was a shared conviction: your worth is defined by what you create, not by what your ancestors left behind.",
-                            "image": "pictures/german_sports_field.jpg"
+                            "image": "pictures/small/german_sports_field.jpg"
                         },
                         {
                             "id": "passport",
@@ -97,7 +98,8 @@
                             "y": "40%",
                             "icon": "🛂",
                             "title": "Inherited Shadows & Privilege",
-                            "analysis": "Memory:\n»Being the \"white, privileged man\" in Taiwan felt bizarre. I was treated like a beauty ideal and an economic powerhouse based on a legacy that was already crumbling from the inside. My country had lost its focus on digital innovation, its cheap energy, its security, and its work ethic. I felt like the heir to a dying kingdom, enjoying the residual respect of a world that hadn't fully realized we were running on empty.«\n\nReflection:\nTaiwan didn't make me feel superior; it forced me to look up. It made me realize that if the economic axis of the last century had been different, the global ideals of privilege would be completely reversed. I didn't want to be the maggot anymore. I wanted to build my own foundation. The intense drive of this island demanded more of me, setting a bar that I still fear I will never fully reach."
+                            "analysis": "Memory:\n»Being the \"white, privileged man\" in Taiwan felt bizarre. I was treated like a beauty ideal and an economic powerhouse based on a legacy that was already crumbling from the inside. My country had lost its focus on digital innovation, its cheap energy, its security, and its work ethic. I felt like the heir to a dying kingdom, enjoying the residual respect of a world that hadn't fully realized we were running on empty.«\n\nReflection:\nTaiwan didn't make me feel superior; it forced me to look up. It made me realize that if the economic axis of the last century had been different, the global ideals of privilege would be completely reversed. I didn't want to be the maggot anymore. I wanted to build my own foundation. The intense drive of this island demanded more of me, setting a bar that I still fear I will never fully reach.",
+                            "image": "pictures/small/german_passport.jpg"
                         }
                     ]
                 },
@@ -138,7 +140,7 @@
                             "icon": "📖",
                             "title": "Teacher's Book",
                             "analysis": "Memory:\n»I thought of my writing teacher and that book of hers she handed me, long ago. I wonder how it would have felt to be her, changing paths from engineering to literature in college. When reading that book, I could smell the bitter yet floral taste of the tea she wrote, as if she had carved down the aroma with her pencil, and it made me sober.«\n\nReflection:\nI couldn’t help but think back to my choices. What if I had chosen what I was most interested in? She had already chosen what she would, when she was in my place. If she were at this conference now, she would have enjoyed listening to stories from different walks of life. If I had made a different choice back then, maybe I would have, too.",
-                            "image": "pictures/teachers_book.jpg"
+                            "image": "pictures/small/teachers_book.jpg"
                         },
                         {
                             "id": "pencil",
@@ -146,7 +148,8 @@
                             "y": "45%",
                             "icon": "✏️",
                             "title": "The Drafting Pencil",
-                            "analysis": "Memory:\n»My pencil stays only as a pencil. Back in school, I wrote down equations. I wrote schematics. I drew art, but then erased them. But what if I hadn’t? What if I had been braver, what if I hadn't gone with the flow, what if I had ignored the fact that I had no talent and went after what I loved?«\n\nReflection:\nThough there’s always that pencil sketching out dreams in my head, dreams that I always claim never existed. I let that pencil cross them out again and again, but what’s there will always be there. Sometimes I wonder if it’s really worth it, living this way."
+                            "analysis": "Memory:\n»My pencil stays only as a pencil. Back in school, I wrote down equations. I wrote schematics. I drew art, but then erased them. But what if I hadn’t? What if I had been braver, what if I hadn't gone with the flow, what if I had ignored the fact that I had no talent and went after what I loved?«\n\nReflection:\nThough there’s always that pencil sketching out dreams in my head, dreams that I always claim never existed. I let that pencil cross them out again and again, but what’s there will always be there. Sometimes I wonder if it’s really worth it, living this way.",
+                            "image": "pictures/small/taiwanese_pencil.jpg"
                         }
                     ]
                 },
@@ -187,7 +190,7 @@
                             "icon": "🧉",
                             "title": "Tereré",
                             "analysis": "Memory:\n»I spent most of my time worrying about exams, reports, and whether my Chinese was good enough to communicate with everyone around me. I often felt like an outsider, usually the only Paraguayan in the room. One afternoon, after a particularly stressful week, I sat outside with a group of classmates. I brought a bag of Paraguayan yerba mate and introduced them to tereré. Most of them had never heard of it. They laughed at the strange metal straw and asked countless questions about my country.«\n\nReflection:\nFor the first time, I realized that being different was not a weakness. The things that made me feel isolated were the same things that made me interesting to others. This tereré reminds me of the day I stopped seeing myself as a foreigner and started seeing myself as a bridge between cultures.",
-                            "image": "pictures/paraguayan_terere_blueprint.jpg"
+                            "image": "pictures/small/paraguayan_terere.jpg"
                         },
                         {
                             "id": "bridge-blueprint",
@@ -196,7 +199,7 @@
                             "icon": "🌉",
                             "title": "Bridge Blueprint",
                             "analysis": "Memory:\n»During my engineering classes at NYCU, I spent hours designing structures, learning to build foundations and run calculations. We built miniature models, testing load capacities and stress points, wondering if these math formulas would ever carry real-world weight.«\n\nReflection:\nThis blueprint represents more than engineering. It reminds me that the most important structures I built were the connections between Paraguay and Taiwan, connections that eventually inspired me to expand my company across the world. Roads and bridges are important, but they are ultimately designed to connect communities. In a way, that idea began during those conversations over tereré.",
-                            "image": "pictures/paraguayan_terere_blueprint.jpg"
+                            "image": "pictures/small/paraguayan_bridge_blueprint.jpg"
                         }
                     ]
                 },
@@ -250,7 +253,8 @@
                         "y": "50%",
                         "icon": "🚪",
                         "title": "Hsinchu Bar Door",
-                        "analysis": "Memory:\n»You stand outside the small bar in Hsinchu. Neon light glows through the glass, showing the four of them—Cheetah, Fox, Wolf, and Bear—already sitting together. The distance between them is tangible even in their postures.«\n\nReflection:\nIt is time to step inside. Pushing this door open means stepping into their past and present. Click the 'Next' button to walk in."
+                        "analysis": "Memory:\n»You stand outside the small bar in Hsinchu. Neon light glows through the glass, showing the four of them—Cheetah, Fox, Wolf, and Bear—already sitting together. The distance between them is tangible even in their postures.«\n\nReflection:\nIt is time to step inside. Pushing this door open means stepping into their past and present. Click the 'Next' button to walk in.",
+                        "image": "pictures/small/reunion_bar_door.jpg"
                     }
                 ],
                 "bgClass": "bg-reunion-bar"

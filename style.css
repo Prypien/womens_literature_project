@@ -703,24 +703,24 @@ body {
 }
 
 .bg-french-glow {
-    background: url("pictures/french_girl.jpg") center/cover no-repeat !important;
+    background: url("pictures/large/french_girl.jpg") center/cover no-repeat !important;
 }
 
 .bg-german-glow {
-    background: url("pictures/german_guy.jpg") center/cover no-repeat !important;
+    background: url("pictures/large/german_guy.jpg") center/cover no-repeat !important;
 }
 
 .bg-taiwanese-glow {
-    background: url("pictures/taiwanese_girl_padded.jpg") center/cover no-repeat !important; /* using padded version for nicer alignment if available */
+    background: url("pictures/large/taiwanese_girl_padded.jpg") center/cover no-repeat !important; /* using padded version for nicer alignment if available */
 }
 
 /* Fallback if padded taiwanese image isn't the primary one */
 .bg-taiwanese-glow-original {
-    background: url("pictures/taiwanese_girl.jpg") center/cover no-repeat !important;
+    background: url("pictures/large/taiwanese_girl.jpg") center/cover no-repeat !important;
 }
 
 .bg-southamerican-glow {
-    background: url("pictures/paraguayan_man.jpg") center/cover no-repeat !important;
+    background: url("pictures/large/paraguayan_man.jpg") center/cover no-repeat !important;
 }
 
 .bg-finale-glow {
@@ -729,7 +729,7 @@ body {
 }
 
 .bg-reunion-bar {
-    background: url("pictures/reunion_bar.jpg") center/cover no-repeat !important;
+    background: url("pictures/large/reunion_bar.jpg") center/cover no-repeat !important;
 }
 
 .bg-game-over {
