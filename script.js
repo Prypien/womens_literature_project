@@ -422,16 +422,19 @@ function inspectItem(item) {
     inspectionMemoryText.textContent = memoryText;
     inspectionReflectionText.textContent = reflectionText;
     
-    // Dynamic image loading
+    // Set item closeup image in the background instead of popup card
     if (item.image) {
-        inspectionImg.src = item.image;
-        inspectionImgBox.classList.remove("hidden");
-        inspectionCols.classList.add("has-image");
-    } else {
-        inspectionImg.src = "";
-        inspectionImgBox.classList.add("hidden");
-        inspectionCols.classList.remove("has-image");
+        gameBg.dataset.originalClass = gameBg.className;
+        gameBg.className = "";
+        gameBg.style.backgroundImage = `url("${item.image}")`;
+        gameBg.style.backgroundSize = "cover";
+        gameBg.style.backgroundPosition = "center";
     }
+    
+    // Always hide popup image box so popup uses clean 50/50 split
+    inspectionImg.src = "";
+    inspectionImgBox.classList.add("hidden");
+    inspectionCols.classList.remove("has-image");
     
     inspectionOverlay.classList.remove("hidden");
     
@@ -448,6 +451,13 @@ function inspectItem(item) {
 // Close item inspection
 function closeInspection() {
     inspectionOverlay.classList.add("hidden");
+    
+    // Restore original background
+    if (gameBg.dataset.originalClass) {
+        gameBg.className = gameBg.dataset.originalClass;
+        gameBg.style.backgroundImage = "";
+        delete gameBg.dataset.originalClass;
+    }
     
     let scene;
     if (gameState === "finale") {
