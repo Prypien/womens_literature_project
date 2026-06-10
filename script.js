@@ -503,7 +503,7 @@ function showEndScreen() {
     gameBg.className = "bg-game-over";
     clickableLayer.innerHTML = "";
     speakerName.textContent = "THE END";
-    dialogueText.innerHTML = "<strong>Congratulations!</strong> You have played through all perspectives and the shared finale.<br><br>Thank you!";
+    dialogueText.innerHTML = "<strong>Congratulations!</strong> You have played through all perspectives and the shared finale.<br><br>Thank you! If you want to play again, click the Play Again Button.";
 
     nextBtn.textContent = "Play Again ↺";
     nextBtn.addEventListener("click", () => {
