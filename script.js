@@ -136,7 +136,7 @@ function playTrack() {
         bgMusic.src = src;
         bgMusic.load();
     }
-    
+
     if (!isAudioMuted && bgMusic.paused) {
         bgMusic.play().catch(e => console.log("Audio play blocked by browser:", e));
     }
@@ -144,7 +144,7 @@ function playTrack() {
 
 function toggleAudio() {
     isAudioMuted = !isAudioMuted;
-    
+
     if (isAudioMuted) {
         bgMusic.pause();
         audioIcon.textContent = "🔇";
@@ -161,7 +161,7 @@ function toggleAudio() {
 // Transition screens
 function transitionTo(state) {
     gameState = state;
-    
+
     startScreen.classList.remove("active");
     introScreen.classList.remove("active");
     selectScreen.classList.remove("active");
@@ -170,12 +170,12 @@ function transitionTo(state) {
     if (state === "intro") {
         introScreen.classList.add("active");
         playTrack();
-    } 
+    }
     else if (state === "select") {
         selectScreen.classList.add("active");
         playTrack();
         updateSelectionScreen();
-    } 
+    }
     else if (state === "char_story") {
         gameScreen.classList.add("active");
         currentSceneIndex = 0;
@@ -183,7 +183,7 @@ function transitionTo(state) {
         backToSelectBtn.classList.remove("hidden");
         playTrack();
         loadScene();
-    } 
+    }
     else if (state === "finale") {
         gameScreen.classList.add("active");
         currentSceneIndex = 0;
@@ -207,7 +207,7 @@ function updateSelectionScreen() {
     document.querySelectorAll(".char-card").forEach(card => {
         const charKey = card.dataset.char;
         let badge = card.querySelector(".status-badge");
-        
+
         if (completedChars.has(charKey)) {
             card.classList.add("completed");
             if (!badge) {
@@ -223,7 +223,7 @@ function updateSelectionScreen() {
             }
         }
     });
-    
+
     // Unlock finale if all 4 are completed
     if (completedChars.size === 4) {
         startFinaleBtn.classList.remove("hidden");
@@ -242,13 +242,13 @@ function loadScene() {
         scene = storyData.intro.scenes[currentSceneIndex];
         title = "Introduction";
         bgClass = storyData.intro.bgClass;
-    } 
+    }
     else if (gameState === "char_story") {
         const charData = storyData.characters[selectedChar];
         scene = charData.scenes[currentSceneIndex];
         title = `${charData.name} (${charData.role})`;
         bgClass = charData.bgClass;
-    } 
+    }
     else if (gameState === "finale") {
         if (currentSceneIndex === 10 && askedFinaleChars.size === 4) {
             currentSceneIndex = 31;
@@ -273,7 +273,7 @@ function loadScene() {
 
     clickableLayer.innerHTML = "";
     clickableLayer.style.pointerEvents = "none";
-    
+
     // Hide choice box
     choiceContainer.innerHTML = "";
     choiceContainer.classList.add("hidden");
@@ -302,7 +302,7 @@ function loadScene() {
             itemEl.style.top = item.y;
             itemEl.textContent = item.icon;
             itemEl.dataset.id = item.id;
-            
+
             if (foundItems.has(item.id)) {
                 itemEl.style.opacity = "0.4";
                 itemEl.style.pointerEvents = "none";
@@ -310,15 +310,15 @@ function loadScene() {
             } else {
                 itemEl.addEventListener("click", () => inspectItem(item));
             }
-            
+
             clickableLayer.appendChild(itemEl);
         });
-    } 
+    }
     else if (scene.type === "choice") {
         nextBtn.style.display = "none";
         speakerName.textContent = scene.speaker || title;
         typeWriterEffect(dialogueText, scene.text);
-        
+
         // Render choice buttons
         choiceContainer.innerHTML = "";
         scene.choices.forEach(opt => {
@@ -332,7 +332,7 @@ function loadScene() {
             choiceContainer.appendChild(btn);
         });
         choiceContainer.classList.remove("hidden");
-    } 
+    }
     else {
         nextBtn.style.display = "inline-block";
         nextBtn.textContent = "Next ▶";
@@ -345,21 +345,21 @@ function loadScene() {
 function makeChoice(opt) {
     choiceContainer.classList.add("hidden");
     typeWriterEffect(dialogueText, opt.consequence);
-    
+
     if (opt.points !== undefined) {
         finaleScore += opt.points;
     }
-    
+
     if (opt.char !== undefined) {
         askedFinaleChars.add(opt.char);
     }
-    
+
     if (opt.targetSceneIndex !== undefined) {
         consequenceRedirectIndex = opt.targetSceneIndex;
     } else {
         consequenceRedirectIndex = null;
     }
-    
+
     nextBtn.style.display = "inline-block";
 }
 
@@ -383,23 +383,23 @@ function advanceScene() {
         } else {
             transitionTo("select");
         }
-    } 
+    }
     else if (gameState === "char_story") {
         const charData = storyData.characters[selectedChar];
         maxScenes = charData.scenes.length;
         currentSceneIndex++;
-        
+
         if (currentSceneIndex < maxScenes) {
             loadScene();
         } else {
             completedChars.add(selectedChar);
             transitionTo("select");
         }
-    } 
+    }
     else if (gameState === "finale") {
         const currentChapter = storyData.finale;
         const scene = currentChapter.scenes[currentSceneIndex];
-        
+
         // Dynamic ending routing at the end of the bar discussion (scene index 31)
         if (currentSceneIndex === 31) {
             if (finaleScore >= 6) {
@@ -424,7 +424,7 @@ function advanceScene() {
 
         maxScenes = currentChapter.scenes.length;
         currentSceneIndex++;
-        
+
         if (currentSceneIndex < maxScenes) {
             loadScene();
         } else {
@@ -436,10 +436,10 @@ function advanceScene() {
 // Item clicked
 function inspectItem(item) {
     inspectionTitle.textContent = item.title;
-    
+
     let memoryText = "";
     let reflectionText = "";
-    
+
     if (item.analysis.includes("\n\nReflection:\n")) {
         const parts = item.analysis.split("\n\nReflection:\n");
         memoryText = parts[0].replace(/^Memory:\n/, "");
@@ -448,10 +448,10 @@ function inspectItem(item) {
         memoryText = item.analysis.replace(/^Memory:\n/, "");
         reflectionText = "";
     }
-    
+
     inspectionMemoryText.textContent = memoryText;
     inspectionReflectionText.textContent = reflectionText;
-    
+
     // Show item closeup image inside the popup card
     if (item.image) {
         inspectionImg.src = item.image;
@@ -462,11 +462,11 @@ function inspectItem(item) {
         inspectionImgBox.classList.add("hidden");
         inspectionCols.classList.remove("has-image");
     }
-    
+
     inspectionOverlay.classList.remove("hidden");
-    
+
     foundItems.add(item.id);
-    
+
     const el = clickableLayer.querySelector(`[data-id="${item.id}"]`);
     if (el) {
         el.style.opacity = "0.4";
@@ -478,7 +478,7 @@ function inspectItem(item) {
 // Close item inspection
 function closeInspection() {
     inspectionOverlay.classList.add("hidden");
-    
+
     let scene;
     if (gameState === "finale") {
         scene = storyData.finale.scenes[currentSceneIndex];
@@ -486,7 +486,7 @@ function closeInspection() {
         const charData = storyData.characters[selectedChar];
         scene = charData.scenes[currentSceneIndex];
     }
-    
+
     const allFound = scene.items.every(item => foundItems.has(item.id));
     if (allFound) {
         if (gameState === "finale") {
@@ -503,8 +503,8 @@ function showEndScreen() {
     gameBg.className = "bg-game-over";
     clickableLayer.innerHTML = "";
     speakerName.textContent = "THE END";
-    dialogueText.innerHTML = "<strong>Congratulations!</strong> You have played through all perspectives and the shared finale.<br><br>This project creatively demonstrates how different socio-economic backgrounds and identities shape the experience of the exact same place — in the spirit of Zadie Smith's <em>Swing Time</em>. You have built a solid literary and technical foundation.";
-    
+    dialogueText.innerHTML = "<strong>Congratulations!</strong> You have played through all perspectives and the shared finale.<br><br>Thank you!";
+
     nextBtn.textContent = "Play Again ↺";
     nextBtn.addEventListener("click", () => {
         location.reload();
@@ -520,7 +520,7 @@ function typeWriterEffect(element, text) {
 
     element.innerHTML = "";
     let i = 0;
-    
+
     if (text.includes("<") || text.length < 15) {
         element.innerHTML = text;
         return;
