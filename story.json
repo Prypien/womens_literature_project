@@ -4,7 +4,7 @@
         "scenes": [
             {
                 "speaker": "Guangfu Campus — Hsinchu",
-                "text": "June is scorching hot on the Guangfu campus. The air feels heavy and oppressive; the sound of cicadas fills the background while people hurry across the campus, eager to spend as little time as possible under the blazing sun and to reach the air-conditioned buildings."
+                "text": "June is scorching hot on the Guangfu campus. The air feels heavy and oppressive, the sound of cicadas fills the background while people hurry across the campus, eager to spend as little time as possible under the blazing sun and to reach the air-conditioned buildings."
             },
             {
                 "speaker": "Guangfu Campus — Hsinchu",
@@ -22,7 +22,7 @@
             "scenes": [
                 {
                     "speaker": "The Fox",
-                    "text": "My band was touring across Asia, and I had noticed the invitation to the event buried among my emails. I had started singing professionally seven years earlier, but my career had not exactly taken off at first ; things had changed only recently when our band gained unexpected popularity after composing the soundtrack for a successful film. I was on tour with my group as a singer, and I was certainly not the kind of alumnus NYCU had in mind when organizing this congress. Still, I decided to attend the event."
+                    "text": "My band was touring across Asia, and I have noticed the invitation to the event buried among my emails. I have started singing professionally seven years earlier, but my career had not exactly taken off at first, things had changed only recently when our band gained unexpected popularity after composing the soundtrack for a successful film. I was on tour with my group as a singer, and I was certainly not the kind of alumnus the NYCU had in mind when organizing this congress. Still, I decided to attend the event."
                 },
                 {
                     "speaker": "The Fox",
@@ -55,7 +55,7 @@
                 },
                 {
                     "speaker": "The Fox",
-                    "text": "But what could I do? I did not have an answer at the time, and I did not throw away my phone. I still have not done it ; I can feel it in my pocket right now. So what did I learn? Well, I decided not to work for big companies, and I am an artist now."
+                    "text": "But what could I do? I did not have an answer at the time, and I did not throw away my phone. I still have not done it , I can feel it in my pocket right now. So what did I learn? Well, I decided not to work for big companies, and I am an artist now."
                 }
             ]
         },
@@ -89,7 +89,7 @@
                             "y": "60%",
                             "icon": "🏃",
                             "title": "The NYCU Running Track at Night",
-                            "analysis": "Memory:\n»I remember the NYCU running track at night. It was never empty. Under the harsh floodlights, through the thick, heavy air, people were running. Students who had spent twelve hours in the labs, professors, local residents, they didn't just exercise; they strived. There was an absolute focus on performance, an unapologetic culture of merit and execution. I used to go there after the gym, drinking my creatine, watching them, maybe even admiring them.«\n\nReflection:\nWhile my home country back then was already settling into a comfortable, sluggish decadence, complaining about minor inconveniences while living off the accumulated wealth of past decades, Taiwan was a revelation of raw, disciplined energy. In Germany, we had become comfortable living like maggots in bacon, inheriting a massive economic empire we didn't create, losing our drive, hiding our stagnation behind moral grandstanding and pretending to be the world’s police. But here, nobody was pretending. People just put their heads down and worked. From the high-tech engineers to the night market vendors shouting into the neon-lit night, there was a shared conviction: your worth is defined by what you create, not by what your ancestors left behind.",
+                            "analysis": "Memory:\n»I remember the NYCU running track at night. It was never empty. Under the harsh floodlights, through the thick, heavy air, people were running. Students who had spent twelve hours in the labs, professors, local residents, they didn't just exercise, they strived. There was an absolute focus on performance, an unapologetic culture of merit and execution. I used to go there after the gym, drinking my creatine, watching them, maybe even admiring them.«\n\nReflection:\nWhile my home country back then was already settling into a comfortable, sluggish decadence, complaining about minor inconveniences while living off the accumulated wealth of past decades, Taiwan was a revelation of raw, disciplined energy. In Germany, we had become comfortable living like maggots in bacon, inheriting a massive economic empire we didn't create, losing our drive, hiding our stagnation behind moral grandstanding and pretending to be the world’s police. But here, nobody was pretending. People just put their heads down and worked. From the high-tech engineers to the night market vendors shouting into the neon-lit night, there was a shared conviction: your worth is defined by what you create, not by what your ancestors left behind.",
                             "image": "pictures/small/german_sports_field.jpg"
                         },
                         {
@@ -98,7 +98,7 @@
                             "y": "40%",
                             "icon": "🛂",
                             "title": "Inherited Shadows & Privilege",
-                            "analysis": "Memory:\n»Being the white, privileged man in Taiwan felt bizarre. I was treated like a beauty ideal and an economic powerhouse based on a legacy that was already crumbling from the inside. My country had lost its focus on digital innovation, its cheap energy, its security, and its work ethic. I felt like the heir to a dying kingdom, enjoying the residual respect of a world that hadn't fully realized we were running on empty.«\n\nReflection:\nTaiwan didn't make me feel superior; it forced me to look up. It made me realize that if the economic axis of the last century had been different, the global ideals of privilege would be completely reversed. I didn't want to be the maggot anymore. I wanted to build my own foundation. The intense drive of this island demanded more of me, setting a bar that I still fear I will never fully reach.",
+                            "analysis": "Memory:\n»Being the white, privileged man in Taiwan felt bizarre. I was treated like a beauty ideal and an economic powerhouse based on a legacy that was already crumbling from the inside. My country had lost its focus on digital innovation, its cheap energy, its security, and its work ethic. I felt like the heir to a dying kingdom, enjoying the residual respect of a world that hadn't fully realized we were running on empty.«\n\nReflection:\nTaiwan didn't make me feel superior, it forced me to look up. It made me realize that if the economic axis of the last century had been different, the global ideals of privilege would be completely reversed. I didn't want to be the maggot anymore. I wanted to build my own foundation. The intense drive of this island demanded more of me, setting a bar that I still fear I will never fully reach.",
                             "image": "pictures/small/german_passport.jpg"
                         }
                     ]
@@ -109,7 +109,7 @@
                 },
                 {
                     "speaker": "The Wolf",
-                    "text": "I smile softly, step away from the glass, and walk back into the crowd. I am no longer a ghost of a fading West; I am exactly where I belong, creating something that matters."
+                    "text": "I smile softly, step away from the glass, and walk back into the crowd. I am no longer a ghost of a fading West, I am exactly where I belong, creating something that matters."
                 }
             ]
         },
@@ -205,7 +205,7 @@
                 },
                 {
                     "speaker": "The Cheetah",
-                    "text": "As my company expanded, I started working with international partners. I realized that infrastructure projects are no longer purely local. The materials, technologies, and expertise often come from different countries. Globalization is not only about products moving across borders; it is also about ideas and people doing the same. My years in Taiwan showed me that collaboration across cultures creates stronger solutions than any country could achieve alone."
+                    "text": "As my company expanded, I started working with international partners. I realized that infrastructure projects are no longer purely local. The materials, technologies, and expertise often come from different countries. Globalization is not only about products moving across borders, it is also about ideas and people doing the same. My years in Taiwan showed me that collaboration across cultures creates stronger solutions than any country could achieve alone."
                 },
                 {
                     "speaker": "The Cheetah",
@@ -327,7 +327,7 @@
             },
             {
                 "speaker": "The Fox",
-                "text": "She shakes her head. It's a nice thought, Cheetah. But nostalgia is a privilege. Your bridges are built in a system of massive inequality. Look at the Wolf. He runs a company that exploits migrant workers. We are not just classmates anymore; we represent different sides of a global system.",
+                "text": "She shakes her head. It's a nice thought, Cheetah. But nostalgia is a privilege. Your bridges are built in a system of massive inequality. Look at the Wolf. He runs a company that exploits migrant workers. We are not just classmates anymore, we represent different sides of a global system.",
                 "bgClass": "bg-reunion-bar"
             },
             {
@@ -360,7 +360,7 @@
                     },
                     {
                         "text": "Accuse Cheetah's infrastructure projects of perpetuating neo-colonial exploitation.",
-                        "consequence": "You say: Your bridges aren't just connections, Cheetah; they're pipelines for corporate interest that exploit local labor. You're part of the problem. The Cheetah's smile vanishes, his face turning red. I employ hundreds of local families! he says, slamming his glass down.",
+                        "consequence": "You say: Your bridges aren't just connections, Cheetah, they're pipelines for corporate interest that exploit local labor. You're part of the problem. The Cheetah's smile vanishes, his face turning red. I employ hundreds of local families! he says, slamming his glass down.",
                         "points": -1,
                         "targetSceneIndex": 10
                     }
@@ -554,7 +554,7 @@
             },
             {
                 "speaker": "The End",
-                "text": "Thank you for playing the revised Finale! Your final choices determined the outcome: {score} points.<br><br>This visual novel explores how differing socioeconomic realities, national security pressures, and privileges shape our lives, even for those who once shared the same university halls."
+                "text": "Thank you for playing the Finale! Your final choices determined the outcome: {score} points.<br><br>This visual novel explores how differing socioeconomic realities, national security pressures, and privileges shape our lives, even for those who once shared the same university halls."
             }
         ]
     }
