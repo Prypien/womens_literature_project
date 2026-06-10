@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NYCU: Perspectives of a Semester</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main id="game-container">
-        
+
         <!-- Ambient Music Controller (Top-Right) -->
         <button id="audio-toggle" class="audio-btn">
             <span id="audio-icon">🔇</span> Music Off
@@ -20,7 +24,9 @@
         <div id="start-screen" class="screen active">
             <h1>NYCU</h1>
             <p class="subtitle">Perspectives of a Semester — Ten Years Later</p>
-            <p class="intro-text">An interactive visual novel inspired by Zadie Smith's <em>Swing Time</em>. Experience an exchange semester in Taiwan from four different viewpoints and see how they clash ten years later.</p>
+            <p class="intro-text">An interactive visual novel inspired by Zadie Smith's <em>Swing Time</em>. Experience
+                an exchange semester in Taiwan from four different viewpoints and see how they clash ten years later.
+            </p>
             <button id="start-btn" class="primary-btn">Start Game</button>
         </div>
 
@@ -29,8 +35,11 @@
             <div class="intro-content">
                 <h2>Guangfu Campus — June</h2>
                 <p class="shared-intro-text">
-                    June is scorching hot on the Guangfu campus. The air feels heavy and oppressive; the sound of cicadas fills the background while people hurry across the campus, eager to spend as little time as possible under the blazing sun and to reach the air-conditioned buildings.<br><br>
-                    On that day, the university is hosting a congress. All former students from the past ten years who are currently in Taiwan have been invited to gather and reconnect.
+                    June is scorching hot on the Guangfu campus. The air feels heavy and oppressive, the sound of
+                    cicadas fills the background while people hurry across the campus, eager to spend as little time as
+                    possible under the blazing sun and to reach the air-conditioned buildings.<br><br>
+                    On that day, the university is hosting a congress. All former students from the past ten years who
+                    are currently in Taiwan have been invited to gather and reconnect.
                 </p>
                 <button id="to-select-btn" class="primary-btn">Continue to Character Selection</button>
             </div>
@@ -39,8 +48,9 @@
         <!-- Character Selection Screen -->
         <div id="character-select-screen" class="screen">
             <h2>Choose a Perspective</h2>
-            <p class="select-desc">Play the stories of the four classmates to discover how the semester in Taiwan shaped their lives.</p>
-            
+            <p class="select-desc">Play the stories of the four classmates to discover how the semester in Taiwan shaped
+                their lives.</p>
+
             <div class="character-grid">
                 <!-- French Girl Card -->
                 <div class="char-card" id="char-french" data-char="french">
@@ -86,7 +96,7 @@
             <div id="dialogue-box">
                 <div id="speaker-name"></div>
                 <div id="dialogue-text"></div>
-                
+
                 <!-- Multiple Choice Decisions Container (Hidden by default) -->
                 <div id="choice-container" class="choice-container hidden">
                     <!-- Dynamic choice buttons will be injected here -->
@@ -97,7 +107,7 @@
                     <button id="next-btn" class="next-btn">Next ▶</button>
                 </div>
             </div>
-            
+
             <!-- Overlay for when a Point-and-Click item is inspected -->
             <div id="inspection-overlay" class="hidden">
                 <div class="inspection-card">
@@ -128,4 +138,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
